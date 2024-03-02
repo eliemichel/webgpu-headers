@@ -19,10 +19,15 @@ jobs:
       - uses: actions/setup-go@v4
         with:
           go-version: '>=1.21.0'
-      - run: |
-          cd "${{ github.workspace }}"
-          pip install -r doc/requirements.txt
-          make docs
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r doc/requirements.txt
+      - run: make docs
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: doc/site
 
   # Deployment job
   deploy:
