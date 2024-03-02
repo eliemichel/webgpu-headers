@@ -1,6 +1,6 @@
 
 
-## QuerySet { #WGPUQuerySet }
+# QuerySet { #WGPUQuerySet }
 
 
 TODO
@@ -8,9 +8,14 @@ TODO
 
 
 
-### `wgpuQuerySetDestroy` { #wgpuQuerySetDestroy }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuQuerySetDestroy(WGPUQuerySet querySet)`
+## Destroy { #wgpuQuerySetDestroy }
+
+```C
+void wgpuQuerySetDestroy(WGPUQuerySet querySet)
+```
 
 
 TODO
@@ -24,9 +29,14 @@ TODO
 
 
 
-### `wgpuQuerySetGetCount` { #wgpuQuerySetGetCount }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `uint32_t wgpuQuerySetGetCount(WGPUQuerySet querySet)`
+## GetCount { #wgpuQuerySetGetCount }
+
+```C
+uint32_t wgpuQuerySetGetCount(WGPUQuerySet querySet)
+```
 
 
 TODO
@@ -45,9 +55,14 @@ TODO
 
 
 
-### `wgpuQuerySetGetType` { #wgpuQuerySetGetType }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUQueryType wgpuQuerySetGetType(WGPUQuerySet querySet)`
+## GetType { #wgpuQuerySetGetType }
+
+```C
+WGPUQueryType wgpuQuerySetGetType(WGPUQuerySet querySet)
+```
 
 
 TODO
@@ -66,9 +81,14 @@ TODO
 
 
 
-### `wgpuQuerySetSetLabel` { #wgpuQuerySetSetLabel }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuQuerySetSetLabel(WGPUQuerySet querySet, char const * label)`
+## SetLabel { #wgpuQuerySetSetLabel }
+
+```C
+void wgpuQuerySetSetLabel(WGPUQuerySet querySet, char const * label)
+```
 
 
 TODO
@@ -77,7 +97,6 @@ TODO
 **Arguments:**
 
  - TODO
-
 
 
 

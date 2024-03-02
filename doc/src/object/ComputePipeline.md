@@ -1,6 +1,6 @@
 
 
-## ComputePipeline { #WGPUComputePipeline }
+# ComputePipeline { #WGPUComputePipeline }
 
 
 TODO
@@ -8,9 +8,14 @@ TODO
 
 
 
-### `wgpuComputePipelineGetBindGroupLayout` { #wgpuComputePipelineGetBindGroupLayout }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUBindGroupLayout wgpuComputePipelineGetBindGroupLayout(WGPUComputePipeline computePipeline, uint32_t groupIndex)`
+## GetBindGroupLayout { #wgpuComputePipelineGetBindGroupLayout }
+
+```C
+WGPUBindGroupLayout wgpuComputePipelineGetBindGroupLayout(WGPUComputePipeline computePipeline, uint32_t groupIndex)
+```
 
 
 TODO
@@ -29,9 +34,14 @@ TODO
 
 
 
-### `wgpuComputePipelineSetLabel` { #wgpuComputePipelineSetLabel }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuComputePipelineSetLabel(WGPUComputePipeline computePipeline, char const * label)`
+## SetLabel { #wgpuComputePipelineSetLabel }
+
+```C
+void wgpuComputePipelineSetLabel(WGPUComputePipeline computePipeline, char const * label)
+```
 
 
 TODO
@@ -40,7 +50,6 @@ TODO
 **Arguments:**
 
  - TODO
-
 
 
 

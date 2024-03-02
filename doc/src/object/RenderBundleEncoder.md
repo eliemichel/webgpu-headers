@@ -1,6 +1,6 @@
 
 
-## RenderBundleEncoder { #WGPURenderBundleEncoder }
+# RenderBundleEncoder { #WGPURenderBundleEncoder }
 
 
 TODO
@@ -8,24 +8,14 @@ TODO
 
 
 
-### `wgpuRenderBundleEncoderDraw` { #wgpuRenderBundleEncoderDraw }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuRenderBundleEncoderDraw(WGPURenderBundleEncoder renderBundleEncoder, uint32_t vertexCount, uint32_t instanceCount, uint32_t firstVertex, uint32_t firstInstance)`
+## Draw { #wgpuRenderBundleEncoderDraw }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuRenderBundleEncoderDrawIndexed` { #wgpuRenderBundleEncoderDrawIndexed }
-
-**Prototype:** `void wgpuRenderBundleEncoderDrawIndexed(WGPURenderBundleEncoder renderBundleEncoder, uint32_t indexCount, uint32_t instanceCount, uint32_t firstIndex, int32_t baseVertex, uint32_t firstInstance)`
+```C
+void wgpuRenderBundleEncoderDraw(WGPURenderBundleEncoder renderBundleEncoder, uint32_t vertexCount, uint32_t instanceCount, uint32_t firstVertex, uint32_t firstInstance)
+```
 
 
 TODO
@@ -38,24 +28,14 @@ TODO
 
 
 
-### `wgpuRenderBundleEncoderDrawIndexedIndirect` { #wgpuRenderBundleEncoderDrawIndexedIndirect }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuRenderBundleEncoderDrawIndexedIndirect(WGPURenderBundleEncoder renderBundleEncoder, WGPUBuffer indirectBuffer, uint64_t indirectOffset)`
+## DrawIndexed { #wgpuRenderBundleEncoderDrawIndexed }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuRenderBundleEncoderDrawIndirect` { #wgpuRenderBundleEncoderDrawIndirect }
-
-**Prototype:** `void wgpuRenderBundleEncoderDrawIndirect(WGPURenderBundleEncoder renderBundleEncoder, WGPUBuffer indirectBuffer, uint64_t indirectOffset)`
+```C
+void wgpuRenderBundleEncoderDrawIndexed(WGPURenderBundleEncoder renderBundleEncoder, uint32_t indexCount, uint32_t instanceCount, uint32_t firstIndex, int32_t baseVertex, uint32_t firstInstance)
+```
 
 
 TODO
@@ -68,9 +48,54 @@ TODO
 
 
 
-### `wgpuRenderBundleEncoderFinish` { #wgpuRenderBundleEncoderFinish }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPURenderBundle wgpuRenderBundleEncoderFinish(WGPURenderBundleEncoder renderBundleEncoder, WGPU_NULLABLE WGPURenderBundleDescriptor const * descriptor)`
+## DrawIndexedIndirect { #wgpuRenderBundleEncoderDrawIndexedIndirect }
+
+```C
+void wgpuRenderBundleEncoderDrawIndexedIndirect(WGPURenderBundleEncoder renderBundleEncoder, WGPUBuffer indirectBuffer, uint64_t indirectOffset)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
+
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## DrawIndirect { #wgpuRenderBundleEncoderDrawIndirect }
+
+```C
+void wgpuRenderBundleEncoderDrawIndirect(WGPURenderBundleEncoder renderBundleEncoder, WGPUBuffer indirectBuffer, uint64_t indirectOffset)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
+
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## Finish { #wgpuRenderBundleEncoderFinish }
+
+```C
+WGPURenderBundle wgpuRenderBundleEncoderFinish(WGPURenderBundleEncoder renderBundleEncoder, WGPU_NULLABLE WGPURenderBundleDescriptor const * descriptor)
+```
 
 
 TODO
@@ -89,24 +114,14 @@ TODO
 
 
 
-### `wgpuRenderBundleEncoderInsertDebugMarker` { #wgpuRenderBundleEncoderInsertDebugMarker }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuRenderBundleEncoderInsertDebugMarker(WGPURenderBundleEncoder renderBundleEncoder, char const * markerLabel)`
+## InsertDebugMarker { #wgpuRenderBundleEncoderInsertDebugMarker }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuRenderBundleEncoderPopDebugGroup` { #wgpuRenderBundleEncoderPopDebugGroup }
-
-**Prototype:** `void wgpuRenderBundleEncoderPopDebugGroup(WGPURenderBundleEncoder renderBundleEncoder)`
+```C
+void wgpuRenderBundleEncoderInsertDebugMarker(WGPURenderBundleEncoder renderBundleEncoder, char const * markerLabel)
+```
 
 
 TODO
@@ -119,24 +134,14 @@ TODO
 
 
 
-### `wgpuRenderBundleEncoderPushDebugGroup` { #wgpuRenderBundleEncoderPushDebugGroup }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuRenderBundleEncoderPushDebugGroup(WGPURenderBundleEncoder renderBundleEncoder, char const * groupLabel)`
+## PopDebugGroup { #wgpuRenderBundleEncoderPopDebugGroup }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuRenderBundleEncoderSetBindGroup` { #wgpuRenderBundleEncoderSetBindGroup }
-
-**Prototype:** `void wgpuRenderBundleEncoderSetBindGroup(WGPURenderBundleEncoder renderBundleEncoder, uint32_t groupIndex, WGPU_NULLABLE WGPUBindGroup group, size_t dynamicOffsetCount, uint32_t const * dynamicOffsets)`
+```C
+void wgpuRenderBundleEncoderPopDebugGroup(WGPURenderBundleEncoder renderBundleEncoder)
+```
 
 
 TODO
@@ -149,24 +154,14 @@ TODO
 
 
 
-### `wgpuRenderBundleEncoderSetIndexBuffer` { #wgpuRenderBundleEncoderSetIndexBuffer }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuRenderBundleEncoderSetIndexBuffer(WGPURenderBundleEncoder renderBundleEncoder, WGPUBuffer buffer, WGPUIndexFormat format, uint64_t offset, uint64_t size)`
+## PushDebugGroup { #wgpuRenderBundleEncoderPushDebugGroup }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuRenderBundleEncoderSetLabel` { #wgpuRenderBundleEncoderSetLabel }
-
-**Prototype:** `void wgpuRenderBundleEncoderSetLabel(WGPURenderBundleEncoder renderBundleEncoder, char const * label)`
+```C
+void wgpuRenderBundleEncoderPushDebugGroup(WGPURenderBundleEncoder renderBundleEncoder, char const * groupLabel)
+```
 
 
 TODO
@@ -179,9 +174,34 @@ TODO
 
 
 
-### `wgpuRenderBundleEncoderSetPipeline` { #wgpuRenderBundleEncoderSetPipeline }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuRenderBundleEncoderSetPipeline(WGPURenderBundleEncoder renderBundleEncoder, WGPURenderPipeline pipeline)`
+## SetBindGroup { #wgpuRenderBundleEncoderSetBindGroup }
+
+```C
+void wgpuRenderBundleEncoderSetBindGroup(WGPURenderBundleEncoder renderBundleEncoder, uint32_t groupIndex, WGPU_NULLABLE WGPUBindGroup group, size_t dynamicOffsetCount, uint32_t const * dynamicOffsets)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
+
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## SetIndexBuffer { #wgpuRenderBundleEncoderSetIndexBuffer }
+
+```C
+void wgpuRenderBundleEncoderSetIndexBuffer(WGPURenderBundleEncoder renderBundleEncoder, WGPUBuffer buffer, WGPUIndexFormat format, uint64_t offset, uint64_t size)
+```
 
 
 TODO
@@ -194,9 +214,14 @@ TODO
 
 
 
-### `wgpuRenderBundleEncoderSetVertexBuffer` { #wgpuRenderBundleEncoderSetVertexBuffer }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuRenderBundleEncoderSetVertexBuffer(WGPURenderBundleEncoder renderBundleEncoder, uint32_t slot, WGPU_NULLABLE WGPUBuffer buffer, uint64_t offset, uint64_t size)`
+## SetLabel { #wgpuRenderBundleEncoderSetLabel }
+
+```C
+void wgpuRenderBundleEncoderSetLabel(WGPURenderBundleEncoder renderBundleEncoder, char const * label)
+```
 
 
 TODO
@@ -206,6 +231,45 @@ TODO
 
  - TODO
 
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## SetPipeline { #wgpuRenderBundleEncoderSetPipeline }
+
+```C
+void wgpuRenderBundleEncoderSetPipeline(WGPURenderBundleEncoder renderBundleEncoder, WGPURenderPipeline pipeline)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
+
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## SetVertexBuffer { #wgpuRenderBundleEncoderSetVertexBuffer }
+
+```C
+void wgpuRenderBundleEncoderSetVertexBuffer(WGPURenderBundleEncoder renderBundleEncoder, uint32_t slot, WGPU_NULLABLE WGPUBuffer buffer, uint64_t offset, uint64_t size)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
 
 
 

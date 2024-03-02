@@ -1,6 +1,6 @@
 
 
-## CommandBuffer { #WGPUCommandBuffer }
+# CommandBuffer { #WGPUCommandBuffer }
 
 
 TODO
@@ -8,9 +8,14 @@ TODO
 
 
 
-### `wgpuCommandBufferSetLabel` { #wgpuCommandBufferSetLabel }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuCommandBufferSetLabel(WGPUCommandBuffer commandBuffer, char const * label)`
+## SetLabel { #wgpuCommandBufferSetLabel }
+
+```C
+void wgpuCommandBufferSetLabel(WGPUCommandBuffer commandBuffer, char const * label)
+```
 
 
 TODO
@@ -19,7 +24,6 @@ TODO
 **Arguments:**
 
  - TODO
-
 
 
 

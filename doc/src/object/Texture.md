@@ -1,6 +1,6 @@
 
 
-## Texture { #WGPUTexture }
+# Texture { #WGPUTexture }
 
 
 TODO
@@ -8,9 +8,14 @@ TODO
 
 
 
-### `wgpuTextureCreateView` { #wgpuTextureCreateView }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUTextureView wgpuTextureCreateView(WGPUTexture texture, WGPU_NULLABLE WGPUTextureViewDescriptor const * descriptor)`
+## CreateView { #wgpuTextureCreateView }
+
+```C
+WGPUTextureView wgpuTextureCreateView(WGPUTexture texture, WGPU_NULLABLE WGPUTextureViewDescriptor const * descriptor)
+```
 
 
 TODO
@@ -29,9 +34,14 @@ TODO
 
 
 
-### `wgpuTextureDestroy` { #wgpuTextureDestroy }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuTextureDestroy(WGPUTexture texture)`
+## Destroy { #wgpuTextureDestroy }
+
+```C
+void wgpuTextureDestroy(WGPUTexture texture)
+```
 
 
 TODO
@@ -45,9 +55,14 @@ TODO
 
 
 
-### `wgpuTextureGetDepthOrArrayLayers` { #wgpuTextureGetDepthOrArrayLayers }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `uint32_t wgpuTextureGetDepthOrArrayLayers(WGPUTexture texture)`
+## GetDepthOrArrayLayers { #wgpuTextureGetDepthOrArrayLayers }
+
+```C
+uint32_t wgpuTextureGetDepthOrArrayLayers(WGPUTexture texture)
+```
 
 
 TODO
@@ -66,9 +81,14 @@ TODO
 
 
 
-### `wgpuTextureGetDimension` { #wgpuTextureGetDimension }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUTextureDimension wgpuTextureGetDimension(WGPUTexture texture)`
+## GetDimension { #wgpuTextureGetDimension }
+
+```C
+WGPUTextureDimension wgpuTextureGetDimension(WGPUTexture texture)
+```
 
 
 TODO
@@ -87,9 +107,14 @@ TODO
 
 
 
-### `wgpuTextureGetFormat` { #wgpuTextureGetFormat }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUTextureFormat wgpuTextureGetFormat(WGPUTexture texture)`
+## GetFormat { #wgpuTextureGetFormat }
+
+```C
+WGPUTextureFormat wgpuTextureGetFormat(WGPUTexture texture)
+```
 
 
 TODO
@@ -108,30 +133,14 @@ TODO
 
 
 
-### `wgpuTextureGetHeight` { #wgpuTextureGetHeight }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `uint32_t wgpuTextureGetHeight(WGPUTexture texture)`
+## GetHeight { #wgpuTextureGetHeight }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-**Returns:** `uint32_t` 
-TODO
-
-
-
-
-
-### `wgpuTextureGetMipLevelCount` { #wgpuTextureGetMipLevelCount }
-
-**Prototype:** `uint32_t wgpuTextureGetMipLevelCount(WGPUTexture texture)`
+```C
+uint32_t wgpuTextureGetHeight(WGPUTexture texture)
+```
 
 
 TODO
@@ -150,9 +159,14 @@ TODO
 
 
 
-### `wgpuTextureGetSampleCount` { #wgpuTextureGetSampleCount }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `uint32_t wgpuTextureGetSampleCount(WGPUTexture texture)`
+## GetMipLevelCount { #wgpuTextureGetMipLevelCount }
+
+```C
+uint32_t wgpuTextureGetMipLevelCount(WGPUTexture texture)
+```
 
 
 TODO
@@ -171,9 +185,40 @@ TODO
 
 
 
-### `wgpuTextureGetUsage` { #wgpuTextureGetUsage }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUTextureUsageFlags wgpuTextureGetUsage(WGPUTexture texture)`
+## GetSampleCount { #wgpuTextureGetSampleCount }
+
+```C
+uint32_t wgpuTextureGetSampleCount(WGPUTexture texture)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
+
+
+
+**Returns:** `uint32_t` 
+TODO
+
+
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## GetUsage { #wgpuTextureGetUsage }
+
+```C
+WGPUTextureUsageFlags wgpuTextureGetUsage(WGPUTexture texture)
+```
 
 
 TODO
@@ -192,9 +237,14 @@ TODO
 
 
 
-### `wgpuTextureGetWidth` { #wgpuTextureGetWidth }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `uint32_t wgpuTextureGetWidth(WGPUTexture texture)`
+## GetWidth { #wgpuTextureGetWidth }
+
+```C
+uint32_t wgpuTextureGetWidth(WGPUTexture texture)
+```
 
 
 TODO
@@ -213,9 +263,14 @@ TODO
 
 
 
-### `wgpuTextureSetLabel` { #wgpuTextureSetLabel }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuTextureSetLabel(WGPUTexture texture, char const * label)`
+## SetLabel { #wgpuTextureSetLabel }
+
+```C
+void wgpuTextureSetLabel(WGPUTexture texture, char const * label)
+```
 
 
 TODO
@@ -224,7 +279,6 @@ TODO
 **Arguments:**
 
  - TODO
-
 
 
 

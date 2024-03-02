@@ -1,8 +1,5 @@
 # Structures
 
-## Structures
-
-
  - [`WGPUAdapterInfo`](AdapterInfo)
  - [`WGPUAdapterProperties`](AdapterProperties)
  - [`WGPUBindGroupEntry`](BindGroupEntry)

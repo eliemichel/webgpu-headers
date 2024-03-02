@@ -1,6 +1,6 @@
 
 
-## Sampler { #WGPUSampler }
+# Sampler { #WGPUSampler }
 
 
 TODO
@@ -8,9 +8,14 @@ TODO
 
 
 
-### `wgpuSamplerSetLabel` { #wgpuSamplerSetLabel }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuSamplerSetLabel(WGPUSampler sampler, char const * label)`
+## SetLabel { #wgpuSamplerSetLabel }
+
+```C
+void wgpuSamplerSetLabel(WGPUSampler sampler, char const * label)
+```
 
 
 TODO
@@ -19,7 +24,6 @@ TODO
 **Arguments:**
 
  - TODO
-
 
 
 

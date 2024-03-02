@@ -1,6 +1,6 @@
 
 
-## CommandEncoder { #WGPUCommandEncoder }
+# CommandEncoder { #WGPUCommandEncoder }
 
 
 TODO
@@ -8,9 +8,14 @@ TODO
 
 
 
-### `wgpuCommandEncoderBeginComputePass` { #wgpuCommandEncoderBeginComputePass }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUComputePassEncoder wgpuCommandEncoderBeginComputePass(WGPUCommandEncoder commandEncoder, WGPU_NULLABLE WGPUComputePassDescriptor const * descriptor)`
+## BeginComputePass { #wgpuCommandEncoderBeginComputePass }
+
+```C
+WGPUComputePassEncoder wgpuCommandEncoderBeginComputePass(WGPUCommandEncoder commandEncoder, WGPU_NULLABLE WGPUComputePassDescriptor const * descriptor)
+```
 
 
 TODO
@@ -29,9 +34,14 @@ TODO
 
 
 
-### `wgpuCommandEncoderBeginRenderPass` { #wgpuCommandEncoderBeginRenderPass }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPURenderPassEncoder wgpuCommandEncoderBeginRenderPass(WGPUCommandEncoder commandEncoder, WGPURenderPassDescriptor const * descriptor)`
+## BeginRenderPass { #wgpuCommandEncoderBeginRenderPass }
+
+```C
+WGPURenderPassEncoder wgpuCommandEncoderBeginRenderPass(WGPUCommandEncoder commandEncoder, WGPURenderPassDescriptor const * descriptor)
+```
 
 
 TODO
@@ -50,24 +60,14 @@ TODO
 
 
 
-### `wgpuCommandEncoderClearBuffer` { #wgpuCommandEncoderClearBuffer }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuCommandEncoderClearBuffer(WGPUCommandEncoder commandEncoder, WGPUBuffer buffer, uint64_t offset, uint64_t size)`
+## ClearBuffer { #wgpuCommandEncoderClearBuffer }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuCommandEncoderCopyBufferToBuffer` { #wgpuCommandEncoderCopyBufferToBuffer }
-
-**Prototype:** `void wgpuCommandEncoderCopyBufferToBuffer(WGPUCommandEncoder commandEncoder, WGPUBuffer source, uint64_t sourceOffset, WGPUBuffer destination, uint64_t destinationOffset, uint64_t size)`
+```C
+void wgpuCommandEncoderClearBuffer(WGPUCommandEncoder commandEncoder, WGPUBuffer buffer, uint64_t offset, uint64_t size)
+```
 
 
 TODO
@@ -80,24 +80,14 @@ TODO
 
 
 
-### `wgpuCommandEncoderCopyBufferToTexture` { #wgpuCommandEncoderCopyBufferToTexture }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuCommandEncoderCopyBufferToTexture(WGPUCommandEncoder commandEncoder, WGPUImageCopyBuffer const * source, WGPUImageCopyTexture const * destination, WGPUExtent3D const * copySize)`
+## CopyBufferToBuffer { #wgpuCommandEncoderCopyBufferToBuffer }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuCommandEncoderCopyTextureToBuffer` { #wgpuCommandEncoderCopyTextureToBuffer }
-
-**Prototype:** `void wgpuCommandEncoderCopyTextureToBuffer(WGPUCommandEncoder commandEncoder, WGPUImageCopyTexture const * source, WGPUImageCopyBuffer const * destination, WGPUExtent3D const * copySize)`
+```C
+void wgpuCommandEncoderCopyBufferToBuffer(WGPUCommandEncoder commandEncoder, WGPUBuffer source, uint64_t sourceOffset, WGPUBuffer destination, uint64_t destinationOffset, uint64_t size)
+```
 
 
 TODO
@@ -110,9 +100,14 @@ TODO
 
 
 
-### `wgpuCommandEncoderCopyTextureToTexture` { #wgpuCommandEncoderCopyTextureToTexture }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuCommandEncoderCopyTextureToTexture(WGPUCommandEncoder commandEncoder, WGPUImageCopyTexture const * source, WGPUImageCopyTexture const * destination, WGPUExtent3D const * copySize)`
+## CopyBufferToTexture { #wgpuCommandEncoderCopyBufferToTexture }
+
+```C
+void wgpuCommandEncoderCopyBufferToTexture(WGPUCommandEncoder commandEncoder, WGPUImageCopyBuffer const * source, WGPUImageCopyTexture const * destination, WGPUExtent3D const * copySize)
+```
 
 
 TODO
@@ -125,9 +120,54 @@ TODO
 
 
 
-### `wgpuCommandEncoderFinish` { #wgpuCommandEncoderFinish }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUCommandBuffer wgpuCommandEncoderFinish(WGPUCommandEncoder commandEncoder, WGPU_NULLABLE WGPUCommandBufferDescriptor const * descriptor)`
+## CopyTextureToBuffer { #wgpuCommandEncoderCopyTextureToBuffer }
+
+```C
+void wgpuCommandEncoderCopyTextureToBuffer(WGPUCommandEncoder commandEncoder, WGPUImageCopyTexture const * source, WGPUImageCopyBuffer const * destination, WGPUExtent3D const * copySize)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
+
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## CopyTextureToTexture { #wgpuCommandEncoderCopyTextureToTexture }
+
+```C
+void wgpuCommandEncoderCopyTextureToTexture(WGPUCommandEncoder commandEncoder, WGPUImageCopyTexture const * source, WGPUImageCopyTexture const * destination, WGPUExtent3D const * copySize)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
+
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## Finish { #wgpuCommandEncoderFinish }
+
+```C
+WGPUCommandBuffer wgpuCommandEncoderFinish(WGPUCommandEncoder commandEncoder, WGPU_NULLABLE WGPUCommandBufferDescriptor const * descriptor)
+```
 
 
 TODO
@@ -146,24 +186,14 @@ TODO
 
 
 
-### `wgpuCommandEncoderInsertDebugMarker` { #wgpuCommandEncoderInsertDebugMarker }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuCommandEncoderInsertDebugMarker(WGPUCommandEncoder commandEncoder, char const * markerLabel)`
+## InsertDebugMarker { #wgpuCommandEncoderInsertDebugMarker }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuCommandEncoderPopDebugGroup` { #wgpuCommandEncoderPopDebugGroup }
-
-**Prototype:** `void wgpuCommandEncoderPopDebugGroup(WGPUCommandEncoder commandEncoder)`
+```C
+void wgpuCommandEncoderInsertDebugMarker(WGPUCommandEncoder commandEncoder, char const * markerLabel)
+```
 
 
 TODO
@@ -176,24 +206,14 @@ TODO
 
 
 
-### `wgpuCommandEncoderPushDebugGroup` { #wgpuCommandEncoderPushDebugGroup }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuCommandEncoderPushDebugGroup(WGPUCommandEncoder commandEncoder, char const * groupLabel)`
+## PopDebugGroup { #wgpuCommandEncoderPopDebugGroup }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuCommandEncoderResolveQuerySet` { #wgpuCommandEncoderResolveQuerySet }
-
-**Prototype:** `void wgpuCommandEncoderResolveQuerySet(WGPUCommandEncoder commandEncoder, WGPUQuerySet querySet, uint32_t firstQuery, uint32_t queryCount, WGPUBuffer destination, uint64_t destinationOffset)`
+```C
+void wgpuCommandEncoderPopDebugGroup(WGPUCommandEncoder commandEncoder)
+```
 
 
 TODO
@@ -206,9 +226,34 @@ TODO
 
 
 
-### `wgpuCommandEncoderSetLabel` { #wgpuCommandEncoderSetLabel }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuCommandEncoderSetLabel(WGPUCommandEncoder commandEncoder, char const * label)`
+## PushDebugGroup { #wgpuCommandEncoderPushDebugGroup }
+
+```C
+void wgpuCommandEncoderPushDebugGroup(WGPUCommandEncoder commandEncoder, char const * groupLabel)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
+
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## ResolveQuerySet { #wgpuCommandEncoderResolveQuerySet }
+
+```C
+void wgpuCommandEncoderResolveQuerySet(WGPUCommandEncoder commandEncoder, WGPUQuerySet querySet, uint32_t firstQuery, uint32_t queryCount, WGPUBuffer destination, uint64_t destinationOffset)
+```
 
 
 TODO
@@ -221,9 +266,14 @@ TODO
 
 
 
-### `wgpuCommandEncoderWriteTimestamp` { #wgpuCommandEncoderWriteTimestamp }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuCommandEncoderWriteTimestamp(WGPUCommandEncoder commandEncoder, WGPUQuerySet querySet, uint32_t queryIndex)`
+## SetLabel { #wgpuCommandEncoderSetLabel }
+
+```C
+void wgpuCommandEncoderSetLabel(WGPUCommandEncoder commandEncoder, char const * label)
+```
 
 
 TODO
@@ -233,6 +283,25 @@ TODO
 
  - TODO
 
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## WriteTimestamp { #wgpuCommandEncoderWriteTimestamp }
+
+```C
+void wgpuCommandEncoderWriteTimestamp(WGPUCommandEncoder commandEncoder, WGPUQuerySet querySet, uint32_t queryIndex)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
 
 
 

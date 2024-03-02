@@ -1,6 +1,6 @@
 
 
-## RenderBundle { #WGPURenderBundle }
+# RenderBundle { #WGPURenderBundle }
 
 
 TODO
@@ -8,9 +8,14 @@ TODO
 
 
 
-### `wgpuRenderBundleSetLabel` { #wgpuRenderBundleSetLabel }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuRenderBundleSetLabel(WGPURenderBundle renderBundle, char const * label)`
+## SetLabel { #wgpuRenderBundleSetLabel }
+
+```C
+void wgpuRenderBundleSetLabel(WGPURenderBundle renderBundle, char const * label)
+```
 
 
 TODO
@@ -19,7 +24,6 @@ TODO
 **Arguments:**
 
  - TODO
-
 
 
 

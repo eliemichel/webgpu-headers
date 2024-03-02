@@ -1,6 +1,6 @@
 
 
-## PipelineLayout { #WGPUPipelineLayout }
+# PipelineLayout { #WGPUPipelineLayout }
 
 
 TODO
@@ -8,9 +8,14 @@ TODO
 
 
 
-### `wgpuPipelineLayoutSetLabel` { #wgpuPipelineLayoutSetLabel }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuPipelineLayoutSetLabel(WGPUPipelineLayout pipelineLayout, char const * label)`
+## SetLabel { #wgpuPipelineLayoutSetLabel }
+
+```C
+void wgpuPipelineLayoutSetLabel(WGPUPipelineLayout pipelineLayout, char const * label)
+```
 
 
 TODO
@@ -19,7 +24,6 @@ TODO
 **Arguments:**
 
  - TODO
-
 
 
 

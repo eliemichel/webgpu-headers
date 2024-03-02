@@ -1,6 +1,6 @@
 
 
-## Surface { #WGPUSurface }
+# Surface { #WGPUSurface }
 
 
 TODO
@@ -8,24 +8,14 @@ TODO
 
 
 
-### `wgpuSurfaceConfigure` { #wgpuSurfaceConfigure }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuSurfaceConfigure(WGPUSurface surface, WGPUSurfaceConfiguration const * config)`
+## Configure { #wgpuSurfaceConfigure }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuSurfaceGetCapabilities` { #wgpuSurfaceGetCapabilities }
-
-**Prototype:** `void wgpuSurfaceGetCapabilities(WGPUSurface surface, WGPUAdapter adapter, WGPUSurfaceCapabilities * capabilities)`
+```C
+void wgpuSurfaceConfigure(WGPUSurface surface, WGPUSurfaceConfiguration const * config)
+```
 
 
 TODO
@@ -38,9 +28,14 @@ TODO
 
 
 
-### `wgpuSurfaceGetCurrentTexture` { #wgpuSurfaceGetCurrentTexture }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuSurfaceGetCurrentTexture(WGPUSurface surface, WGPUSurfaceTexture * surfaceTexture)`
+## GetCapabilities { #wgpuSurfaceGetCapabilities }
+
+```C
+void wgpuSurfaceGetCapabilities(WGPUSurface surface, WGPUAdapter adapter, WGPUSurfaceCapabilities * capabilities)
+```
 
 
 TODO
@@ -53,9 +48,34 @@ TODO
 
 
 
-### `wgpuSurfaceGetPreferredFormat` { #wgpuSurfaceGetPreferredFormat }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUTextureFormat wgpuSurfaceGetPreferredFormat(WGPUSurface surface, WGPUAdapter adapter)`
+## GetCurrentTexture { #wgpuSurfaceGetCurrentTexture }
+
+```C
+void wgpuSurfaceGetCurrentTexture(WGPUSurface surface, WGPUSurfaceTexture * surfaceTexture)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
+
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## GetPreferredFormat { #wgpuSurfaceGetPreferredFormat }
+
+```C
+WGPUTextureFormat wgpuSurfaceGetPreferredFormat(WGPUSurface surface, WGPUAdapter adapter)
+```
 
 
 TODO
@@ -74,24 +94,14 @@ TODO
 
 
 
-### `wgpuSurfacePresent` { #wgpuSurfacePresent }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuSurfacePresent(WGPUSurface surface)`
+## Present { #wgpuSurfacePresent }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuSurfaceSetLabel` { #wgpuSurfaceSetLabel }
-
-**Prototype:** `void wgpuSurfaceSetLabel(WGPUSurface surface, char const * label)`
+```C
+void wgpuSurfacePresent(WGPUSurface surface)
+```
 
 
 TODO
@@ -104,9 +114,14 @@ TODO
 
 
 
-### `wgpuSurfaceUnconfigure` { #wgpuSurfaceUnconfigure }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuSurfaceUnconfigure(WGPUSurface surface)`
+## SetLabel { #wgpuSurfaceSetLabel }
+
+```C
+void wgpuSurfaceSetLabel(WGPUSurface surface, char const * label)
+```
 
 
 TODO
@@ -116,6 +131,25 @@ TODO
 
  - TODO
 
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## Unconfigure { #wgpuSurfaceUnconfigure }
+
+```C
+void wgpuSurfaceUnconfigure(WGPUSurface surface)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
 
 
 

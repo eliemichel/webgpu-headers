@@ -1,6 +1,6 @@
 
 
-## Buffer { #WGPUBuffer }
+# Buffer { #WGPUBuffer }
 
 
 TODO
@@ -8,9 +8,14 @@ TODO
 
 
 
-### `wgpuBufferDestroy` { #wgpuBufferDestroy }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuBufferDestroy(WGPUBuffer buffer)`
+## Destroy { #wgpuBufferDestroy }
+
+```C
+void wgpuBufferDestroy(WGPUBuffer buffer)
+```
 
 
 TODO
@@ -24,9 +29,14 @@ TODO
 
 
 
-### `wgpuBufferGetConstMappedRange` { #wgpuBufferGetConstMappedRange }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void const * wgpuBufferGetConstMappedRange(WGPUBuffer buffer, size_t offset, size_t size)`
+## GetConstMappedRange { #wgpuBufferGetConstMappedRange }
+
+```C
+void const * wgpuBufferGetConstMappedRange(WGPUBuffer buffer, size_t offset, size_t size)
+```
 
 
 TODO
@@ -45,9 +55,14 @@ TODO
 
 
 
-### `wgpuBufferGetMapState` { #wgpuBufferGetMapState }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUBufferMapState wgpuBufferGetMapState(WGPUBuffer buffer)`
+## GetMapState { #wgpuBufferGetMapState }
+
+```C
+WGPUBufferMapState wgpuBufferGetMapState(WGPUBuffer buffer)
+```
 
 
 TODO
@@ -66,9 +81,14 @@ TODO
 
 
 
-### `wgpuBufferGetMappedRange` { #wgpuBufferGetMappedRange }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void * wgpuBufferGetMappedRange(WGPUBuffer buffer, size_t offset, size_t size)`
+## GetMappedRange { #wgpuBufferGetMappedRange }
+
+```C
+void * wgpuBufferGetMappedRange(WGPUBuffer buffer, size_t offset, size_t size)
+```
 
 
 TODO
@@ -87,9 +107,14 @@ TODO
 
 
 
-### `wgpuBufferGetSize` { #wgpuBufferGetSize }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `uint64_t wgpuBufferGetSize(WGPUBuffer buffer)`
+## GetSize { #wgpuBufferGetSize }
+
+```C
+uint64_t wgpuBufferGetSize(WGPUBuffer buffer)
+```
 
 
 TODO
@@ -108,9 +133,14 @@ TODO
 
 
 
-### `wgpuBufferGetUsage` { #wgpuBufferGetUsage }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUBufferUsageFlags wgpuBufferGetUsage(WGPUBuffer buffer)`
+## GetUsage { #wgpuBufferGetUsage }
+
+```C
+WGPUBufferUsageFlags wgpuBufferGetUsage(WGPUBuffer buffer)
+```
 
 
 TODO
@@ -129,24 +159,14 @@ TODO
 
 
 
-### `wgpuBufferMapAsync` { #wgpuBufferMapAsync }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuBufferMapAsync(WGPUBuffer buffer, WGPUMapModeFlags mode, size_t offset, size_t size, WGPUBufferMapAsyncCallback callback, WGPU_NULLABLE void * userdata)`
+## MapAsync { #wgpuBufferMapAsync }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuBufferSetLabel` { #wgpuBufferSetLabel }
-
-**Prototype:** `void wgpuBufferSetLabel(WGPUBuffer buffer, char const * label)`
+```C
+void wgpuBufferMapAsync(WGPUBuffer buffer, WGPUMapModeFlags mode, size_t offset, size_t size, WGPUBufferMapAsyncCallback callback, WGPU_NULLABLE void * userdata)
+```
 
 
 TODO
@@ -159,9 +179,14 @@ TODO
 
 
 
-### `wgpuBufferUnmap` { #wgpuBufferUnmap }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuBufferUnmap(WGPUBuffer buffer)`
+## SetLabel { #wgpuBufferSetLabel }
+
+```C
+void wgpuBufferSetLabel(WGPUBuffer buffer, char const * label)
+```
 
 
 TODO
@@ -171,6 +196,25 @@ TODO
 
  - TODO
 
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## Unmap { #wgpuBufferUnmap }
+
+```C
+void wgpuBufferUnmap(WGPUBuffer buffer)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
 
 
 

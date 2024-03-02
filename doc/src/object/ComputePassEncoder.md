@@ -1,6 +1,6 @@
 
 
-## ComputePassEncoder { #WGPUComputePassEncoder }
+# ComputePassEncoder { #WGPUComputePassEncoder }
 
 
 TODO
@@ -8,24 +8,14 @@ TODO
 
 
 
-### `wgpuComputePassEncoderDispatchWorkgroups` { #wgpuComputePassEncoderDispatchWorkgroups }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuComputePassEncoderDispatchWorkgroups(WGPUComputePassEncoder computePassEncoder, uint32_t workgroupCountX, uint32_t workgroupCountY, uint32_t workgroupCountZ)`
+## DispatchWorkgroups { #wgpuComputePassEncoderDispatchWorkgroups }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuComputePassEncoderDispatchWorkgroupsIndirect` { #wgpuComputePassEncoderDispatchWorkgroupsIndirect }
-
-**Prototype:** `void wgpuComputePassEncoderDispatchWorkgroupsIndirect(WGPUComputePassEncoder computePassEncoder, WGPUBuffer indirectBuffer, uint64_t indirectOffset)`
+```C
+void wgpuComputePassEncoderDispatchWorkgroups(WGPUComputePassEncoder computePassEncoder, uint32_t workgroupCountX, uint32_t workgroupCountY, uint32_t workgroupCountZ)
+```
 
 
 TODO
@@ -38,24 +28,14 @@ TODO
 
 
 
-### `wgpuComputePassEncoderEnd` { #wgpuComputePassEncoderEnd }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuComputePassEncoderEnd(WGPUComputePassEncoder computePassEncoder)`
+## DispatchWorkgroupsIndirect { #wgpuComputePassEncoderDispatchWorkgroupsIndirect }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuComputePassEncoderInsertDebugMarker` { #wgpuComputePassEncoderInsertDebugMarker }
-
-**Prototype:** `void wgpuComputePassEncoderInsertDebugMarker(WGPUComputePassEncoder computePassEncoder, char const * markerLabel)`
+```C
+void wgpuComputePassEncoderDispatchWorkgroupsIndirect(WGPUComputePassEncoder computePassEncoder, WGPUBuffer indirectBuffer, uint64_t indirectOffset)
+```
 
 
 TODO
@@ -68,24 +48,14 @@ TODO
 
 
 
-### `wgpuComputePassEncoderPopDebugGroup` { #wgpuComputePassEncoderPopDebugGroup }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuComputePassEncoderPopDebugGroup(WGPUComputePassEncoder computePassEncoder)`
+## End { #wgpuComputePassEncoderEnd }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuComputePassEncoderPushDebugGroup` { #wgpuComputePassEncoderPushDebugGroup }
-
-**Prototype:** `void wgpuComputePassEncoderPushDebugGroup(WGPUComputePassEncoder computePassEncoder, char const * groupLabel)`
+```C
+void wgpuComputePassEncoderEnd(WGPUComputePassEncoder computePassEncoder)
+```
 
 
 TODO
@@ -98,24 +68,14 @@ TODO
 
 
 
-### `wgpuComputePassEncoderSetBindGroup` { #wgpuComputePassEncoderSetBindGroup }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuComputePassEncoderSetBindGroup(WGPUComputePassEncoder computePassEncoder, uint32_t groupIndex, WGPU_NULLABLE WGPUBindGroup group, size_t dynamicOffsetCount, uint32_t const * dynamicOffsets)`
+## InsertDebugMarker { #wgpuComputePassEncoderInsertDebugMarker }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuComputePassEncoderSetLabel` { #wgpuComputePassEncoderSetLabel }
-
-**Prototype:** `void wgpuComputePassEncoderSetLabel(WGPUComputePassEncoder computePassEncoder, char const * label)`
+```C
+void wgpuComputePassEncoderInsertDebugMarker(WGPUComputePassEncoder computePassEncoder, char const * markerLabel)
+```
 
 
 TODO
@@ -128,9 +88,14 @@ TODO
 
 
 
-### `wgpuComputePassEncoderSetPipeline` { #wgpuComputePassEncoderSetPipeline }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuComputePassEncoderSetPipeline(WGPUComputePassEncoder computePassEncoder, WGPUComputePipeline pipeline)`
+## PopDebugGroup { #wgpuComputePassEncoderPopDebugGroup }
+
+```C
+void wgpuComputePassEncoderPopDebugGroup(WGPUComputePassEncoder computePassEncoder)
+```
 
 
 TODO
@@ -140,6 +105,85 @@ TODO
 
  - TODO
 
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## PushDebugGroup { #wgpuComputePassEncoderPushDebugGroup }
+
+```C
+void wgpuComputePassEncoderPushDebugGroup(WGPUComputePassEncoder computePassEncoder, char const * groupLabel)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
+
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## SetBindGroup { #wgpuComputePassEncoderSetBindGroup }
+
+```C
+void wgpuComputePassEncoderSetBindGroup(WGPUComputePassEncoder computePassEncoder, uint32_t groupIndex, WGPU_NULLABLE WGPUBindGroup group, size_t dynamicOffsetCount, uint32_t const * dynamicOffsets)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
+
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## SetLabel { #wgpuComputePassEncoderSetLabel }
+
+```C
+void wgpuComputePassEncoderSetLabel(WGPUComputePassEncoder computePassEncoder, char const * label)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
+
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## SetPipeline { #wgpuComputePassEncoderSetPipeline }
+
+```C
+void wgpuComputePassEncoderSetPipeline(WGPUComputePassEncoder computePassEncoder, WGPUComputePipeline pipeline)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
 
 
 

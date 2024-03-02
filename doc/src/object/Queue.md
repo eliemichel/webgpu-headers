@@ -1,6 +1,6 @@
 
 
-## Queue { #WGPUQueue }
+# Queue { #WGPUQueue }
 
 
 TODO
@@ -8,24 +8,14 @@ TODO
 
 
 
-### `wgpuQueueOnSubmittedWorkDone` { #wgpuQueueOnSubmittedWorkDone }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuQueueOnSubmittedWorkDone(WGPUQueue queue, WGPUQueueOnSubmittedWorkDoneCallback callback, WGPU_NULLABLE void * userdata)`
+## OnSubmittedWorkDone { #wgpuQueueOnSubmittedWorkDone }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuQueueSetLabel` { #wgpuQueueSetLabel }
-
-**Prototype:** `void wgpuQueueSetLabel(WGPUQueue queue, char const * label)`
+```C
+void wgpuQueueOnSubmittedWorkDone(WGPUQueue queue, WGPUQueueOnSubmittedWorkDoneCallback callback, WGPU_NULLABLE void * userdata)
+```
 
 
 TODO
@@ -38,24 +28,14 @@ TODO
 
 
 
-### `wgpuQueueSubmit` { #wgpuQueueSubmit }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuQueueSubmit(WGPUQueue queue, size_t commandCount, WGPUCommandBuffer const * commands)`
+## SetLabel { #wgpuQueueSetLabel }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuQueueWriteBuffer` { #wgpuQueueWriteBuffer }
-
-**Prototype:** `void wgpuQueueWriteBuffer(WGPUQueue queue, WGPUBuffer buffer, uint64_t bufferOffset, void const * data, size_t size)`
+```C
+void wgpuQueueSetLabel(WGPUQueue queue, char const * label)
+```
 
 
 TODO
@@ -68,9 +48,14 @@ TODO
 
 
 
-### `wgpuQueueWriteTexture` { #wgpuQueueWriteTexture }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuQueueWriteTexture(WGPUQueue queue, WGPUImageCopyTexture const * destination, void const * data, size_t dataSize, WGPUTextureDataLayout const * dataLayout, WGPUExtent3D const * writeSize)`
+## Submit { #wgpuQueueSubmit }
+
+```C
+void wgpuQueueSubmit(WGPUQueue queue, size_t commandCount, WGPUCommandBuffer const * commands)
+```
 
 
 TODO
@@ -80,6 +65,45 @@ TODO
 
  - TODO
 
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## WriteBuffer { #wgpuQueueWriteBuffer }
+
+```C
+void wgpuQueueWriteBuffer(WGPUQueue queue, WGPUBuffer buffer, uint64_t bufferOffset, void const * data, size_t size)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
+
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## WriteTexture { #wgpuQueueWriteTexture }
+
+```C
+void wgpuQueueWriteTexture(WGPUQueue queue, WGPUImageCopyTexture const * destination, void const * data, size_t dataSize, WGPUTextureDataLayout const * dataLayout, WGPUExtent3D const * writeSize)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
 
 
 

@@ -1,6 +1,6 @@
 
 
-## ShaderModule { #WGPUShaderModule }
+# ShaderModule { #WGPUShaderModule }
 
 
 TODO
@@ -8,24 +8,14 @@ TODO
 
 
 
-### `wgpuShaderModuleGetCompilationInfo` { #wgpuShaderModuleGetCompilationInfo }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuShaderModuleGetCompilationInfo(WGPUShaderModule shaderModule, WGPUShaderModuleGetCompilationInfoCallback callback, WGPU_NULLABLE void * userdata)`
+## GetCompilationInfo { #wgpuShaderModuleGetCompilationInfo }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuShaderModuleSetLabel` { #wgpuShaderModuleSetLabel }
-
-**Prototype:** `void wgpuShaderModuleSetLabel(WGPUShaderModule shaderModule, char const * label)`
+```C
+void wgpuShaderModuleGetCompilationInfo(WGPUShaderModule shaderModule, WGPUShaderModuleGetCompilationInfoCallback callback, WGPU_NULLABLE void * userdata)
+```
 
 
 TODO
@@ -35,6 +25,25 @@ TODO
 
  - TODO
 
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## SetLabel { #wgpuShaderModuleSetLabel }
+
+```C
+void wgpuShaderModuleSetLabel(WGPUShaderModule shaderModule, char const * label)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
 
 
 

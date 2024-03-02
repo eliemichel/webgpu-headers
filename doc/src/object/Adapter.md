@@ -1,6 +1,6 @@
 
 
-## Adapter { #WGPUAdapter }
+# Adapter { #WGPUAdapter }
 
 
 This is a test.
@@ -8,9 +8,14 @@ This is a test.
 
 
 
-### `wgpuAdapterEnumerateFeatures` { #wgpuAdapterEnumerateFeatures }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `size_t wgpuAdapterEnumerateFeatures(WGPUAdapter adapter, WGPUFeatureName * features)`
+## EnumerateFeatures { #wgpuAdapterEnumerateFeatures }
+
+```C
+size_t wgpuAdapterEnumerateFeatures(WGPUAdapter adapter, WGPUFeatureName * features)
+```
 
 
 TODO
@@ -29,9 +34,14 @@ TODO
 
 
 
-### `wgpuAdapterGetLimits` { #wgpuAdapterGetLimits }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUBool wgpuAdapterGetLimits(WGPUAdapter adapter, WGPUSupportedLimits * limits)`
+## GetLimits { #wgpuAdapterGetLimits }
+
+```C
+WGPUBool wgpuAdapterGetLimits(WGPUAdapter adapter, WGPUSupportedLimits * limits)
+```
 
 
 Get the limits that the adapter supports. This is used to drive the
@@ -51,9 +61,14 @@ True iff limits were successfully retrieved.
 
 
 
-### `wgpuAdapterGetProperties` { #wgpuAdapterGetProperties }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuAdapterGetProperties(WGPUAdapter adapter, WGPUAdapterProperties * properties)`
+## GetProperties { #wgpuAdapterGetProperties }
+
+```C
+void wgpuAdapterGetProperties(WGPUAdapter adapter, WGPUAdapterProperties * properties)
+```
 
 
 TODO
@@ -66,9 +81,14 @@ TODO
 
 
 
-### `wgpuAdapterHasFeature` { #wgpuAdapterHasFeature }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUBool wgpuAdapterHasFeature(WGPUAdapter adapter, WGPUFeatureName feature)`
+## HasFeature { #wgpuAdapterHasFeature }
+
+```C
+WGPUBool wgpuAdapterHasFeature(WGPUAdapter adapter, WGPUFeatureName feature)
+```
 
 
 TODO
@@ -87,24 +107,14 @@ TODO
 
 
 
-### `wgpuAdapterRequestAdapterInfo` { #wgpuAdapterRequestAdapterInfo }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuAdapterRequestAdapterInfo(WGPUAdapter adapter, WGPUAdapterRequestAdapterInfoCallback callback, WGPU_NULLABLE void * userdata)`
+## RequestAdapterInfo { #wgpuAdapterRequestAdapterInfo }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuAdapterRequestDevice` { #wgpuAdapterRequestDevice }
-
-**Prototype:** `void wgpuAdapterRequestDevice(WGPUAdapter adapter, WGPU_NULLABLE WGPUDeviceDescriptor const * descriptor, WGPUAdapterRequestDeviceCallback callback, WGPU_NULLABLE void * userdata)`
+```C
+void wgpuAdapterRequestAdapterInfo(WGPUAdapter adapter, WGPUAdapterRequestAdapterInfoCallback callback, WGPU_NULLABLE void * userdata)
+```
 
 
 TODO
@@ -114,6 +124,25 @@ TODO
 
  - TODO
 
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## RequestDevice { #wgpuAdapterRequestDevice }
+
+```C
+void wgpuAdapterRequestDevice(WGPUAdapter adapter, WGPU_NULLABLE WGPUDeviceDescriptor const * descriptor, WGPUAdapterRequestDeviceCallback callback, WGPU_NULLABLE void * userdata)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
 
 
 

@@ -1,6 +1,6 @@
 
 
-## TextureView { #WGPUTextureView }
+# TextureView { #WGPUTextureView }
 
 
 TODO
@@ -8,9 +8,14 @@ TODO
 
 
 
-### `wgpuTextureViewSetLabel` { #wgpuTextureViewSetLabel }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuTextureViewSetLabel(WGPUTextureView textureView, char const * label)`
+## SetLabel { #wgpuTextureViewSetLabel }
+
+```C
+void wgpuTextureViewSetLabel(WGPUTextureView textureView, char const * label)
+```
 
 
 TODO
@@ -19,7 +24,6 @@ TODO
 **Arguments:**
 
  - TODO
-
 
 
 

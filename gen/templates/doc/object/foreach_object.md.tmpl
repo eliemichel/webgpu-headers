@@ -1,16 +1,19 @@
 {{ $object := . }}
 
-{{-     if not .IsStruct}}
-
-## {{.Name | PascalCase}} { #WGPU{{.Name | PascalCase}} }
+# {{.Name | PascalCase}} { #WGPU{{.Name | PascalCase}} }
 
 {{.Doc}}
 
-{{        range $method := .Methods}}
+{{  range $method := .Methods}}
 
-### `wgpu{{$object.Name | PascalCase}}{{.Name | PascalCase}}` { #wgpu{{$object.Name | PascalCase}}{{.Name | PascalCase}} }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `{{FunctionReturns .}} wgpu{{$object.Name | PascalCase}}{{.Name | PascalCase}}({{MethodArgs . $object}})`
+## {{.Name | PascalCase}} { #wgpu{{$object.Name | PascalCase}}{{.Name | PascalCase}} }
+
+```C
+{{FunctionReturns .}} wgpu{{$object.Name | PascalCase}}{{.Name | PascalCase}}({{MethodArgs . $object}})
+```
 
 {{.Doc}}
 
@@ -18,10 +21,9 @@
 
  - TODO
 
-{{          if .Returns}}
+{{    if .Returns}}
 
 **Returns:** `{{FunctionReturns .}}` {{.Returns.Doc}}
 
-{{          end}}
-{{        end}}
-{{      end}}
+{{    end}}
+{{  end}}

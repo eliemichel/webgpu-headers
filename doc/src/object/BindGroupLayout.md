@@ -1,6 +1,6 @@
 
 
-## BindGroupLayout { #WGPUBindGroupLayout }
+# BindGroupLayout { #WGPUBindGroupLayout }
 
 
 TODO
@@ -8,9 +8,14 @@ TODO
 
 
 
-### `wgpuBindGroupLayoutSetLabel` { #wgpuBindGroupLayoutSetLabel }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuBindGroupLayoutSetLabel(WGPUBindGroupLayout bindGroupLayout, char const * label)`
+## SetLabel { #wgpuBindGroupLayoutSetLabel }
+
+```C
+void wgpuBindGroupLayoutSetLabel(WGPUBindGroupLayout bindGroupLayout, char const * label)
+```
 
 
 TODO
@@ -19,7 +24,6 @@ TODO
 **Arguments:**
 
  - TODO
-
 
 
 

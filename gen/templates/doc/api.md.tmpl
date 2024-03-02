@@ -1,11 +1,10 @@
-# API
+# API Index
 
+**NB** This is a comprehensive index of all the entities defined by the WebGPU native API. For a more didactic entry point, please refer the [API overview](overview).
 
 {{- if .Objects}}
 
 ## Objects
-
-WebGPU objects are referenced through blind handles, which are homogenous to pointers. The following objects are defined by the API:
 
 {{    range .Objects}}
 {{-     if not .IsStruct}}
@@ -20,7 +19,7 @@ WebGPU objects are referenced through blind handles, which are homogenous to poi
 ## Structures
 
 {{    range .Structs}}
- - [`WGPU{{.Name | PascalCase}}`]({{.Name | PascalCase}})
+ - [`WGPU{{.Name | PascalCase}}`](../struct/{{.Name | PascalCase}})
 {{-   end}}
 {{  end}}
 
@@ -40,18 +39,16 @@ WebGPU objects are referenced through blind handles, which are homogenous to poi
 ## Constants
 
 {{-   range .Constants}}
-{{.Doc}}
- - `WGPU_{{.Name | ConstantCase}}` = `{{.Value | CValue}}`
+ - [`WGPU_{{.Name | ConstantCase}}`](../constants#WGPU_{{.Name | ConstantCase}})
 {{-   end}}
-
 {{  end}}
 
 {{- if eq .Name "webgpu"}}
 
 ## Typedefs
 
- - `typedef uint32_t WGPUFlags`
- - `typedef uint32_t WGPUBool`
+ - [`typedef uint32_t WGPUFlags`](typedefs#WGPUFlags)
+ - [`typedef uint32_t WGPUBool`](typedefs#WGPUBool)
 
 {{  end}}
 
@@ -60,11 +57,10 @@ WebGPU objects are referenced through blind handles, which are homogenous to poi
 
 ## Callback types
 
-{{    range $object := .Objects}}
+{{-   range $object := .Objects}}
 {{-     range $method := .Methods}}
 {{-       if .ReturnsAsync}}
-{{.Doc}}
- - `typedef void (*WGPU{{$object.Name | PascalCase}}{{$method.Name | PascalCase}}Callback)({{CallbackArgs .}})`
+ - [`WGPU{{$object.Name | PascalCase}}{{$method.Name | PascalCase}}Callback`](../callbacks#WGPU{{$object.Name | PascalCase}}{{$method.Name | PascalCase}}Callback)
 {{-       end}}
 {{-     end}}
 {{-   end}}

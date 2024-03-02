@@ -1,8 +1,8 @@
-# API
+# API Index
+
+**NB** This is a comprehensive index of all the entities defined by the WebGPU native API. For a more didactic entry point, please refer the [API overview](overview).
 
 ## Objects
-
-WebGPU objects are referenced through blind handles, which are homogenous to pointers. The following objects are defined by the API:
 
 
  - [`WGPUAdapter`](../object/Adapter)
@@ -31,79 +31,79 @@ WebGPU objects are referenced through blind handles, which are homogenous to poi
 ## Structures
 
 
- - [`WGPUAdapterInfo`](AdapterInfo)
- - [`WGPUAdapterProperties`](AdapterProperties)
- - [`WGPUBindGroupEntry`](BindGroupEntry)
- - [`WGPUBlendComponent`](BlendComponent)
- - [`WGPUBufferBindingLayout`](BufferBindingLayout)
- - [`WGPUBufferDescriptor`](BufferDescriptor)
- - [`WGPUColor`](Color)
- - [`WGPUCommandBufferDescriptor`](CommandBufferDescriptor)
- - [`WGPUCommandEncoderDescriptor`](CommandEncoderDescriptor)
- - [`WGPUCompilationMessage`](CompilationMessage)
- - [`WGPUComputePassTimestampWrites`](ComputePassTimestampWrites)
- - [`WGPUConstantEntry`](ConstantEntry)
- - [`WGPUExtent3D`](Extent3D)
- - [`WGPUInstanceDescriptor`](InstanceDescriptor)
- - [`WGPULimits`](Limits)
- - [`WGPUMultisampleState`](MultisampleState)
- - [`WGPUOrigin3D`](Origin3D)
- - [`WGPUPipelineLayoutDescriptor`](PipelineLayoutDescriptor)
- - [`WGPUPrimitiveDepthClipControl`](PrimitiveDepthClipControl)
- - [`WGPUPrimitiveState`](PrimitiveState)
- - [`WGPUQuerySetDescriptor`](QuerySetDescriptor)
- - [`WGPUQueueDescriptor`](QueueDescriptor)
- - [`WGPURenderBundleDescriptor`](RenderBundleDescriptor)
- - [`WGPURenderBundleEncoderDescriptor`](RenderBundleEncoderDescriptor)
- - [`WGPURenderPassDepthStencilAttachment`](RenderPassDepthStencilAttachment)
- - [`WGPURenderPassDescriptorMaxDrawCount`](RenderPassDescriptorMaxDrawCount)
- - [`WGPURenderPassTimestampWrites`](RenderPassTimestampWrites)
- - [`WGPURequestAdapterOptions`](RequestAdapterOptions)
- - [`WGPUSamplerBindingLayout`](SamplerBindingLayout)
- - [`WGPUSamplerDescriptor`](SamplerDescriptor)
- - [`WGPUShaderModuleCompilationHint`](ShaderModuleCompilationHint)
- - [`WGPUShaderModuleSPIRVDescriptor`](ShaderModuleSPIRVDescriptor)
- - [`WGPUShaderModuleWGSLDescriptor`](ShaderModuleWGSLDescriptor)
- - [`WGPUStencilFaceState`](StencilFaceState)
- - [`WGPUStorageTextureBindingLayout`](StorageTextureBindingLayout)
- - [`WGPUSurfaceCapabilities`](SurfaceCapabilities)
- - [`WGPUSurfaceConfiguration`](SurfaceConfiguration)
- - [`WGPUSurfaceDescriptor`](SurfaceDescriptor)
- - [`WGPUSurfaceDescriptorFromAndroidNativeWindow`](SurfaceDescriptorFromAndroidNativeWindow)
- - [`WGPUSurfaceDescriptorFromCanvasHTMLSelector`](SurfaceDescriptorFromCanvasHTMLSelector)
- - [`WGPUSurfaceDescriptorFromMetalLayer`](SurfaceDescriptorFromMetalLayer)
- - [`WGPUSurfaceDescriptorFromWaylandSurface`](SurfaceDescriptorFromWaylandSurface)
- - [`WGPUSurfaceDescriptorFromWindowsHWND`](SurfaceDescriptorFromWindowsHWND)
- - [`WGPUSurfaceDescriptorFromXcbWindow`](SurfaceDescriptorFromXcbWindow)
- - [`WGPUSurfaceDescriptorFromXlibWindow`](SurfaceDescriptorFromXlibWindow)
- - [`WGPUSurfaceTexture`](SurfaceTexture)
- - [`WGPUTextureBindingLayout`](TextureBindingLayout)
- - [`WGPUTextureDataLayout`](TextureDataLayout)
- - [`WGPUTextureViewDescriptor`](TextureViewDescriptor)
- - [`WGPUVertexAttribute`](VertexAttribute)
- - [`WGPUBindGroupDescriptor`](BindGroupDescriptor)
- - [`WGPUBindGroupLayoutEntry`](BindGroupLayoutEntry)
- - [`WGPUBlendState`](BlendState)
- - [`WGPUCompilationInfo`](CompilationInfo)
- - [`WGPUComputePassDescriptor`](ComputePassDescriptor)
- - [`WGPUDepthStencilState`](DepthStencilState)
- - [`WGPUImageCopyBuffer`](ImageCopyBuffer)
- - [`WGPUImageCopyTexture`](ImageCopyTexture)
- - [`WGPUProgrammableStageDescriptor`](ProgrammableStageDescriptor)
- - [`WGPURenderPassColorAttachment`](RenderPassColorAttachment)
- - [`WGPURequiredLimits`](RequiredLimits)
- - [`WGPUShaderModuleDescriptor`](ShaderModuleDescriptor)
- - [`WGPUSupportedLimits`](SupportedLimits)
- - [`WGPUTextureDescriptor`](TextureDescriptor)
- - [`WGPUVertexBufferLayout`](VertexBufferLayout)
- - [`WGPUBindGroupLayoutDescriptor`](BindGroupLayoutDescriptor)
- - [`WGPUColorTargetState`](ColorTargetState)
- - [`WGPUComputePipelineDescriptor`](ComputePipelineDescriptor)
- - [`WGPUDeviceDescriptor`](DeviceDescriptor)
- - [`WGPURenderPassDescriptor`](RenderPassDescriptor)
- - [`WGPUVertexState`](VertexState)
- - [`WGPUFragmentState`](FragmentState)
- - [`WGPURenderPipelineDescriptor`](RenderPipelineDescriptor)
+ - [`WGPUAdapterInfo`](../struct/AdapterInfo)
+ - [`WGPUAdapterProperties`](../struct/AdapterProperties)
+ - [`WGPUBindGroupEntry`](../struct/BindGroupEntry)
+ - [`WGPUBlendComponent`](../struct/BlendComponent)
+ - [`WGPUBufferBindingLayout`](../struct/BufferBindingLayout)
+ - [`WGPUBufferDescriptor`](../struct/BufferDescriptor)
+ - [`WGPUColor`](../struct/Color)
+ - [`WGPUCommandBufferDescriptor`](../struct/CommandBufferDescriptor)
+ - [`WGPUCommandEncoderDescriptor`](../struct/CommandEncoderDescriptor)
+ - [`WGPUCompilationMessage`](../struct/CompilationMessage)
+ - [`WGPUComputePassTimestampWrites`](../struct/ComputePassTimestampWrites)
+ - [`WGPUConstantEntry`](../struct/ConstantEntry)
+ - [`WGPUExtent3D`](../struct/Extent3D)
+ - [`WGPUInstanceDescriptor`](../struct/InstanceDescriptor)
+ - [`WGPULimits`](../struct/Limits)
+ - [`WGPUMultisampleState`](../struct/MultisampleState)
+ - [`WGPUOrigin3D`](../struct/Origin3D)
+ - [`WGPUPipelineLayoutDescriptor`](../struct/PipelineLayoutDescriptor)
+ - [`WGPUPrimitiveDepthClipControl`](../struct/PrimitiveDepthClipControl)
+ - [`WGPUPrimitiveState`](../struct/PrimitiveState)
+ - [`WGPUQuerySetDescriptor`](../struct/QuerySetDescriptor)
+ - [`WGPUQueueDescriptor`](../struct/QueueDescriptor)
+ - [`WGPURenderBundleDescriptor`](../struct/RenderBundleDescriptor)
+ - [`WGPURenderBundleEncoderDescriptor`](../struct/RenderBundleEncoderDescriptor)
+ - [`WGPURenderPassDepthStencilAttachment`](../struct/RenderPassDepthStencilAttachment)
+ - [`WGPURenderPassDescriptorMaxDrawCount`](../struct/RenderPassDescriptorMaxDrawCount)
+ - [`WGPURenderPassTimestampWrites`](../struct/RenderPassTimestampWrites)
+ - [`WGPURequestAdapterOptions`](../struct/RequestAdapterOptions)
+ - [`WGPUSamplerBindingLayout`](../struct/SamplerBindingLayout)
+ - [`WGPUSamplerDescriptor`](../struct/SamplerDescriptor)
+ - [`WGPUShaderModuleCompilationHint`](../struct/ShaderModuleCompilationHint)
+ - [`WGPUShaderModuleSPIRVDescriptor`](../struct/ShaderModuleSPIRVDescriptor)
+ - [`WGPUShaderModuleWGSLDescriptor`](../struct/ShaderModuleWGSLDescriptor)
+ - [`WGPUStencilFaceState`](../struct/StencilFaceState)
+ - [`WGPUStorageTextureBindingLayout`](../struct/StorageTextureBindingLayout)
+ - [`WGPUSurfaceCapabilities`](../struct/SurfaceCapabilities)
+ - [`WGPUSurfaceConfiguration`](../struct/SurfaceConfiguration)
+ - [`WGPUSurfaceDescriptor`](../struct/SurfaceDescriptor)
+ - [`WGPUSurfaceDescriptorFromAndroidNativeWindow`](../struct/SurfaceDescriptorFromAndroidNativeWindow)
+ - [`WGPUSurfaceDescriptorFromCanvasHTMLSelector`](../struct/SurfaceDescriptorFromCanvasHTMLSelector)
+ - [`WGPUSurfaceDescriptorFromMetalLayer`](../struct/SurfaceDescriptorFromMetalLayer)
+ - [`WGPUSurfaceDescriptorFromWaylandSurface`](../struct/SurfaceDescriptorFromWaylandSurface)
+ - [`WGPUSurfaceDescriptorFromWindowsHWND`](../struct/SurfaceDescriptorFromWindowsHWND)
+ - [`WGPUSurfaceDescriptorFromXcbWindow`](../struct/SurfaceDescriptorFromXcbWindow)
+ - [`WGPUSurfaceDescriptorFromXlibWindow`](../struct/SurfaceDescriptorFromXlibWindow)
+ - [`WGPUSurfaceTexture`](../struct/SurfaceTexture)
+ - [`WGPUTextureBindingLayout`](../struct/TextureBindingLayout)
+ - [`WGPUTextureDataLayout`](../struct/TextureDataLayout)
+ - [`WGPUTextureViewDescriptor`](../struct/TextureViewDescriptor)
+ - [`WGPUVertexAttribute`](../struct/VertexAttribute)
+ - [`WGPUBindGroupDescriptor`](../struct/BindGroupDescriptor)
+ - [`WGPUBindGroupLayoutEntry`](../struct/BindGroupLayoutEntry)
+ - [`WGPUBlendState`](../struct/BlendState)
+ - [`WGPUCompilationInfo`](../struct/CompilationInfo)
+ - [`WGPUComputePassDescriptor`](../struct/ComputePassDescriptor)
+ - [`WGPUDepthStencilState`](../struct/DepthStencilState)
+ - [`WGPUImageCopyBuffer`](../struct/ImageCopyBuffer)
+ - [`WGPUImageCopyTexture`](../struct/ImageCopyTexture)
+ - [`WGPUProgrammableStageDescriptor`](../struct/ProgrammableStageDescriptor)
+ - [`WGPURenderPassColorAttachment`](../struct/RenderPassColorAttachment)
+ - [`WGPURequiredLimits`](../struct/RequiredLimits)
+ - [`WGPUShaderModuleDescriptor`](../struct/ShaderModuleDescriptor)
+ - [`WGPUSupportedLimits`](../struct/SupportedLimits)
+ - [`WGPUTextureDescriptor`](../struct/TextureDescriptor)
+ - [`WGPUVertexBufferLayout`](../struct/VertexBufferLayout)
+ - [`WGPUBindGroupLayoutDescriptor`](../struct/BindGroupLayoutDescriptor)
+ - [`WGPUColorTargetState`](../struct/ColorTargetState)
+ - [`WGPUComputePipelineDescriptor`](../struct/ComputePipelineDescriptor)
+ - [`WGPUDeviceDescriptor`](../struct/DeviceDescriptor)
+ - [`WGPURenderPassDescriptor`](../struct/RenderPassDescriptor)
+ - [`WGPUVertexState`](../struct/VertexState)
+ - [`WGPUFragmentState`](../struct/FragmentState)
+ - [`WGPURenderPipelineDescriptor`](../struct/RenderPipelineDescriptor)
 
 
 ## Enumerations
@@ -156,86 +156,31 @@ WebGPU objects are referenced through blind handles, which are homogenous to poi
 
 
 ## Constants
-
-TODO
-
- - `WGPU_ARRAY_LAYER_COUNT_UNDEFINED` = `0xffffffffUL`
-
-TODO
-
- - `WGPU_COPY_STRIDE_UNDEFINED` = `0xffffffffUL`
-
-TODO
-
- - `WGPU_DEPTH_SLICE_UNDEFINED` = `0xffffffffUL`
-
-TODO
-
- - `WGPU_LIMIT_U32_UNDEFINED` = `0xffffffffUL`
-
-TODO
-
- - `WGPU_LIMIT_U64_UNDEFINED` = `0xffffffffffffffffULL`
-
-TODO
-
- - `WGPU_MIP_LEVEL_COUNT_UNDEFINED` = `0xffffffffUL`
-
-TODO
-
- - `WGPU_QUERY_SET_INDEX_UNDEFINED` = `0xffffffffUL`
-
-TODO
-
- - `WGPU_WHOLE_MAP_SIZE` = `SIZE_MAX`
-
-TODO
-
-
- - `WGPU_WHOLE_SIZE` = `0xffffffffffffffffULL`
-
+ - [`WGPU_ARRAY_LAYER_COUNT_UNDEFINED`](../constants#WGPU_ARRAY_LAYER_COUNT_UNDEFINED)
+ - [`WGPU_COPY_STRIDE_UNDEFINED`](../constants#WGPU_COPY_STRIDE_UNDEFINED)
+ - [`WGPU_DEPTH_SLICE_UNDEFINED`](../constants#WGPU_DEPTH_SLICE_UNDEFINED)
+ - [`WGPU_LIMIT_U32_UNDEFINED`](../constants#WGPU_LIMIT_U32_UNDEFINED)
+ - [`WGPU_LIMIT_U64_UNDEFINED`](../constants#WGPU_LIMIT_U64_UNDEFINED)
+ - [`WGPU_MIP_LEVEL_COUNT_UNDEFINED`](../constants#WGPU_MIP_LEVEL_COUNT_UNDEFINED)
+ - [`WGPU_QUERY_SET_INDEX_UNDEFINED`](../constants#WGPU_QUERY_SET_INDEX_UNDEFINED)
+ - [`WGPU_WHOLE_MAP_SIZE`](../constants#WGPU_WHOLE_MAP_SIZE)
+ - [`WGPU_WHOLE_SIZE`](../constants#WGPU_WHOLE_SIZE)
 
 
 ## Typedefs
 
- - `typedef uint32_t WGPUFlags`
- - `typedef uint32_t WGPUBool`
+ - [`typedef uint32_t WGPUFlags`](typedefs#WGPUFlags)
+ - [`typedef uint32_t WGPUBool`](typedefs#WGPUBool)
 
 
 
 ## Callback types
-
-
-
-TODO
-
- - `typedef void (*WGPUAdapterRequestAdapterInfoCallback)(struct WGPUAdapterInfo adapterInfo, WGPU_NULLABLE void * userdata)`
-
-TODO
-
- - `typedef void (*WGPUAdapterRequestDeviceCallback)(WGPURequestDeviceStatus status, WGPUDevice device, char const * message, WGPU_NULLABLE void * userdata)`
-
-TODO
-
- - `typedef void (*WGPUBufferMapAsyncCallback)(WGPUBufferMapAsyncStatus status, WGPU_NULLABLE void * userdata)`
-
-TODO
-
- - `typedef void (*WGPUDeviceCreateComputePipelineAsyncCallback)(WGPUCreatePipelineAsyncStatus status, WGPUComputePipeline pipeline, char const * message, WGPU_NULLABLE void * userdata)`
-
-TODO
-
- - `typedef void (*WGPUDeviceCreateRenderPipelineAsyncCallback)(WGPUCreatePipelineAsyncStatus status, WGPURenderPipeline pipeline, char const * message, WGPU_NULLABLE void * userdata)`
-
-TODO
-
- - `typedef void (*WGPUInstanceRequestAdapterCallback)(WGPURequestAdapterStatus status, WGPUAdapter adapter, char const * message, WGPU_NULLABLE void * userdata)`
-
-TODO
-
- - `typedef void (*WGPUQueueOnSubmittedWorkDoneCallback)(WGPUQueueWorkDoneStatus status, WGPU_NULLABLE void * userdata)`
-
-TODO
-
- - `typedef void (*WGPUShaderModuleGetCompilationInfoCallback)(WGPUCompilationInfoRequestStatus status, struct WGPUCompilationInfo const * compilationInfo, WGPU_NULLABLE void * userdata)`
+ - [`WGPUAdapterRequestAdapterInfoCallback`](../callbacks#WGPUAdapterRequestAdapterInfoCallback)
+ - [`WGPUAdapterRequestDeviceCallback`](../callbacks#WGPUAdapterRequestDeviceCallback)
+ - [`WGPUBufferMapAsyncCallback`](../callbacks#WGPUBufferMapAsyncCallback)
+ - [`WGPUDeviceCreateComputePipelineAsyncCallback`](../callbacks#WGPUDeviceCreateComputePipelineAsyncCallback)
+ - [`WGPUDeviceCreateRenderPipelineAsyncCallback`](../callbacks#WGPUDeviceCreateRenderPipelineAsyncCallback)
+ - [`WGPUInstanceRequestAdapterCallback`](../callbacks#WGPUInstanceRequestAdapterCallback)
+ - [`WGPUQueueOnSubmittedWorkDoneCallback`](../callbacks#WGPUQueueOnSubmittedWorkDoneCallback)
+ - [`WGPUShaderModuleGetCompilationInfoCallback`](../callbacks#WGPUShaderModuleGetCompilationInfoCallback)
 

@@ -1,6 +1,6 @@
 
 
-## Device { #WGPUDevice }
+# Device { #WGPUDevice }
 
 
 TODO
@@ -8,9 +8,14 @@ TODO
 
 
 
-### `wgpuDeviceCreateBindGroup` { #wgpuDeviceCreateBindGroup }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUBindGroup wgpuDeviceCreateBindGroup(WGPUDevice device, WGPUBindGroupDescriptor const * descriptor)`
+## CreateBindGroup { #wgpuDeviceCreateBindGroup }
+
+```C
+WGPUBindGroup wgpuDeviceCreateBindGroup(WGPUDevice device, WGPUBindGroupDescriptor const * descriptor)
+```
 
 
 TODO
@@ -29,9 +34,14 @@ TODO
 
 
 
-### `wgpuDeviceCreateBindGroupLayout` { #wgpuDeviceCreateBindGroupLayout }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUBindGroupLayout wgpuDeviceCreateBindGroupLayout(WGPUDevice device, WGPUBindGroupLayoutDescriptor const * descriptor)`
+## CreateBindGroupLayout { #wgpuDeviceCreateBindGroupLayout }
+
+```C
+WGPUBindGroupLayout wgpuDeviceCreateBindGroupLayout(WGPUDevice device, WGPUBindGroupLayoutDescriptor const * descriptor)
+```
 
 
 TODO
@@ -50,9 +60,14 @@ TODO
 
 
 
-### `wgpuDeviceCreateBuffer` { #wgpuDeviceCreateBuffer }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUBuffer wgpuDeviceCreateBuffer(WGPUDevice device, WGPUBufferDescriptor const * descriptor)`
+## CreateBuffer { #wgpuDeviceCreateBuffer }
+
+```C
+WGPUBuffer wgpuDeviceCreateBuffer(WGPUDevice device, WGPUBufferDescriptor const * descriptor)
+```
 
 
 TODO
@@ -71,9 +86,14 @@ TODO
 
 
 
-### `wgpuDeviceCreateCommandEncoder` { #wgpuDeviceCreateCommandEncoder }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUCommandEncoder wgpuDeviceCreateCommandEncoder(WGPUDevice device, WGPU_NULLABLE WGPUCommandEncoderDescriptor const * descriptor)`
+## CreateCommandEncoder { #wgpuDeviceCreateCommandEncoder }
+
+```C
+WGPUCommandEncoder wgpuDeviceCreateCommandEncoder(WGPUDevice device, WGPU_NULLABLE WGPUCommandEncoderDescriptor const * descriptor)
+```
 
 
 TODO
@@ -92,9 +112,14 @@ TODO
 
 
 
-### `wgpuDeviceCreateComputePipeline` { #wgpuDeviceCreateComputePipeline }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUComputePipeline wgpuDeviceCreateComputePipeline(WGPUDevice device, WGPUComputePipelineDescriptor const * descriptor)`
+## CreateComputePipeline { #wgpuDeviceCreateComputePipeline }
+
+```C
+WGPUComputePipeline wgpuDeviceCreateComputePipeline(WGPUDevice device, WGPUComputePipelineDescriptor const * descriptor)
+```
 
 
 TODO
@@ -113,9 +138,14 @@ TODO
 
 
 
-### `wgpuDeviceCreateComputePipelineAsync` { #wgpuDeviceCreateComputePipelineAsync }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuDeviceCreateComputePipelineAsync(WGPUDevice device, WGPUComputePipelineDescriptor const * descriptor, WGPUDeviceCreateComputePipelineAsyncCallback callback, WGPU_NULLABLE void * userdata)`
+## CreateComputePipelineAsync { #wgpuDeviceCreateComputePipelineAsync }
+
+```C
+void wgpuDeviceCreateComputePipelineAsync(WGPUDevice device, WGPUComputePipelineDescriptor const * descriptor, WGPUDeviceCreateComputePipelineAsyncCallback callback, WGPU_NULLABLE void * userdata)
+```
 
 
 TODO
@@ -128,9 +158,14 @@ TODO
 
 
 
-### `wgpuDeviceCreatePipelineLayout` { #wgpuDeviceCreatePipelineLayout }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUPipelineLayout wgpuDeviceCreatePipelineLayout(WGPUDevice device, WGPUPipelineLayoutDescriptor const * descriptor)`
+## CreatePipelineLayout { #wgpuDeviceCreatePipelineLayout }
+
+```C
+WGPUPipelineLayout wgpuDeviceCreatePipelineLayout(WGPUDevice device, WGPUPipelineLayoutDescriptor const * descriptor)
+```
 
 
 TODO
@@ -149,9 +184,14 @@ TODO
 
 
 
-### `wgpuDeviceCreateQuerySet` { #wgpuDeviceCreateQuerySet }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUQuerySet wgpuDeviceCreateQuerySet(WGPUDevice device, WGPUQuerySetDescriptor const * descriptor)`
+## CreateQuerySet { #wgpuDeviceCreateQuerySet }
+
+```C
+WGPUQuerySet wgpuDeviceCreateQuerySet(WGPUDevice device, WGPUQuerySetDescriptor const * descriptor)
+```
 
 
 TODO
@@ -170,9 +210,14 @@ TODO
 
 
 
-### `wgpuDeviceCreateRenderBundleEncoder` { #wgpuDeviceCreateRenderBundleEncoder }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPURenderBundleEncoder wgpuDeviceCreateRenderBundleEncoder(WGPUDevice device, WGPURenderBundleEncoderDescriptor const * descriptor)`
+## CreateRenderBundleEncoder { #wgpuDeviceCreateRenderBundleEncoder }
+
+```C
+WGPURenderBundleEncoder wgpuDeviceCreateRenderBundleEncoder(WGPUDevice device, WGPURenderBundleEncoderDescriptor const * descriptor)
+```
 
 
 TODO
@@ -191,9 +236,14 @@ TODO
 
 
 
-### `wgpuDeviceCreateRenderPipeline` { #wgpuDeviceCreateRenderPipeline }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPURenderPipeline wgpuDeviceCreateRenderPipeline(WGPUDevice device, WGPURenderPipelineDescriptor const * descriptor)`
+## CreateRenderPipeline { #wgpuDeviceCreateRenderPipeline }
+
+```C
+WGPURenderPipeline wgpuDeviceCreateRenderPipeline(WGPUDevice device, WGPURenderPipelineDescriptor const * descriptor)
+```
 
 
 TODO
@@ -212,9 +262,14 @@ TODO
 
 
 
-### `wgpuDeviceCreateRenderPipelineAsync` { #wgpuDeviceCreateRenderPipelineAsync }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuDeviceCreateRenderPipelineAsync(WGPUDevice device, WGPURenderPipelineDescriptor const * descriptor, WGPUDeviceCreateRenderPipelineAsyncCallback callback, WGPU_NULLABLE void * userdata)`
+## CreateRenderPipelineAsync { #wgpuDeviceCreateRenderPipelineAsync }
+
+```C
+void wgpuDeviceCreateRenderPipelineAsync(WGPUDevice device, WGPURenderPipelineDescriptor const * descriptor, WGPUDeviceCreateRenderPipelineAsyncCallback callback, WGPU_NULLABLE void * userdata)
+```
 
 
 TODO
@@ -227,9 +282,14 @@ TODO
 
 
 
-### `wgpuDeviceCreateSampler` { #wgpuDeviceCreateSampler }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUSampler wgpuDeviceCreateSampler(WGPUDevice device, WGPU_NULLABLE WGPUSamplerDescriptor const * descriptor)`
+## CreateSampler { #wgpuDeviceCreateSampler }
+
+```C
+WGPUSampler wgpuDeviceCreateSampler(WGPUDevice device, WGPU_NULLABLE WGPUSamplerDescriptor const * descriptor)
+```
 
 
 TODO
@@ -248,9 +308,14 @@ TODO
 
 
 
-### `wgpuDeviceCreateShaderModule` { #wgpuDeviceCreateShaderModule }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUShaderModule wgpuDeviceCreateShaderModule(WGPUDevice device, WGPUShaderModuleDescriptor const * descriptor)`
+## CreateShaderModule { #wgpuDeviceCreateShaderModule }
+
+```C
+WGPUShaderModule wgpuDeviceCreateShaderModule(WGPUDevice device, WGPUShaderModuleDescriptor const * descriptor)
+```
 
 
 TODO
@@ -269,9 +334,14 @@ TODO
 
 
 
-### `wgpuDeviceCreateTexture` { #wgpuDeviceCreateTexture }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUTexture wgpuDeviceCreateTexture(WGPUDevice device, WGPUTextureDescriptor const * descriptor)`
+## CreateTexture { #wgpuDeviceCreateTexture }
+
+```C
+WGPUTexture wgpuDeviceCreateTexture(WGPUDevice device, WGPUTextureDescriptor const * descriptor)
+```
 
 
 TODO
@@ -290,9 +360,14 @@ TODO
 
 
 
-### `wgpuDeviceDestroy` { #wgpuDeviceDestroy }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuDeviceDestroy(WGPUDevice device)`
+## Destroy { #wgpuDeviceDestroy }
+
+```C
+void wgpuDeviceDestroy(WGPUDevice device)
+```
 
 
 TODO
@@ -305,9 +380,14 @@ TODO
 
 
 
-### `wgpuDeviceEnumerateFeatures` { #wgpuDeviceEnumerateFeatures }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `size_t wgpuDeviceEnumerateFeatures(WGPUDevice device, WGPUFeatureName * features)`
+## EnumerateFeatures { #wgpuDeviceEnumerateFeatures }
+
+```C
+size_t wgpuDeviceEnumerateFeatures(WGPUDevice device, WGPUFeatureName * features)
+```
 
 
 TODO
@@ -326,9 +406,14 @@ TODO
 
 
 
-### `wgpuDeviceGetLimits` { #wgpuDeviceGetLimits }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUBool wgpuDeviceGetLimits(WGPUDevice device, WGPUSupportedLimits * limits)`
+## GetLimits { #wgpuDeviceGetLimits }
+
+```C
+WGPUBool wgpuDeviceGetLimits(WGPUDevice device, WGPUSupportedLimits * limits)
+```
 
 
 TODO
@@ -347,9 +432,14 @@ TODO
 
 
 
-### `wgpuDeviceGetQueue` { #wgpuDeviceGetQueue }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUQueue wgpuDeviceGetQueue(WGPUDevice device)`
+## GetQueue { #wgpuDeviceGetQueue }
+
+```C
+WGPUQueue wgpuDeviceGetQueue(WGPUDevice device)
+```
 
 
 TODO
@@ -368,9 +458,14 @@ TODO
 
 
 
-### `wgpuDeviceHasFeature` { #wgpuDeviceHasFeature }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUBool wgpuDeviceHasFeature(WGPUDevice device, WGPUFeatureName feature)`
+## HasFeature { #wgpuDeviceHasFeature }
+
+```C
+WGPUBool wgpuDeviceHasFeature(WGPUDevice device, WGPUFeatureName feature)
+```
 
 
 TODO
@@ -389,24 +484,14 @@ TODO
 
 
 
-### `wgpuDevicePopErrorScope` { #wgpuDevicePopErrorScope }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuDevicePopErrorScope(WGPUDevice device, WGPUErrorCallback callback, void * userdata)`
+## PopErrorScope { #wgpuDevicePopErrorScope }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuDevicePushErrorScope` { #wgpuDevicePushErrorScope }
-
-**Prototype:** `void wgpuDevicePushErrorScope(WGPUDevice device, WGPUErrorFilter filter)`
+```C
+void wgpuDevicePopErrorScope(WGPUDevice device, WGPUErrorCallback callback, void * userdata)
+```
 
 
 TODO
@@ -419,9 +504,34 @@ TODO
 
 
 
-### `wgpuDeviceSetLabel` { #wgpuDeviceSetLabel }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuDeviceSetLabel(WGPUDevice device, char const * label)`
+## PushErrorScope { #wgpuDevicePushErrorScope }
+
+```C
+void wgpuDevicePushErrorScope(WGPUDevice device, WGPUErrorFilter filter)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
+
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## SetLabel { #wgpuDeviceSetLabel }
+
+```C
+void wgpuDeviceSetLabel(WGPUDevice device, char const * label)
+```
 
 
 TODO
@@ -434,9 +544,14 @@ TODO
 
 
 
-### `wgpuDeviceSetUncapturedErrorCallback` { #wgpuDeviceSetUncapturedErrorCallback }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuDeviceSetUncapturedErrorCallback(WGPUDevice device, WGPUErrorCallback callback, void * userdata)`
+## SetUncapturedErrorCallback { #wgpuDeviceSetUncapturedErrorCallback }
+
+```C
+void wgpuDeviceSetUncapturedErrorCallback(WGPUDevice device, WGPUErrorCallback callback, void * userdata)
+```
 
 
 TODO
@@ -445,7 +560,6 @@ TODO
 **Arguments:**
 
  - TODO
-
 
 
 

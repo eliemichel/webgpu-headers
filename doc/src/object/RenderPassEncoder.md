@@ -1,6 +1,6 @@
 
 
-## RenderPassEncoder { #WGPURenderPassEncoder }
+# RenderPassEncoder { #WGPURenderPassEncoder }
 
 
 TODO
@@ -8,24 +8,14 @@ TODO
 
 
 
-### `wgpuRenderPassEncoderBeginOcclusionQuery` { #wgpuRenderPassEncoderBeginOcclusionQuery }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuRenderPassEncoderBeginOcclusionQuery(WGPURenderPassEncoder renderPassEncoder, uint32_t queryIndex)`
+## BeginOcclusionQuery { #wgpuRenderPassEncoderBeginOcclusionQuery }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuRenderPassEncoderDraw` { #wgpuRenderPassEncoderDraw }
-
-**Prototype:** `void wgpuRenderPassEncoderDraw(WGPURenderPassEncoder renderPassEncoder, uint32_t vertexCount, uint32_t instanceCount, uint32_t firstVertex, uint32_t firstInstance)`
+```C
+void wgpuRenderPassEncoderBeginOcclusionQuery(WGPURenderPassEncoder renderPassEncoder, uint32_t queryIndex)
+```
 
 
 TODO
@@ -38,24 +28,14 @@ TODO
 
 
 
-### `wgpuRenderPassEncoderDrawIndexed` { #wgpuRenderPassEncoderDrawIndexed }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuRenderPassEncoderDrawIndexed(WGPURenderPassEncoder renderPassEncoder, uint32_t indexCount, uint32_t instanceCount, uint32_t firstIndex, int32_t baseVertex, uint32_t firstInstance)`
+## Draw { #wgpuRenderPassEncoderDraw }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuRenderPassEncoderDrawIndexedIndirect` { #wgpuRenderPassEncoderDrawIndexedIndirect }
-
-**Prototype:** `void wgpuRenderPassEncoderDrawIndexedIndirect(WGPURenderPassEncoder renderPassEncoder, WGPUBuffer indirectBuffer, uint64_t indirectOffset)`
+```C
+void wgpuRenderPassEncoderDraw(WGPURenderPassEncoder renderPassEncoder, uint32_t vertexCount, uint32_t instanceCount, uint32_t firstVertex, uint32_t firstInstance)
+```
 
 
 TODO
@@ -68,24 +48,14 @@ TODO
 
 
 
-### `wgpuRenderPassEncoderDrawIndirect` { #wgpuRenderPassEncoderDrawIndirect }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuRenderPassEncoderDrawIndirect(WGPURenderPassEncoder renderPassEncoder, WGPUBuffer indirectBuffer, uint64_t indirectOffset)`
+## DrawIndexed { #wgpuRenderPassEncoderDrawIndexed }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuRenderPassEncoderEnd` { #wgpuRenderPassEncoderEnd }
-
-**Prototype:** `void wgpuRenderPassEncoderEnd(WGPURenderPassEncoder renderPassEncoder)`
+```C
+void wgpuRenderPassEncoderDrawIndexed(WGPURenderPassEncoder renderPassEncoder, uint32_t indexCount, uint32_t instanceCount, uint32_t firstIndex, int32_t baseVertex, uint32_t firstInstance)
+```
 
 
 TODO
@@ -98,24 +68,14 @@ TODO
 
 
 
-### `wgpuRenderPassEncoderEndOcclusionQuery` { #wgpuRenderPassEncoderEndOcclusionQuery }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuRenderPassEncoderEndOcclusionQuery(WGPURenderPassEncoder renderPassEncoder)`
+## DrawIndexedIndirect { #wgpuRenderPassEncoderDrawIndexedIndirect }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuRenderPassEncoderExecuteBundles` { #wgpuRenderPassEncoderExecuteBundles }
-
-**Prototype:** `void wgpuRenderPassEncoderExecuteBundles(WGPURenderPassEncoder renderPassEncoder, size_t bundleCount, WGPURenderBundle const * bundles)`
+```C
+void wgpuRenderPassEncoderDrawIndexedIndirect(WGPURenderPassEncoder renderPassEncoder, WGPUBuffer indirectBuffer, uint64_t indirectOffset)
+```
 
 
 TODO
@@ -128,24 +88,14 @@ TODO
 
 
 
-### `wgpuRenderPassEncoderInsertDebugMarker` { #wgpuRenderPassEncoderInsertDebugMarker }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuRenderPassEncoderInsertDebugMarker(WGPURenderPassEncoder renderPassEncoder, char const * markerLabel)`
+## DrawIndirect { #wgpuRenderPassEncoderDrawIndirect }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuRenderPassEncoderPopDebugGroup` { #wgpuRenderPassEncoderPopDebugGroup }
-
-**Prototype:** `void wgpuRenderPassEncoderPopDebugGroup(WGPURenderPassEncoder renderPassEncoder)`
+```C
+void wgpuRenderPassEncoderDrawIndirect(WGPURenderPassEncoder renderPassEncoder, WGPUBuffer indirectBuffer, uint64_t indirectOffset)
+```
 
 
 TODO
@@ -158,24 +108,14 @@ TODO
 
 
 
-### `wgpuRenderPassEncoderPushDebugGroup` { #wgpuRenderPassEncoderPushDebugGroup }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuRenderPassEncoderPushDebugGroup(WGPURenderPassEncoder renderPassEncoder, char const * groupLabel)`
+## End { #wgpuRenderPassEncoderEnd }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuRenderPassEncoderSetBindGroup` { #wgpuRenderPassEncoderSetBindGroup }
-
-**Prototype:** `void wgpuRenderPassEncoderSetBindGroup(WGPURenderPassEncoder renderPassEncoder, uint32_t groupIndex, WGPU_NULLABLE WGPUBindGroup group, size_t dynamicOffsetCount, uint32_t const * dynamicOffsets)`
+```C
+void wgpuRenderPassEncoderEnd(WGPURenderPassEncoder renderPassEncoder)
+```
 
 
 TODO
@@ -188,24 +128,14 @@ TODO
 
 
 
-### `wgpuRenderPassEncoderSetBlendConstant` { #wgpuRenderPassEncoderSetBlendConstant }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuRenderPassEncoderSetBlendConstant(WGPURenderPassEncoder renderPassEncoder, WGPUColor const * color)`
+## EndOcclusionQuery { #wgpuRenderPassEncoderEndOcclusionQuery }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuRenderPassEncoderSetIndexBuffer` { #wgpuRenderPassEncoderSetIndexBuffer }
-
-**Prototype:** `void wgpuRenderPassEncoderSetIndexBuffer(WGPURenderPassEncoder renderPassEncoder, WGPUBuffer buffer, WGPUIndexFormat format, uint64_t offset, uint64_t size)`
+```C
+void wgpuRenderPassEncoderEndOcclusionQuery(WGPURenderPassEncoder renderPassEncoder)
+```
 
 
 TODO
@@ -218,24 +148,14 @@ TODO
 
 
 
-### `wgpuRenderPassEncoderSetLabel` { #wgpuRenderPassEncoderSetLabel }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuRenderPassEncoderSetLabel(WGPURenderPassEncoder renderPassEncoder, char const * label)`
+## ExecuteBundles { #wgpuRenderPassEncoderExecuteBundles }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuRenderPassEncoderSetPipeline` { #wgpuRenderPassEncoderSetPipeline }
-
-**Prototype:** `void wgpuRenderPassEncoderSetPipeline(WGPURenderPassEncoder renderPassEncoder, WGPURenderPipeline pipeline)`
+```C
+void wgpuRenderPassEncoderExecuteBundles(WGPURenderPassEncoder renderPassEncoder, size_t bundleCount, WGPURenderBundle const * bundles)
+```
 
 
 TODO
@@ -248,24 +168,14 @@ TODO
 
 
 
-### `wgpuRenderPassEncoderSetScissorRect` { #wgpuRenderPassEncoderSetScissorRect }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuRenderPassEncoderSetScissorRect(WGPURenderPassEncoder renderPassEncoder, uint32_t x, uint32_t y, uint32_t width, uint32_t height)`
+## InsertDebugMarker { #wgpuRenderPassEncoderInsertDebugMarker }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuRenderPassEncoderSetStencilReference` { #wgpuRenderPassEncoderSetStencilReference }
-
-**Prototype:** `void wgpuRenderPassEncoderSetStencilReference(WGPURenderPassEncoder renderPassEncoder, uint32_t reference)`
+```C
+void wgpuRenderPassEncoderInsertDebugMarker(WGPURenderPassEncoder renderPassEncoder, char const * markerLabel)
+```
 
 
 TODO
@@ -278,9 +188,34 @@ TODO
 
 
 
-### `wgpuRenderPassEncoderSetVertexBuffer` { #wgpuRenderPassEncoderSetVertexBuffer }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuRenderPassEncoderSetVertexBuffer(WGPURenderPassEncoder renderPassEncoder, uint32_t slot, WGPU_NULLABLE WGPUBuffer buffer, uint64_t offset, uint64_t size)`
+## PopDebugGroup { #wgpuRenderPassEncoderPopDebugGroup }
+
+```C
+void wgpuRenderPassEncoderPopDebugGroup(WGPURenderPassEncoder renderPassEncoder)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
+
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## PushDebugGroup { #wgpuRenderPassEncoderPushDebugGroup }
+
+```C
+void wgpuRenderPassEncoderPushDebugGroup(WGPURenderPassEncoder renderPassEncoder, char const * groupLabel)
+```
 
 
 TODO
@@ -293,9 +228,14 @@ TODO
 
 
 
-### `wgpuRenderPassEncoderSetViewport` { #wgpuRenderPassEncoderSetViewport }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuRenderPassEncoderSetViewport(WGPURenderPassEncoder renderPassEncoder, float x, float y, float width, float height, float minDepth, float maxDepth)`
+## SetBindGroup { #wgpuRenderPassEncoderSetBindGroup }
+
+```C
+void wgpuRenderPassEncoderSetBindGroup(WGPURenderPassEncoder renderPassEncoder, uint32_t groupIndex, WGPU_NULLABLE WGPUBindGroup group, size_t dynamicOffsetCount, uint32_t const * dynamicOffsets)
+```
 
 
 TODO
@@ -305,6 +245,165 @@ TODO
 
  - TODO
 
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## SetBlendConstant { #wgpuRenderPassEncoderSetBlendConstant }
+
+```C
+void wgpuRenderPassEncoderSetBlendConstant(WGPURenderPassEncoder renderPassEncoder, WGPUColor const * color)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
+
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## SetIndexBuffer { #wgpuRenderPassEncoderSetIndexBuffer }
+
+```C
+void wgpuRenderPassEncoderSetIndexBuffer(WGPURenderPassEncoder renderPassEncoder, WGPUBuffer buffer, WGPUIndexFormat format, uint64_t offset, uint64_t size)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
+
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## SetLabel { #wgpuRenderPassEncoderSetLabel }
+
+```C
+void wgpuRenderPassEncoderSetLabel(WGPURenderPassEncoder renderPassEncoder, char const * label)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
+
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## SetPipeline { #wgpuRenderPassEncoderSetPipeline }
+
+```C
+void wgpuRenderPassEncoderSetPipeline(WGPURenderPassEncoder renderPassEncoder, WGPURenderPipeline pipeline)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
+
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## SetScissorRect { #wgpuRenderPassEncoderSetScissorRect }
+
+```C
+void wgpuRenderPassEncoderSetScissorRect(WGPURenderPassEncoder renderPassEncoder, uint32_t x, uint32_t y, uint32_t width, uint32_t height)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
+
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## SetStencilReference { #wgpuRenderPassEncoderSetStencilReference }
+
+```C
+void wgpuRenderPassEncoderSetStencilReference(WGPURenderPassEncoder renderPassEncoder, uint32_t reference)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
+
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## SetVertexBuffer { #wgpuRenderPassEncoderSetVertexBuffer }
+
+```C
+void wgpuRenderPassEncoderSetVertexBuffer(WGPURenderPassEncoder renderPassEncoder, uint32_t slot, WGPU_NULLABLE WGPUBuffer buffer, uint64_t offset, uint64_t size)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
+
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## SetViewport { #wgpuRenderPassEncoderSetViewport }
+
+```C
+void wgpuRenderPassEncoderSetViewport(WGPURenderPassEncoder renderPassEncoder, float x, float y, float width, float height, float minDepth, float maxDepth)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
 
 
 

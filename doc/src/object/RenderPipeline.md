@@ -1,6 +1,6 @@
 
 
-## RenderPipeline { #WGPURenderPipeline }
+# RenderPipeline { #WGPURenderPipeline }
 
 
 TODO
@@ -8,9 +8,14 @@ TODO
 
 
 
-### `wgpuRenderPipelineGetBindGroupLayout` { #wgpuRenderPipelineGetBindGroupLayout }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUBindGroupLayout wgpuRenderPipelineGetBindGroupLayout(WGPURenderPipeline renderPipeline, uint32_t groupIndex)`
+## GetBindGroupLayout { #wgpuRenderPipelineGetBindGroupLayout }
+
+```C
+WGPUBindGroupLayout wgpuRenderPipelineGetBindGroupLayout(WGPURenderPipeline renderPipeline, uint32_t groupIndex)
+```
 
 
 TODO
@@ -29,9 +34,14 @@ TODO
 
 
 
-### `wgpuRenderPipelineSetLabel` { #wgpuRenderPipelineSetLabel }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuRenderPipelineSetLabel(WGPURenderPipeline renderPipeline, char const * label)`
+## SetLabel { #wgpuRenderPipelineSetLabel }
+
+```C
+void wgpuRenderPipelineSetLabel(WGPURenderPipeline renderPipeline, char const * label)
+```
 
 
 TODO
@@ -40,7 +50,6 @@ TODO
 **Arguments:**
 
  - TODO
-
 
 
 

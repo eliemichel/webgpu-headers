@@ -1,6 +1,6 @@
 
 
-## Instance { #WGPUInstance }
+# Instance { #WGPUInstance }
 
 
 TODO
@@ -8,9 +8,14 @@ TODO
 
 
 
-### `wgpuInstanceCreateSurface` { #wgpuInstanceCreateSurface }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUSurface wgpuInstanceCreateSurface(WGPUInstance instance, WGPUSurfaceDescriptor const * descriptor)`
+## CreateSurface { #wgpuInstanceCreateSurface }
+
+```C
+WGPUSurface wgpuInstanceCreateSurface(WGPUInstance instance, WGPUSurfaceDescriptor const * descriptor)
+```
 
 
 TODO
@@ -29,9 +34,14 @@ TODO
 
 
 
-### `wgpuInstanceHasWGSLLanguageFeature` { #wgpuInstanceHasWGSLLanguageFeature }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `WGPUBool wgpuInstanceHasWGSLLanguageFeature(WGPUInstance instance, WGPUWGSLFeatureName feature)`
+## HasWGSLLanguageFeature { #wgpuInstanceHasWGSLLanguageFeature }
+
+```C
+WGPUBool wgpuInstanceHasWGSLLanguageFeature(WGPUInstance instance, WGPUWGSLFeatureName feature)
+```
 
 
 TODO
@@ -50,24 +60,14 @@ TODO
 
 
 
-### `wgpuInstanceProcessEvents` { #wgpuInstanceProcessEvents }
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
 
-**Prototype:** `void wgpuInstanceProcessEvents(WGPUInstance instance)`
+## ProcessEvents { #wgpuInstanceProcessEvents }
 
-
-TODO
-
-
-**Arguments:**
-
- - TODO
-
-
-
-
-### `wgpuInstanceRequestAdapter` { #wgpuInstanceRequestAdapter }
-
-**Prototype:** `void wgpuInstanceRequestAdapter(WGPUInstance instance, WGPU_NULLABLE WGPURequestAdapterOptions const * options, WGPUInstanceRequestAdapterCallback callback, WGPU_NULLABLE void * userdata)`
+```C
+void wgpuInstanceProcessEvents(WGPUInstance instance)
+```
 
 
 TODO
@@ -77,6 +77,25 @@ TODO
 
  - TODO
 
+
+
+
+<br/><!-- poor man's styling, just for the demo before we use a non default theme -->
+***
+
+## RequestAdapter { #wgpuInstanceRequestAdapter }
+
+```C
+void wgpuInstanceRequestAdapter(WGPUInstance instance, WGPU_NULLABLE WGPURequestAdapterOptions const * options, WGPUInstanceRequestAdapterCallback callback, WGPU_NULLABLE void * userdata)
+```
+
+
+TODO
+
+
+**Arguments:**
+
+ - TODO
 
 
 
