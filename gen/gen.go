@@ -62,12 +62,70 @@ func GenCHeader(data *Data, dst io.Writer) error {
 			"FunctionArgs": FunctionArgs,
 			"CallbackArgs": CallbackArgs,
 		})
-	t, err := t.Parse(tmpl)
+	t, err := t.Parse(cheaderTmpl)
 	if err != nil {
 		return fmt.Errorf("GenCHeader: failed to parse template: %w", err)
 	}
 	if err := t.Execute(dst, data); err != nil {
 		return fmt.Errorf("GenCHeader: failed to execute template: %w", err)
+	}
+	return nil
+}
+
+// TODO: Factorize better with GenCHeader?
+func GenDocs(data *Data, dst io.Writer) error {
+	t := template.
+		New("").
+		Funcs(template.FuncMap{
+			"SComment":     func(v string, indent int) string { return Comment(v, CommentTypeSingleLine, indent, true) },
+			"MComment":     func(v string, indent int) string { return Comment(v, CommentTypeMultiLine, indent, true) },
+			"SCommentN":    func(v string, indent int) string { return Comment(v, CommentTypeSingleLine, indent, false) },
+			"MCommentN":    func(v string, indent int) string { return Comment(v, CommentTypeMultiLine, indent, false) },
+			"ConstantCase": ConstantCase,
+			"PascalCase":   PascalCase,
+			"CamelCase":    CamelCase,
+			"CType":        CType,
+			"CValue":       CValue,
+			"BitFlagValue": func(index int) uint64 { return uint64(math.Pow(2, float64(index-1))) },
+			"ParseUint": func(s string, bitSize int) (uint64, error) {
+				var num string
+				var base int
+				if strings.HasPrefix(s, "0x") {
+					base = 16
+					num = strings.TrimPrefix(s, "0x")
+				} else {
+					base = 10
+					num = s
+				}
+				return strconv.ParseUint(num, base, bitSize)
+			},
+			"IsArray": func(typ string) bool {
+				return arrayTypeRegexp.Match([]byte(typ))
+			},
+			"ArrayType": func(typ string, pointer PointerType) string {
+				matches := arrayTypeRegexp.FindStringSubmatch(typ)
+				if len(matches) == 2 {
+					return CType(matches[1], pointer)
+				}
+				return ""
+			},
+			"Singularize": Singularize,
+			"IsLast":      func(i int, s any) bool { return i == reflect.ValueOf(s).Len()-1 },
+			"FunctionReturns": func(f Function) string {
+				if f.Returns != nil {
+					return CType(f.Returns.Type, f.Returns.Pointer)
+				}
+				return "void"
+			},
+			"FunctionArgs": FunctionArgs,
+			"CallbackArgs": CallbackArgs,
+		})
+	t, err := t.Parse(docsTmpl)
+	if err != nil {
+		return fmt.Errorf("GenDocs: failed to parse template: %w", err)
+	}
+	if err := t.Execute(dst, data); err != nil {
+		return fmt.Errorf("GenDocs: failed to execute template: %w", err)
 	}
 	return nil
 }

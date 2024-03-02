@@ -1,0 +1,20 @@
+Documentation
+=============
+
+The documentation is automatically generated from `webgpu.yml` using Python and [MkDocs](https://www.mkdocs.org).
+
+Build
+-----
+
+```bash
+# 1. Install python dependencies (potentially in a virtualenv)
+pip install -r requirements.txt
+
+# 2. Generate doc source from webgpu.yml
+python generate.py
+
+# 3. Generate html doc from doc source
+mkdocs build
+```
+
+The documentation is then available in `site/`.

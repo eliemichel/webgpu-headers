@@ -13,20 +13,29 @@ import (
 )
 
 //go:embed cheader.tmpl
-var tmpl string
+var cheaderTmpl string
+
+//go:embed docs.tmpl
+var docsTmpl string
 
 var (
 	schemaPath string
 	headerPath string
 	yamlPath   string
+	docsPath   string
+	genDocs    bool
+	genCAPI    bool
 )
 
 func main() {
 	flag.StringVar(&yamlPath, "yaml", "", "path of the yaml spec")
 	flag.StringVar(&schemaPath, "schema", "", "path of the json schema")
 	flag.StringVar(&headerPath, "header", "", "output path of the header")
+	flag.StringVar(&docsPath, "docs", "", "output directory where to write documentation source")
+	flag.BoolVar(&genCAPI, "gen-c-header", false, "generate C API header")
+	flag.BoolVar(&genDocs, "gen-docs", false, "generate documentation source")
 	flag.Parse()
-	if schemaPath == "" || headerPath == "" || yamlPath == "" {
+	if schemaPath == "" || yamlPath == "" || (genCAPI && headerPath == "") || (genDocs && docsPath == "") {
 		flag.Usage()
 		os.Exit(1)
 	}
@@ -47,11 +56,6 @@ func main() {
 
 	SortAndTransform(&yml)
 
-	dst, err := os.Create(headerPath)
-	if err != nil {
-		panic(err)
-	}
-
 	fileName := filepath.Base(yamlPath)
 	fileNameSplit := strings.Split(fileName, ".")
 	if len(fileNameSplit) != 2 {
@@ -61,8 +65,27 @@ func main() {
 	var data Data
 	data.Yml = &yml
 	data.Name = fileNameSplit[0]
-	if err := GenCHeader(&data, dst); err != nil {
-		panic(err)
+
+	if genCAPI {
+		dst, err := os.Create(headerPath)
+		if err != nil {
+			panic(err)
+		}
+
+		if err := GenCHeader(&data, dst); err != nil {
+			panic(err)
+		}
+	}
+
+	if genDocs {
+		dst, err := os.Create(docsPath + "/api.md")
+		if err != nil {
+			panic(err)
+		}
+
+		if err := GenDocs(&data, dst); err != nil {
+			panic(err)
+		}
 	}
 }
 

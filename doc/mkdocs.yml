@@ -1,0 +1,10 @@
+site_name: WebGPU native
+site_url: https://webgpu-native.github.io/webgpu-headers
+docs_dir: src
+nav:
+  - Home: index.md
+  - API: api.md
+markdown_extensions:
+  - attr_list
+  - toc:
+      permalink: "#"
