@@ -72,7 +72,7 @@ func GenCHeader(data *Data, dst io.Writer) error {
 	return nil
 }
 
-func GenDocSource(data *Data, tmpl string, dst io.Writer) error {
+func GenDocSource(rootData *Data, data any, tmpl string, dst io.Writer) error {
 	t := template.
 		New("").
 		Funcs(template.FuncMap{
@@ -113,7 +113,11 @@ func GenDocSource(data *Data, tmpl string, dst io.Writer) error {
 				return "void"
 			},
 			"FunctionArgs": FunctionArgs,
+			"MethodArgs": MethodArgs,
 			"CallbackArgs": CallbackArgs,
+			"EnumValue": func(entryValue any) string {
+				return fmt.Sprintf("%s%.4X", rootData.EnumPrefix, entryValue)
+			},
 		})
 
 	t, err := t.Parse(tmpl)
@@ -216,6 +220,10 @@ func CType(typ string, pointerType PointerType) string {
 	default:
 		return ""
 	}
+}
+
+func MethodArgs(f Function, o Object) string {
+	return FunctionArgs(f, &o)
 }
 
 func FunctionArgs(f Function, o *Object) string {

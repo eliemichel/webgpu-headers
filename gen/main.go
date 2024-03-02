@@ -17,6 +17,7 @@ import (
 var cheaderTmpl string
 
 //go:embed templates/doc/*.md.tmpl
+//go:embed templates/doc/*/*.md.tmpl
 var docsTmpl embed.FS
 var docsTmplRoot string = "templates/doc"
 
@@ -80,7 +81,7 @@ func main() {
 	}
 
 	if genDocs {
-		if err := GenAllDocSources(&data, docsPath); err != nil {
+		if err := WriteAllDocSources(&data, docsPath); err != nil {
 			panic(err)
 		}
 	}
@@ -124,7 +125,26 @@ func SortAndTransform(yml *Yml) {
 	}
 }
 
-func GenAllDocSources(data *Data, rootPath string) error {
+func WriteDocSource(rootData *Data, data any, tmpl string, path string) error {
+	err := os.MkdirAll(filepath.Dir(path), os.ModePerm)
+	if err != nil {
+		panic(err)
+	}
+
+	dst, err := os.Create(path)
+	if err != nil {
+		panic(err)
+	}
+
+	err = GenDocSource(rootData, data, tmpl, dst)
+	if err != nil {
+		panic(err)
+	}
+
+	return nil
+}
+
+func WriteAllDocSources(rootData *Data, rootPath string) error {
 	return fs.WalkDir(docsTmpl, docsTmplRoot, func(path string, d fs.DirEntry, err error) error {
 		if err != nil {
 			panic(err)
@@ -138,12 +158,56 @@ func GenAllDocSources(data *Data, rootPath string) error {
 			panic(err)
 		}
 
-		dstName := path[len(docsTmplRoot):len(path)-len(".tmpl")]
-		dst, err := os.Create(rootPath + dstName)
-		if err != nil {
-			panic(err)
+		if strings.HasPrefix(d.Name(), "foreach_object") {
+
+			dstPrefix := strings.TrimSuffix(strings.TrimPrefix(path, docsTmplRoot), d.Name())
+			dstSuffix := strings.TrimSuffix(strings.TrimPrefix(d.Name(), "foreach_object"), ".tmpl")
+
+			for _, obj := range rootData.Objects {
+				dstName := dstPrefix + PascalCase(obj.Name) + dstSuffix
+				err = WriteDocSource(rootData, obj, string(tmpl), filepath.Join(rootPath, dstName))
+				if err != nil {
+					panic(err)
+				}
+			}
+
+		} else if strings.HasPrefix(d.Name(), "foreach_enum") {
+
+			dstPrefix := strings.TrimSuffix(strings.TrimPrefix(path, docsTmplRoot), d.Name())
+			dstSuffix := strings.TrimSuffix(strings.TrimPrefix(d.Name(), "foreach_enum"), ".tmpl")
+
+			for _, enum := range rootData.Enums {
+				dstName := dstPrefix + PascalCase(enum.Name) + dstSuffix
+				err = WriteDocSource(rootData, enum, string(tmpl), filepath.Join(rootPath, dstName))
+				if err != nil {
+					panic(err)
+				}
+			}
+
+		} else if strings.HasPrefix(d.Name(), "foreach_struct") {
+
+			dstPrefix := strings.TrimSuffix(strings.TrimPrefix(path, docsTmplRoot), d.Name())
+			dstSuffix := strings.TrimSuffix(strings.TrimPrefix(d.Name(), "foreach_struct"), ".tmpl")
+
+			for _, item := range rootData.Structs {
+				dstName := dstPrefix + PascalCase(item.Name) + dstSuffix
+				err = WriteDocSource(rootData, item, string(tmpl), filepath.Join(rootPath, dstName))
+				if err != nil {
+					panic(err)
+				}
+			}
+
+		} else {
+
+			dstName := strings.TrimSuffix(strings.TrimPrefix(path, docsTmplRoot), ".tmpl")
+			err = WriteDocSource(rootData, rootData, string(tmpl), filepath.Join(rootPath, dstName))
+			if err != nil {
+				panic(err)
+			}
+
 		}
 
-		return GenDocSource(data, string(tmpl), dst)
+		return nil
+
 	})
 }

@@ -1,0 +1,27 @@
+{{ $object := . }}
+
+{{-     if not .IsStruct}}
+
+## {{.Name | PascalCase}} { #WGPU{{.Name | PascalCase}} }
+
+{{.Doc}}
+
+{{        range $method := .Methods}}
+
+### `wgpu{{$object.Name | PascalCase}}{{.Name | PascalCase}}` { #wgpu{{$object.Name | PascalCase}}{{.Name | PascalCase}} }
+
+**Prototype:** `{{FunctionReturns .}} wgpu{{$object.Name | PascalCase}}{{.Name | PascalCase}}({{MethodArgs . $object}})`
+
+{{.Doc}}
+
+**Arguments:**
+
+ - TODO
+
+{{          if .Returns}}
+
+**Returns:** `{{FunctionReturns .}}` {{.Returns.Doc}}
+
+{{          end}}
+{{        end}}
+{{      end}}

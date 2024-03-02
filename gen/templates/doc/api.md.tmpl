@@ -9,7 +9,7 @@ WebGPU objects are referenced through blind handles, which are homogenous to poi
 
 {{    range .Objects}}
 {{-     if not .IsStruct}}
- - [`WGPU{{.Name | PascalCase}}`](../object#WGPU{{.Name | PascalCase}})
+ - [`WGPU{{.Name | PascalCase}}`](../object/{{.Name | PascalCase}})
 {{-     end}}
 {{-   end}}
 {{- end}}
@@ -20,7 +20,7 @@ WebGPU objects are referenced through blind handles, which are homogenous to poi
 ## Structures
 
 {{    range .Structs}}
- - `WGPU{{.Name | PascalCase}}`
+ - [`WGPU{{.Name | PascalCase}}`]({{.Name | PascalCase}})
 {{-   end}}
 {{  end}}
 
@@ -30,7 +30,7 @@ WebGPU objects are referenced through blind handles, which are homogenous to poi
 ## Enumerations
 
 {{  range $entry := .Enums}}
- - [`WGPU{{.Name | PascalCase}}`](../enum#WGPU{{.Name | PascalCase}})
+ - [`WGPU{{.Name | PascalCase}}`](../enum/{{.Name | PascalCase}})
 {{- end}}
 {{  end}}
 
