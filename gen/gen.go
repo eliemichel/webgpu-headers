@@ -72,15 +72,10 @@ func GenCHeader(data *Data, dst io.Writer) error {
 	return nil
 }
 
-// TODO: Factorize better with GenCHeader?
-func GenDocs(data *Data, dst io.Writer) error {
+func GenDocSource(data *Data, tmpl string, dst io.Writer) error {
 	t := template.
 		New("").
 		Funcs(template.FuncMap{
-			"SComment":     func(v string, indent int) string { return Comment(v, CommentTypeSingleLine, indent, true) },
-			"MComment":     func(v string, indent int) string { return Comment(v, CommentTypeMultiLine, indent, true) },
-			"SCommentN":    func(v string, indent int) string { return Comment(v, CommentTypeSingleLine, indent, false) },
-			"MCommentN":    func(v string, indent int) string { return Comment(v, CommentTypeMultiLine, indent, false) },
 			"ConstantCase": ConstantCase,
 			"PascalCase":   PascalCase,
 			"CamelCase":    CamelCase,
@@ -120,13 +115,16 @@ func GenDocs(data *Data, dst io.Writer) error {
 			"FunctionArgs": FunctionArgs,
 			"CallbackArgs": CallbackArgs,
 		})
-	t, err := t.Parse(docsTmpl)
+
+	t, err := t.Parse(tmpl)
 	if err != nil {
 		return fmt.Errorf("GenDocs: failed to parse template: %w", err)
 	}
+
 	if err := t.Execute(dst, data); err != nil {
 		return fmt.Errorf("GenDocs: failed to execute template: %w", err)
 	}
+
 	return nil
 }
 

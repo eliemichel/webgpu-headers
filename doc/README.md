@@ -1,7 +1,7 @@
 Documentation
 =============
 
-The documentation is automatically generated from `webgpu.yml` using Python and [MkDocs](https://www.mkdocs.org).
+The documentation of WebGPU native is automatically generated from `webgpu.yml` using Python and [MkDocs](https://www.mkdocs.org).
 
 Build
 -----
@@ -11,7 +11,7 @@ Build
 pip install -r requirements.txt
 
 # 2. Generate doc source from webgpu.yml
-python generate.py
+(cd ..; make gen-docs)
 
 # 3. Generate html doc from doc source
 mkdocs build

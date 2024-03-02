@@ -1,0 +1,71 @@
+# API
+
+
+{{- if .Objects}}
+
+## Objects
+
+WebGPU objects are referenced through blind handles, which are homogenous to pointers. The following objects are defined by the API:
+
+{{    range .Objects}}
+{{-     if not .IsStruct}}
+ - [`WGPU{{.Name | PascalCase}}`](../object#WGPU{{.Name | PascalCase}})
+{{-     end}}
+{{-   end}}
+{{- end}}
+
+
+{{- if .Structs}}
+
+## Structures
+
+{{    range .Structs}}
+ - `WGPU{{.Name | PascalCase}}`
+{{-   end}}
+{{  end}}
+
+
+{{- if .Enums}}
+
+## Enumerations
+
+{{  range $entry := .Enums}}
+ - [`WGPU{{.Name | PascalCase}}`](../enum#WGPU{{.Name | PascalCase}})
+{{- end}}
+{{  end}}
+
+
+{{- if .Constants}}
+
+## Constants
+
+{{-   range .Constants}}
+{{.Doc}}
+ - `WGPU_{{.Name | ConstantCase}}` = `{{.Value | CValue}}`
+{{-   end}}
+
+{{  end}}
+
+{{- if eq .Name "webgpu"}}
+
+## Typedefs
+
+ - `typedef uint32_t WGPUFlags`
+ - `typedef uint32_t WGPUBool`
+
+{{  end}}
+
+
+{{- if .Objects}}
+
+## Callback types
+
+{{    range $object := .Objects}}
+{{-     range $method := .Methods}}
+{{-       if .ReturnsAsync}}
+{{.Doc}}
+ - `typedef void (*WGPU{{$object.Name | PascalCase}}{{$method.Name | PascalCase}}Callback)({{CallbackArgs .}})`
+{{-       end}}
+{{-     end}}
+{{-   end}}
+{{  end}}

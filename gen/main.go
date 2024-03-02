@@ -3,20 +3,22 @@ package main
 import (
 	"flag"
 	"os"
+	"io/fs"
 	"path/filepath"
 	"slices"
 	"strings"
 
-	_ "embed"
+	"embed"
 
 	"github.com/goccy/go-yaml"
 )
 
-//go:embed cheader.tmpl
+//go:embed templates/c-header/webgpu.h.tmpl
 var cheaderTmpl string
 
-//go:embed docs.tmpl
-var docsTmpl string
+//go:embed templates/doc/*.md.tmpl
+var docsTmpl embed.FS
+var docsTmplRoot string = "templates/doc"
 
 var (
 	schemaPath string
@@ -78,12 +80,7 @@ func main() {
 	}
 
 	if genDocs {
-		dst, err := os.Create(docsPath + "/api.md")
-		if err != nil {
-			panic(err)
-		}
-
-		if err := GenDocs(&data, dst); err != nil {
+		if err := GenAllDocSources(&data, docsPath); err != nil {
 			panic(err)
 		}
 	}
@@ -125,4 +122,28 @@ func SortAndTransform(yml *Yml) {
 			return strings.Compare(PascalCase(a.Name), PascalCase(b.Name))
 		})
 	}
+}
+
+func GenAllDocSources(data *Data, rootPath string) error {
+	return fs.WalkDir(docsTmpl, docsTmplRoot, func(path string, d fs.DirEntry, err error) error {
+		if err != nil {
+			panic(err)
+		}
+		if d.IsDir() {
+			return nil
+		}
+
+		tmpl, err := docsTmpl.ReadFile(path)
+		if err != nil {
+			panic(err)
+		}
+
+		dstName := path[len(docsTmplRoot):len(path)-len(".tmpl")]
+		dst, err := os.Create(rootPath + dstName)
+		if err != nil {
+			panic(err)
+		}
+
+		return GenDocSource(data, string(tmpl), dst)
+	})
 }

@@ -1,0 +1,44 @@
+# Objects
+
+WebGPU objects are referenced through blind handles, which are homogenous to pointers. The following objects are defined and detailed below:
+
+{{- if .Objects}}
+{{    range .Objects}}
+{{-     if not .IsStruct}}
+ - [`WGPU{{.Name | PascalCase}}`](#WGPU{{.Name | PascalCase}})
+{{-     end}}
+{{-   end}}
+
+**NB** Additionally, all objects provide a `Release` and a `Reference` methods:
+
+ - `void wgpu<ObjectName>Reference(WGPU<ObjectName>)`
+ - `void wgpu<ObjectName>Release(WGPU<ObjectName>)`
+
+{{    range $object := .Objects}}
+{{-     if not .IsStruct}}
+
+## {{.Name | PascalCase}} { #WGPU{{.Name | PascalCase}} }
+
+{{.Doc}}
+
+{{        range $method := .Methods}}
+
+### `wgpu{{$object.Name | PascalCase}}{{.Name | PascalCase}}` { #wgpu{{$object.Name | PascalCase}}{{.Name | PascalCase}} }
+
+**Prototype:** `{{FunctionReturns .}} wgpu{{$object.Name | PascalCase}}{{.Name | PascalCase}}({{FunctionArgs . $object}})`
+
+{{.Doc}}
+
+**Arguments:**
+
+ - TODO
+
+{{          if .Returns}}
+
+**Returns:** `{{FunctionReturns .}}` {{.Returns.Doc}}
+
+{{          end}}
+{{        end}}
+{{      end}}
+{{    end}}
+{{  end}}
