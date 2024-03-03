@@ -21,9 +21,18 @@ void wgpuSamplerSetLabel(WGPUSampler sampler, char const * label)
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `label` (`char const *`):
+
+
+TODO
+
+
+
 
 
 

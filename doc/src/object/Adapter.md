@@ -21,9 +21,18 @@ size_t wgpuAdapterEnumerateFeatures(WGPUAdapter adapter, WGPUFeatureName * featu
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `features` (`WGPUFeatureName *`):
+
+
+TODO
+
+
+
 
 
 
@@ -48,9 +57,18 @@ Get the limits that the adapter supports. This is used to drive the
 choice of required limits in {device_descriptor.required_limits}.
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `limits` (`WGPUSupportedLimits *`):
+
+
+TODO
+
+
+
 
 
 
@@ -74,9 +92,18 @@ void wgpuAdapterGetProperties(WGPUAdapter adapter, WGPUAdapterProperties * prope
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `properties` (`WGPUAdapterProperties *`):
+
+
+TODO
+
+
+
 
 
 
@@ -94,9 +121,18 @@ WGPUBool wgpuAdapterHasFeature(WGPUAdapter adapter, WGPUFeatureName feature)
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `feature` (`WGPUFeatureName`):
+
+
+TODO
+
+
+
 
 
 
@@ -120,9 +156,7 @@ void wgpuAdapterRequestAdapterInfo(WGPUAdapter adapter, WGPUAdapterRequestAdapte
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -140,9 +174,18 @@ void wgpuAdapterRequestDevice(WGPUAdapter adapter, WGPU_NULLABLE WGPUDeviceDescr
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `descriptor` (`WGPUDeviceDescriptor const *`, **nullable**):
+
+
+TODO
+
+
+
 
 
 

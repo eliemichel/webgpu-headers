@@ -21,9 +21,18 @@ void wgpuTextureViewSetLabel(WGPUTextureView textureView, char const * label)
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `label` (`char const *`):
+
+
+TODO
+
+
+
 
 
 

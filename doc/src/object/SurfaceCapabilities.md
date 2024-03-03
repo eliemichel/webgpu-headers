@@ -17,9 +17,7 @@ void wgpuSurfaceCapabilitiesFreeMembers(WGPUSurfaceCapabilities surfaceCapabilit
 
 
 
-**Arguments:**
 
- - TODO
 
 
 

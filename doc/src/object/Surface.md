@@ -21,9 +21,18 @@ void wgpuSurfaceConfigure(WGPUSurface surface, WGPUSurfaceConfiguration const * 
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `config` (`WGPUSurfaceConfiguration const *`):
+
+
+TODO
+
+
+
 
 
 
@@ -41,9 +50,24 @@ void wgpuSurfaceGetCapabilities(WGPUSurface surface, WGPUAdapter adapter, WGPUSu
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `adapter` (`WGPUAdapter`):
+
+
+TODO
+
+
+ - `capabilities` (`WGPUSurfaceCapabilities *`):
+
+
+TODO
+
+
+
 
 
 
@@ -61,9 +85,18 @@ void wgpuSurfaceGetCurrentTexture(WGPUSurface surface, WGPUSurfaceTexture * surf
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `surfaceTexture` (`WGPUSurfaceTexture *`):
+
+
+TODO
+
+
+
 
 
 
@@ -81,9 +114,18 @@ WGPUTextureFormat wgpuSurfaceGetPreferredFormat(WGPUSurface surface, WGPUAdapter
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `adapter` (`WGPUAdapter`):
+
+
+TODO
+
+
+
 
 
 
@@ -107,9 +149,7 @@ void wgpuSurfacePresent(WGPUSurface surface)
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -127,9 +167,18 @@ void wgpuSurfaceSetLabel(WGPUSurface surface, char const * label)
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `label` (`char const *`):
+
+
+TODO
+
+
+
 
 
 
@@ -147,9 +196,7 @@ void wgpuSurfaceUnconfigure(WGPUSurface surface)
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 

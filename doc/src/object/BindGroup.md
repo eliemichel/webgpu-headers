@@ -21,9 +21,18 @@ void wgpuBindGroupSetLabel(WGPUBindGroup bindGroup, char const * label)
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `label` (`char const *`):
+
+
+TODO
+
+
+
 
 
 

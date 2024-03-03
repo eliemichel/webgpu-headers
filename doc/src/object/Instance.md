@@ -21,9 +21,18 @@ WGPUSurface wgpuInstanceCreateSurface(WGPUInstance instance, WGPUSurfaceDescript
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `descriptor` (`WGPUSurfaceDescriptor const *`):
+
+
+TODO
+
+
+
 
 
 
@@ -47,9 +56,18 @@ WGPUBool wgpuInstanceHasWGSLLanguageFeature(WGPUInstance instance, WGPUWGSLFeatu
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `feature` (`WGPUWGSLFeatureName`):
+
+
+TODO
+
+
+
 
 
 
@@ -73,9 +91,7 @@ void wgpuInstanceProcessEvents(WGPUInstance instance)
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -93,9 +109,18 @@ void wgpuInstanceRequestAdapter(WGPUInstance instance, WGPU_NULLABLE WGPURequest
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `options` (`WGPURequestAdapterOptions const *`, **nullable**):
+
+
+TODO
+
+
+
 
 
 

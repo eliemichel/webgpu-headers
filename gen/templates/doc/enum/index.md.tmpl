@@ -4,6 +4,6 @@
 
 {{- if .Enums}}
 {{  range $entry := .Enums}}
- - [`WGPU{{.Name | PascalCase}}`]({{.Name | PascalCase}})
+ - [`WGPU{{.Name | PascalCase}}`]({{.Name | PascalCase}}.md)
 {{- end}}
 {{  end}}

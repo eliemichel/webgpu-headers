@@ -21,9 +21,7 @@ void wgpuShaderModuleGetCompilationInfo(WGPUShaderModule shaderModule, WGPUShade
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -41,9 +39,18 @@ void wgpuShaderModuleSetLabel(WGPUShaderModule shaderModule, char const * label)
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `label` (`char const *`):
+
+
+TODO
+
+
+
 
 
 

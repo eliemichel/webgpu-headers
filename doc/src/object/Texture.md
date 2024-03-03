@@ -21,9 +21,18 @@ WGPUTextureView wgpuTextureCreateView(WGPUTexture texture, WGPU_NULLABLE WGPUTex
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `descriptor` (`WGPUTextureViewDescriptor const *`, **nullable**):
+
+
+TODO
+
+
+
 
 
 
@@ -48,9 +57,7 @@ TODO
 
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -68,9 +75,7 @@ uint32_t wgpuTextureGetDepthOrArrayLayers(WGPUTexture texture)
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -94,9 +99,7 @@ WGPUTextureDimension wgpuTextureGetDimension(WGPUTexture texture)
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -120,9 +123,7 @@ WGPUTextureFormat wgpuTextureGetFormat(WGPUTexture texture)
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -146,9 +147,7 @@ uint32_t wgpuTextureGetHeight(WGPUTexture texture)
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -172,9 +171,7 @@ uint32_t wgpuTextureGetMipLevelCount(WGPUTexture texture)
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -198,9 +195,7 @@ uint32_t wgpuTextureGetSampleCount(WGPUTexture texture)
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -224,9 +219,7 @@ WGPUTextureUsageFlags wgpuTextureGetUsage(WGPUTexture texture)
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -250,9 +243,7 @@ uint32_t wgpuTextureGetWidth(WGPUTexture texture)
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -276,9 +267,18 @@ void wgpuTextureSetLabel(WGPUTexture texture, char const * label)
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `label` (`char const *`):
+
+
+TODO
+
+
+
 
 
 

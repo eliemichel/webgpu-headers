@@ -21,9 +21,18 @@ WGPUComputePassEncoder wgpuCommandEncoderBeginComputePass(WGPUCommandEncoder com
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `descriptor` (`WGPUComputePassDescriptor const *`, **nullable**):
+
+
+TODO
+
+
+
 
 
 
@@ -47,9 +56,18 @@ WGPURenderPassEncoder wgpuCommandEncoderBeginRenderPass(WGPUCommandEncoder comma
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `descriptor` (`WGPURenderPassDescriptor const *`):
+
+
+TODO
+
+
+
 
 
 
@@ -73,9 +91,30 @@ void wgpuCommandEncoderClearBuffer(WGPUCommandEncoder commandEncoder, WGPUBuffer
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `buffer` (`WGPUBuffer`):
+
+
+TODO
+
+
+ - `offset` (`uint64_t`):
+
+
+TODO
+
+
+ - `size` (`uint64_t`):
+
+
+TODO
+
+
+
 
 
 
@@ -93,9 +132,42 @@ void wgpuCommandEncoderCopyBufferToBuffer(WGPUCommandEncoder commandEncoder, WGP
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `source` (`WGPUBuffer`):
+
+
+TODO
+
+
+ - `sourceOffset` (`uint64_t`):
+
+
+TODO
+
+
+ - `destination` (`WGPUBuffer`):
+
+
+TODO
+
+
+ - `destinationOffset` (`uint64_t`):
+
+
+TODO
+
+
+ - `size` (`uint64_t`):
+
+
+TODO
+
+
+
 
 
 
@@ -113,9 +185,30 @@ void wgpuCommandEncoderCopyBufferToTexture(WGPUCommandEncoder commandEncoder, WG
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `source` (`WGPUImageCopyBuffer const *`):
+
+
+TODO
+
+
+ - `destination` (`WGPUImageCopyTexture const *`):
+
+
+TODO
+
+
+ - `copySize` (`WGPUExtent3D const *`):
+
+
+TODO
+
+
+
 
 
 
@@ -133,9 +226,30 @@ void wgpuCommandEncoderCopyTextureToBuffer(WGPUCommandEncoder commandEncoder, WG
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `source` (`WGPUImageCopyTexture const *`):
+
+
+TODO
+
+
+ - `destination` (`WGPUImageCopyBuffer const *`):
+
+
+TODO
+
+
+ - `copySize` (`WGPUExtent3D const *`):
+
+
+TODO
+
+
+
 
 
 
@@ -153,9 +267,30 @@ void wgpuCommandEncoderCopyTextureToTexture(WGPUCommandEncoder commandEncoder, W
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `source` (`WGPUImageCopyTexture const *`):
+
+
+TODO
+
+
+ - `destination` (`WGPUImageCopyTexture const *`):
+
+
+TODO
+
+
+ - `copySize` (`WGPUExtent3D const *`):
+
+
+TODO
+
+
+
 
 
 
@@ -173,9 +308,18 @@ WGPUCommandBuffer wgpuCommandEncoderFinish(WGPUCommandEncoder commandEncoder, WG
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `descriptor` (`WGPUCommandBufferDescriptor const *`, **nullable**):
+
+
+TODO
+
+
+
 
 
 
@@ -199,9 +343,18 @@ void wgpuCommandEncoderInsertDebugMarker(WGPUCommandEncoder commandEncoder, char
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `markerLabel` (`char const *`):
+
+
+TODO
+
+
+
 
 
 
@@ -219,9 +372,7 @@ void wgpuCommandEncoderPopDebugGroup(WGPUCommandEncoder commandEncoder)
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -239,9 +390,18 @@ void wgpuCommandEncoderPushDebugGroup(WGPUCommandEncoder commandEncoder, char co
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `groupLabel` (`char const *`):
+
+
+TODO
+
+
+
 
 
 
@@ -259,9 +419,42 @@ void wgpuCommandEncoderResolveQuerySet(WGPUCommandEncoder commandEncoder, WGPUQu
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `querySet` (`WGPUQuerySet`):
+
+
+TODO
+
+
+ - `firstQuery` (`uint32_t`):
+
+
+TODO
+
+
+ - `queryCount` (`uint32_t`):
+
+
+TODO
+
+
+ - `destination` (`WGPUBuffer`):
+
+
+TODO
+
+
+ - `destinationOffset` (`uint64_t`):
+
+
+TODO
+
+
+
 
 
 
@@ -279,9 +472,18 @@ void wgpuCommandEncoderSetLabel(WGPUCommandEncoder commandEncoder, char const * 
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `label` (`char const *`):
+
+
+TODO
+
+
+
 
 
 
@@ -299,9 +501,24 @@ void wgpuCommandEncoderWriteTimestamp(WGPUCommandEncoder commandEncoder, WGPUQue
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `querySet` (`WGPUQuerySet`):
+
+
+TODO
+
+
+ - `queryIndex` (`uint32_t`):
+
+
+TODO
+
+
+
 
 
 

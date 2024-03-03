@@ -22,9 +22,7 @@ TODO
 
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -42,9 +40,24 @@ void const * wgpuBufferGetConstMappedRange(WGPUBuffer buffer, size_t offset, siz
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `offset` (`size_t`):
+
+
+TODO
+
+
+ - `size` (`size_t`):
+
+
+TODO
+
+
+
 
 
 
@@ -68,9 +81,7 @@ WGPUBufferMapState wgpuBufferGetMapState(WGPUBuffer buffer)
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -94,9 +105,24 @@ void * wgpuBufferGetMappedRange(WGPUBuffer buffer, size_t offset, size_t size)
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `offset` (`size_t`):
+
+
+TODO
+
+
+ - `size` (`size_t`):
+
+
+TODO
+
+
+
 
 
 
@@ -120,9 +146,7 @@ uint64_t wgpuBufferGetSize(WGPUBuffer buffer)
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -146,9 +170,7 @@ WGPUBufferUsageFlags wgpuBufferGetUsage(WGPUBuffer buffer)
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -172,9 +194,30 @@ void wgpuBufferMapAsync(WGPUBuffer buffer, WGPUMapModeFlags mode, size_t offset,
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `mode` (`WGPUMapModeFlags`):
+
+
+TODO
+
+
+ - `offset` (`size_t`):
+
+
+TODO
+
+
+ - `size` (`size_t`):
+
+
+TODO
+
+
+
 
 
 
@@ -192,9 +235,18 @@ void wgpuBufferSetLabel(WGPUBuffer buffer, char const * label)
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `label` (`char const *`):
+
+
+TODO
+
+
+
 
 
 
@@ -212,9 +264,7 @@ void wgpuBufferUnmap(WGPUBuffer buffer)
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 

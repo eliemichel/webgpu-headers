@@ -21,9 +21,18 @@ void wgpuRenderPassEncoderBeginOcclusionQuery(WGPURenderPassEncoder renderPassEn
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `queryIndex` (`uint32_t`):
+
+
+TODO
+
+
+
 
 
 
@@ -41,9 +50,36 @@ void wgpuRenderPassEncoderDraw(WGPURenderPassEncoder renderPassEncoder, uint32_t
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `vertexCount` (`uint32_t`):
+
+
+TODO
+
+
+ - `instanceCount` (`uint32_t`):
+
+
+TODO
+
+
+ - `firstVertex` (`uint32_t`):
+
+
+TODO
+
+
+ - `firstInstance` (`uint32_t`):
+
+
+TODO
+
+
+
 
 
 
@@ -61,9 +97,42 @@ void wgpuRenderPassEncoderDrawIndexed(WGPURenderPassEncoder renderPassEncoder, u
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `indexCount` (`uint32_t`):
+
+
+TODO
+
+
+ - `instanceCount` (`uint32_t`):
+
+
+TODO
+
+
+ - `firstIndex` (`uint32_t`):
+
+
+TODO
+
+
+ - `baseVertex` (`int32_t`):
+
+
+TODO
+
+
+ - `firstInstance` (`uint32_t`):
+
+
+TODO
+
+
+
 
 
 
@@ -81,9 +150,24 @@ void wgpuRenderPassEncoderDrawIndexedIndirect(WGPURenderPassEncoder renderPassEn
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `indirectBuffer` (`WGPUBuffer`):
+
+
+TODO
+
+
+ - `indirectOffset` (`uint64_t`):
+
+
+TODO
+
+
+
 
 
 
@@ -101,9 +185,24 @@ void wgpuRenderPassEncoderDrawIndirect(WGPURenderPassEncoder renderPassEncoder, 
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `indirectBuffer` (`WGPUBuffer`):
+
+
+TODO
+
+
+ - `indirectOffset` (`uint64_t`):
+
+
+TODO
+
+
+
 
 
 
@@ -121,9 +220,7 @@ void wgpuRenderPassEncoderEnd(WGPURenderPassEncoder renderPassEncoder)
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -141,9 +238,7 @@ void wgpuRenderPassEncoderEndOcclusionQuery(WGPURenderPassEncoder renderPassEnco
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -161,9 +256,18 @@ void wgpuRenderPassEncoderExecuteBundles(WGPURenderPassEncoder renderPassEncoder
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `bundles` (``):
+
+
+TODO
+
+
+
 
 
 
@@ -181,9 +285,18 @@ void wgpuRenderPassEncoderInsertDebugMarker(WGPURenderPassEncoder renderPassEnco
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `markerLabel` (`char const *`):
+
+
+TODO
+
+
+
 
 
 
@@ -201,9 +314,7 @@ void wgpuRenderPassEncoderPopDebugGroup(WGPURenderPassEncoder renderPassEncoder)
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -221,9 +332,18 @@ void wgpuRenderPassEncoderPushDebugGroup(WGPURenderPassEncoder renderPassEncoder
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `groupLabel` (`char const *`):
+
+
+TODO
+
+
+
 
 
 
@@ -241,9 +361,30 @@ void wgpuRenderPassEncoderSetBindGroup(WGPURenderPassEncoder renderPassEncoder, 
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `groupIndex` (`uint32_t`):
+
+
+TODO
+
+
+ - `group` (`WGPUBindGroup`, **nullable**):
+
+
+TODO
+
+
+ - `dynamicOffsets` (``):
+
+
+TODO
+
+
+
 
 
 
@@ -261,9 +402,18 @@ void wgpuRenderPassEncoderSetBlendConstant(WGPURenderPassEncoder renderPassEncod
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `color` (`WGPUColor const *`):
+
+
+TODO
+
+
+
 
 
 
@@ -281,9 +431,36 @@ void wgpuRenderPassEncoderSetIndexBuffer(WGPURenderPassEncoder renderPassEncoder
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `buffer` (`WGPUBuffer`):
+
+
+TODO
+
+
+ - `format` (`WGPUIndexFormat`):
+
+
+TODO
+
+
+ - `offset` (`uint64_t`):
+
+
+TODO
+
+
+ - `size` (`uint64_t`):
+
+
+TODO
+
+
+
 
 
 
@@ -301,9 +478,18 @@ void wgpuRenderPassEncoderSetLabel(WGPURenderPassEncoder renderPassEncoder, char
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `label` (`char const *`):
+
+
+TODO
+
+
+
 
 
 
@@ -321,9 +507,18 @@ void wgpuRenderPassEncoderSetPipeline(WGPURenderPassEncoder renderPassEncoder, W
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `pipeline` (`WGPURenderPipeline`):
+
+
+TODO
+
+
+
 
 
 
@@ -341,9 +536,36 @@ void wgpuRenderPassEncoderSetScissorRect(WGPURenderPassEncoder renderPassEncoder
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `x` (`uint32_t`):
+
+
+TODO
+
+
+ - `y` (`uint32_t`):
+
+
+TODO
+
+
+ - `width` (`uint32_t`):
+
+
+TODO
+
+
+ - `height` (`uint32_t`):
+
+
+TODO
+
+
+
 
 
 
@@ -361,9 +583,18 @@ void wgpuRenderPassEncoderSetStencilReference(WGPURenderPassEncoder renderPassEn
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `reference` (`uint32_t`):
+
+
+TODO
+
+
+
 
 
 
@@ -381,9 +612,36 @@ void wgpuRenderPassEncoderSetVertexBuffer(WGPURenderPassEncoder renderPassEncode
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `slot` (`uint32_t`):
+
+
+TODO
+
+
+ - `buffer` (`WGPUBuffer`, **nullable**):
+
+
+TODO
+
+
+ - `offset` (`uint64_t`):
+
+
+TODO
+
+
+ - `size` (`uint64_t`):
+
+
+TODO
+
+
+
 
 
 
@@ -401,9 +659,48 @@ void wgpuRenderPassEncoderSetViewport(WGPURenderPassEncoder renderPassEncoder, f
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `x` (`float`):
+
+
+TODO
+
+
+ - `y` (`float`):
+
+
+TODO
+
+
+ - `width` (`float`):
+
+
+TODO
+
+
+ - `height` (`float`):
+
+
+TODO
+
+
+ - `minDepth` (`float`):
+
+
+TODO
+
+
+ - `maxDepth` (`float`):
+
+
+TODO
+
+
+
 
 
 

@@ -21,9 +21,18 @@ void wgpuCommandBufferSetLabel(WGPUCommandBuffer commandBuffer, char const * lab
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `label` (`char const *`):
+
+
+TODO
+
+
+
 
 
 

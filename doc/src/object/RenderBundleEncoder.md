@@ -21,9 +21,36 @@ void wgpuRenderBundleEncoderDraw(WGPURenderBundleEncoder renderBundleEncoder, ui
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `vertexCount` (`uint32_t`):
+
+
+TODO
+
+
+ - `instanceCount` (`uint32_t`):
+
+
+TODO
+
+
+ - `firstVertex` (`uint32_t`):
+
+
+TODO
+
+
+ - `firstInstance` (`uint32_t`):
+
+
+TODO
+
+
+
 
 
 
@@ -41,9 +68,42 @@ void wgpuRenderBundleEncoderDrawIndexed(WGPURenderBundleEncoder renderBundleEnco
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `indexCount` (`uint32_t`):
+
+
+TODO
+
+
+ - `instanceCount` (`uint32_t`):
+
+
+TODO
+
+
+ - `firstIndex` (`uint32_t`):
+
+
+TODO
+
+
+ - `baseVertex` (`int32_t`):
+
+
+TODO
+
+
+ - `firstInstance` (`uint32_t`):
+
+
+TODO
+
+
+
 
 
 
@@ -61,9 +121,24 @@ void wgpuRenderBundleEncoderDrawIndexedIndirect(WGPURenderBundleEncoder renderBu
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `indirectBuffer` (`WGPUBuffer`):
+
+
+TODO
+
+
+ - `indirectOffset` (`uint64_t`):
+
+
+TODO
+
+
+
 
 
 
@@ -81,9 +156,24 @@ void wgpuRenderBundleEncoderDrawIndirect(WGPURenderBundleEncoder renderBundleEnc
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `indirectBuffer` (`WGPUBuffer`):
+
+
+TODO
+
+
+ - `indirectOffset` (`uint64_t`):
+
+
+TODO
+
+
+
 
 
 
@@ -101,9 +191,18 @@ WGPURenderBundle wgpuRenderBundleEncoderFinish(WGPURenderBundleEncoder renderBun
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `descriptor` (`WGPURenderBundleDescriptor const *`, **nullable**):
+
+
+TODO
+
+
+
 
 
 
@@ -127,9 +226,18 @@ void wgpuRenderBundleEncoderInsertDebugMarker(WGPURenderBundleEncoder renderBund
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `markerLabel` (`char const *`):
+
+
+TODO
+
+
+
 
 
 
@@ -147,9 +255,7 @@ void wgpuRenderBundleEncoderPopDebugGroup(WGPURenderBundleEncoder renderBundleEn
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -167,9 +273,18 @@ void wgpuRenderBundleEncoderPushDebugGroup(WGPURenderBundleEncoder renderBundleE
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `groupLabel` (`char const *`):
+
+
+TODO
+
+
+
 
 
 
@@ -187,9 +302,30 @@ void wgpuRenderBundleEncoderSetBindGroup(WGPURenderBundleEncoder renderBundleEnc
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `groupIndex` (`uint32_t`):
+
+
+TODO
+
+
+ - `group` (`WGPUBindGroup`, **nullable**):
+
+
+TODO
+
+
+ - `dynamicOffsets` (``):
+
+
+TODO
+
+
+
 
 
 
@@ -207,9 +343,36 @@ void wgpuRenderBundleEncoderSetIndexBuffer(WGPURenderBundleEncoder renderBundleE
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `buffer` (`WGPUBuffer`):
+
+
+TODO
+
+
+ - `format` (`WGPUIndexFormat`):
+
+
+TODO
+
+
+ - `offset` (`uint64_t`):
+
+
+TODO
+
+
+ - `size` (`uint64_t`):
+
+
+TODO
+
+
+
 
 
 
@@ -227,9 +390,18 @@ void wgpuRenderBundleEncoderSetLabel(WGPURenderBundleEncoder renderBundleEncoder
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `label` (`char const *`):
+
+
+TODO
+
+
+
 
 
 
@@ -247,9 +419,18 @@ void wgpuRenderBundleEncoderSetPipeline(WGPURenderBundleEncoder renderBundleEnco
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `pipeline` (`WGPURenderPipeline`):
+
+
+TODO
+
+
+
 
 
 
@@ -267,9 +448,36 @@ void wgpuRenderBundleEncoderSetVertexBuffer(WGPURenderBundleEncoder renderBundle
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `slot` (`uint32_t`):
+
+
+TODO
+
+
+ - `buffer` (`WGPUBuffer`, **nullable**):
+
+
+TODO
+
+
+ - `offset` (`uint64_t`):
+
+
+TODO
+
+
+ - `size` (`uint64_t`):
+
+
+TODO
+
+
+
 
 
 

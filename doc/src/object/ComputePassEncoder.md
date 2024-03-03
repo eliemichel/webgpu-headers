@@ -21,9 +21,30 @@ void wgpuComputePassEncoderDispatchWorkgroups(WGPUComputePassEncoder computePass
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `workgroupCountX` (`uint32_t`):
+
+
+TODO
+
+
+ - `workgroupCountY` (`uint32_t`):
+
+
+TODO
+
+
+ - `workgroupCountZ` (`uint32_t`):
+
+
+TODO
+
+
+
 
 
 
@@ -41,9 +62,24 @@ void wgpuComputePassEncoderDispatchWorkgroupsIndirect(WGPUComputePassEncoder com
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `indirectBuffer` (`WGPUBuffer`):
+
+
+TODO
+
+
+ - `indirectOffset` (`uint64_t`):
+
+
+TODO
+
+
+
 
 
 
@@ -61,9 +97,7 @@ void wgpuComputePassEncoderEnd(WGPUComputePassEncoder computePassEncoder)
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -81,9 +115,18 @@ void wgpuComputePassEncoderInsertDebugMarker(WGPUComputePassEncoder computePassE
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `markerLabel` (`char const *`):
+
+
+TODO
+
+
+
 
 
 
@@ -101,9 +144,7 @@ void wgpuComputePassEncoderPopDebugGroup(WGPUComputePassEncoder computePassEncod
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -121,9 +162,18 @@ void wgpuComputePassEncoderPushDebugGroup(WGPUComputePassEncoder computePassEnco
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `groupLabel` (`char const *`):
+
+
+TODO
+
+
+
 
 
 
@@ -141,9 +191,30 @@ void wgpuComputePassEncoderSetBindGroup(WGPUComputePassEncoder computePassEncode
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `groupIndex` (`uint32_t`):
+
+
+TODO
+
+
+ - `group` (`WGPUBindGroup`, **nullable**):
+
+
+TODO
+
+
+ - `dynamicOffsets` (``):
+
+
+TODO
+
+
+
 
 
 
@@ -161,9 +232,18 @@ void wgpuComputePassEncoderSetLabel(WGPUComputePassEncoder computePassEncoder, c
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `label` (`char const *`):
+
+
+TODO
+
+
+
 
 
 
@@ -181,9 +261,18 @@ void wgpuComputePassEncoderSetPipeline(WGPUComputePassEncoder computePassEncoder
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `pipeline` (`WGPUComputePipeline`):
+
+
+TODO
+
+
+
 
 
 

@@ -17,9 +17,16 @@
 
 {{.Doc}}
 
+{{  if .Args}}
+
 **Arguments:**
 
- - TODO
+{{    range .Args}}
+ - `{{.Name | CamelCase}}` (`{{CType .Type .Pointer}}`{{if .Optional}}, **nullable**{{end}}):
+
+{{.Doc}}
+{{    end}}
+{{  end}}
 
 {{    if .Returns}}
 

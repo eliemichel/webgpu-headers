@@ -21,9 +21,18 @@ void wgpuPipelineLayoutSetLabel(WGPUPipelineLayout pipelineLayout, char const * 
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `label` (`char const *`):
+
+
+TODO
+
+
+
 
 
 

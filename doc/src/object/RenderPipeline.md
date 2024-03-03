@@ -21,9 +21,18 @@ WGPUBindGroupLayout wgpuRenderPipelineGetBindGroupLayout(WGPURenderPipeline rend
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `groupIndex` (`uint32_t`):
+
+
+TODO
+
+
+
 
 
 
@@ -47,9 +56,18 @@ void wgpuRenderPipelineSetLabel(WGPURenderPipeline renderPipeline, char const * 
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `label` (`char const *`):
+
+
+TODO
+
+
+
 
 
 

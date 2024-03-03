@@ -21,9 +21,18 @@ void wgpuRenderBundleSetLabel(WGPURenderBundle renderBundle, char const * label)
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `label` (`char const *`):
+
+
+TODO
+
+
+
 
 
 

@@ -22,9 +22,7 @@ TODO
 
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -42,9 +40,7 @@ uint32_t wgpuQuerySetGetCount(WGPUQuerySet querySet)
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -68,9 +64,7 @@ WGPUQueryType wgpuQuerySetGetType(WGPUQuerySet querySet)
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -94,9 +88,18 @@ void wgpuQuerySetSetLabel(WGPUQuerySet querySet, char const * label)
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `label` (`char const *`):
+
+
+TODO
+
+
+
 
 
 

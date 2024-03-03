@@ -21,9 +21,18 @@ WGPUBindGroupLayout wgpuComputePipelineGetBindGroupLayout(WGPUComputePipeline co
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `groupIndex` (`uint32_t`):
+
+
+TODO
+
+
+
 
 
 
@@ -47,9 +56,18 @@ void wgpuComputePipelineSetLabel(WGPUComputePipeline computePipeline, char const
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `label` (`char const *`):
+
+
+TODO
+
+
+
 
 
 

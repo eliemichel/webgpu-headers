@@ -21,9 +21,7 @@ void wgpuQueueOnSubmittedWorkDone(WGPUQueue queue, WGPUQueueOnSubmittedWorkDoneC
 TODO
 
 
-**Arguments:**
 
- - TODO
 
 
 
@@ -41,9 +39,18 @@ void wgpuQueueSetLabel(WGPUQueue queue, char const * label)
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `label` (`char const *`):
+
+
+TODO
+
+
+
 
 
 
@@ -61,9 +68,18 @@ void wgpuQueueSubmit(WGPUQueue queue, size_t commandCount, WGPUCommandBuffer con
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `commands` (``):
+
+
+TODO
+
+
+
 
 
 
@@ -81,9 +97,36 @@ void wgpuQueueWriteBuffer(WGPUQueue queue, WGPUBuffer buffer, uint64_t bufferOff
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `buffer` (`WGPUBuffer`):
+
+
+TODO
+
+
+ - `bufferOffset` (`uint64_t`):
+
+
+TODO
+
+
+ - `data` (`void const *`):
+
+
+TODO
+
+
+ - `size` (`size_t`):
+
+
+TODO
+
+
+
 
 
 
@@ -101,9 +144,42 @@ void wgpuQueueWriteTexture(WGPUQueue queue, WGPUImageCopyTexture const * destina
 TODO
 
 
+
+
 **Arguments:**
 
- - TODO
+
+ - `destination` (`WGPUImageCopyTexture const *`):
+
+
+TODO
+
+
+ - `data` (`void const *`):
+
+
+TODO
+
+
+ - `dataSize` (`size_t`):
+
+
+TODO
+
+
+ - `dataLayout` (`WGPUTextureDataLayout const *`):
+
+
+TODO
+
+
+ - `writeSize` (`WGPUExtent3D const *`):
+
+
+TODO
+
+
+
 
 
 
