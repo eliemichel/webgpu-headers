@@ -14,7 +14,10 @@ TODO
 ## CreateBindGroup { #wgpuDeviceCreateBindGroup }
 
 ```C
-WGPUBindGroup wgpuDeviceCreateBindGroup(WGPUDevice device, WGPUBindGroupDescriptor const * descriptor)
+WGPUBindGroup wgpuDeviceCreateBindGroup(
+	WGPUDevice device,
+	WGPUBindGroupDescriptor const * descriptor,
+)
 ```
 
 
@@ -49,7 +52,10 @@ TODO
 ## CreateBindGroupLayout { #wgpuDeviceCreateBindGroupLayout }
 
 ```C
-WGPUBindGroupLayout wgpuDeviceCreateBindGroupLayout(WGPUDevice device, WGPUBindGroupLayoutDescriptor const * descriptor)
+WGPUBindGroupLayout wgpuDeviceCreateBindGroupLayout(
+	WGPUDevice device,
+	WGPUBindGroupLayoutDescriptor const * descriptor,
+)
 ```
 
 
@@ -84,7 +90,10 @@ TODO
 ## CreateBuffer { #wgpuDeviceCreateBuffer }
 
 ```C
-WGPUBuffer wgpuDeviceCreateBuffer(WGPUDevice device, WGPUBufferDescriptor const * descriptor)
+WGPUBuffer wgpuDeviceCreateBuffer(
+	WGPUDevice device,
+	WGPUBufferDescriptor const * descriptor,
+)
 ```
 
 
@@ -119,7 +128,10 @@ TODO
 ## CreateCommandEncoder { #wgpuDeviceCreateCommandEncoder }
 
 ```C
-WGPUCommandEncoder wgpuDeviceCreateCommandEncoder(WGPUDevice device, WGPU_NULLABLE WGPUCommandEncoderDescriptor const * descriptor)
+WGPUCommandEncoder wgpuDeviceCreateCommandEncoder(
+	WGPUDevice device,
+	WGPU_NULLABLE WGPUCommandEncoderDescriptor const * descriptor,
+)
 ```
 
 
@@ -154,7 +166,10 @@ TODO
 ## CreateComputePipeline { #wgpuDeviceCreateComputePipeline }
 
 ```C
-WGPUComputePipeline wgpuDeviceCreateComputePipeline(WGPUDevice device, WGPUComputePipelineDescriptor const * descriptor)
+WGPUComputePipeline wgpuDeviceCreateComputePipeline(
+	WGPUDevice device,
+	WGPUComputePipelineDescriptor const * descriptor,
+)
 ```
 
 
@@ -189,7 +204,12 @@ TODO
 ## CreateComputePipelineAsync { #wgpuDeviceCreateComputePipelineAsync }
 
 ```C
-void wgpuDeviceCreateComputePipelineAsync(WGPUDevice device, WGPUComputePipelineDescriptor const * descriptor, WGPUDeviceCreateComputePipelineAsyncCallback callback, WGPU_NULLABLE void * userdata)
+void wgpuDeviceCreateComputePipelineAsync(
+	WGPUDevice device,
+	WGPUComputePipelineDescriptor const * descriptor,
+	WGPUDeviceCreateComputePipelineAsyncCallback callback,
+	WGPU_NULLABLE void * userdata,
+)
 ```
 
 
@@ -218,7 +238,10 @@ TODO
 ## CreatePipelineLayout { #wgpuDeviceCreatePipelineLayout }
 
 ```C
-WGPUPipelineLayout wgpuDeviceCreatePipelineLayout(WGPUDevice device, WGPUPipelineLayoutDescriptor const * descriptor)
+WGPUPipelineLayout wgpuDeviceCreatePipelineLayout(
+	WGPUDevice device,
+	WGPUPipelineLayoutDescriptor const * descriptor,
+)
 ```
 
 
@@ -253,7 +276,10 @@ TODO
 ## CreateQuerySet { #wgpuDeviceCreateQuerySet }
 
 ```C
-WGPUQuerySet wgpuDeviceCreateQuerySet(WGPUDevice device, WGPUQuerySetDescriptor const * descriptor)
+WGPUQuerySet wgpuDeviceCreateQuerySet(
+	WGPUDevice device,
+	WGPUQuerySetDescriptor const * descriptor,
+)
 ```
 
 
@@ -288,7 +314,10 @@ TODO
 ## CreateRenderBundleEncoder { #wgpuDeviceCreateRenderBundleEncoder }
 
 ```C
-WGPURenderBundleEncoder wgpuDeviceCreateRenderBundleEncoder(WGPUDevice device, WGPURenderBundleEncoderDescriptor const * descriptor)
+WGPURenderBundleEncoder wgpuDeviceCreateRenderBundleEncoder(
+	WGPUDevice device,
+	WGPURenderBundleEncoderDescriptor const * descriptor,
+)
 ```
 
 
@@ -323,7 +352,10 @@ TODO
 ## CreateRenderPipeline { #wgpuDeviceCreateRenderPipeline }
 
 ```C
-WGPURenderPipeline wgpuDeviceCreateRenderPipeline(WGPUDevice device, WGPURenderPipelineDescriptor const * descriptor)
+WGPURenderPipeline wgpuDeviceCreateRenderPipeline(
+	WGPUDevice device,
+	WGPURenderPipelineDescriptor const * descriptor,
+)
 ```
 
 
@@ -358,7 +390,12 @@ TODO
 ## CreateRenderPipelineAsync { #wgpuDeviceCreateRenderPipelineAsync }
 
 ```C
-void wgpuDeviceCreateRenderPipelineAsync(WGPUDevice device, WGPURenderPipelineDescriptor const * descriptor, WGPUDeviceCreateRenderPipelineAsyncCallback callback, WGPU_NULLABLE void * userdata)
+void wgpuDeviceCreateRenderPipelineAsync(
+	WGPUDevice device,
+	WGPURenderPipelineDescriptor const * descriptor,
+	WGPUDeviceCreateRenderPipelineAsyncCallback callback,
+	WGPU_NULLABLE void * userdata,
+)
 ```
 
 
@@ -387,7 +424,10 @@ TODO
 ## CreateSampler { #wgpuDeviceCreateSampler }
 
 ```C
-WGPUSampler wgpuDeviceCreateSampler(WGPUDevice device, WGPU_NULLABLE WGPUSamplerDescriptor const * descriptor)
+WGPUSampler wgpuDeviceCreateSampler(
+	WGPUDevice device,
+	WGPU_NULLABLE WGPUSamplerDescriptor const * descriptor,
+)
 ```
 
 
@@ -422,7 +462,10 @@ TODO
 ## CreateShaderModule { #wgpuDeviceCreateShaderModule }
 
 ```C
-WGPUShaderModule wgpuDeviceCreateShaderModule(WGPUDevice device, WGPUShaderModuleDescriptor const * descriptor)
+WGPUShaderModule wgpuDeviceCreateShaderModule(
+	WGPUDevice device,
+	WGPUShaderModuleDescriptor const * descriptor,
+)
 ```
 
 
@@ -457,7 +500,10 @@ TODO
 ## CreateTexture { #wgpuDeviceCreateTexture }
 
 ```C
-WGPUTexture wgpuDeviceCreateTexture(WGPUDevice device, WGPUTextureDescriptor const * descriptor)
+WGPUTexture wgpuDeviceCreateTexture(
+	WGPUDevice device,
+	WGPUTextureDescriptor const * descriptor,
+)
 ```
 
 
@@ -492,7 +538,9 @@ TODO
 ## Destroy { #wgpuDeviceDestroy }
 
 ```C
-void wgpuDeviceDestroy(WGPUDevice device)
+void wgpuDeviceDestroy(
+	WGPUDevice device,
+)
 ```
 
 
@@ -510,7 +558,10 @@ TODO
 ## EnumerateFeatures { #wgpuDeviceEnumerateFeatures }
 
 ```C
-size_t wgpuDeviceEnumerateFeatures(WGPUDevice device, WGPUFeatureName * features)
+size_t wgpuDeviceEnumerateFeatures(
+	WGPUDevice device,
+	WGPUFeatureName * features,
+)
 ```
 
 
@@ -545,7 +596,10 @@ TODO
 ## GetLimits { #wgpuDeviceGetLimits }
 
 ```C
-WGPUBool wgpuDeviceGetLimits(WGPUDevice device, WGPUSupportedLimits * limits)
+WGPUBool wgpuDeviceGetLimits(
+	WGPUDevice device,
+	WGPUSupportedLimits * limits,
+)
 ```
 
 
@@ -580,7 +634,9 @@ TODO
 ## GetQueue { #wgpuDeviceGetQueue }
 
 ```C
-WGPUQueue wgpuDeviceGetQueue(WGPUDevice device)
+WGPUQueue wgpuDeviceGetQueue(
+	WGPUDevice device,
+)
 ```
 
 
@@ -604,7 +660,10 @@ TODO
 ## HasFeature { #wgpuDeviceHasFeature }
 
 ```C
-WGPUBool wgpuDeviceHasFeature(WGPUDevice device, WGPUFeatureName feature)
+WGPUBool wgpuDeviceHasFeature(
+	WGPUDevice device,
+	WGPUFeatureName feature,
+)
 ```
 
 
@@ -639,7 +698,11 @@ TODO
 ## PopErrorScope { #wgpuDevicePopErrorScope }
 
 ```C
-void wgpuDevicePopErrorScope(WGPUDevice device, WGPUErrorCallback callback, void * userdata)
+void wgpuDevicePopErrorScope(
+	WGPUDevice device,
+	WGPUErrorCallback callback,
+	void * userdata,
+)
 ```
 
 
@@ -674,7 +737,10 @@ TODO
 ## PushErrorScope { #wgpuDevicePushErrorScope }
 
 ```C
-void wgpuDevicePushErrorScope(WGPUDevice device, WGPUErrorFilter filter)
+void wgpuDevicePushErrorScope(
+	WGPUDevice device,
+	WGPUErrorFilter filter,
+)
 ```
 
 
@@ -703,7 +769,10 @@ TODO
 ## SetLabel { #wgpuDeviceSetLabel }
 
 ```C
-void wgpuDeviceSetLabel(WGPUDevice device, char const * label)
+void wgpuDeviceSetLabel(
+	WGPUDevice device,
+	char const * label,
+)
 ```
 
 
@@ -732,7 +801,11 @@ TODO
 ## SetUncapturedErrorCallback { #wgpuDeviceSetUncapturedErrorCallback }
 
 ```C
-void wgpuDeviceSetUncapturedErrorCallback(WGPUDevice device, WGPUErrorCallback callback, void * userdata)
+void wgpuDeviceSetUncapturedErrorCallback(
+	WGPUDevice device,
+	WGPUErrorCallback callback,
+	void * userdata,
+)
 ```
 
 

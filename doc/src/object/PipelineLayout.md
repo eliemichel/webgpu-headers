@@ -14,7 +14,10 @@ TODO
 ## SetLabel { #wgpuPipelineLayoutSetLabel }
 
 ```C
-void wgpuPipelineLayoutSetLabel(WGPUPipelineLayout pipelineLayout, char const * label)
+void wgpuPipelineLayoutSetLabel(
+	WGPUPipelineLayout pipelineLayout,
+	char const * label,
+)
 ```
 
 

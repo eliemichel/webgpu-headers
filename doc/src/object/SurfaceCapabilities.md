@@ -12,7 +12,9 @@
 ## FreeMembers { #wgpuSurfaceCapabilitiesFreeMembers }
 
 ```C
-void wgpuSurfaceCapabilitiesFreeMembers(WGPUSurfaceCapabilities surfaceCapabilities)
+void wgpuSurfaceCapabilitiesFreeMembers(
+	WGPUSurfaceCapabilities surfaceCapabilities,
+)
 ```
 
 

@@ -14,7 +14,10 @@ TODO
 ## SetLabel { #wgpuTextureViewSetLabel }
 
 ```C
-void wgpuTextureViewSetLabel(WGPUTextureView textureView, char const * label)
+void wgpuTextureViewSetLabel(
+	WGPUTextureView textureView,
+	char const * label,
+)
 ```
 
 

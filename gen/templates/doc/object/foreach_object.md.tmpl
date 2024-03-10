@@ -12,7 +12,11 @@
 ## {{.Name | PascalCase}} { #wgpu{{$object.Name | PascalCase}}{{.Name | PascalCase}} }
 
 ```C
-{{FunctionReturns .}} wgpu{{$object.Name | PascalCase}}{{.Name | PascalCase}}({{MethodArgs . $object}})
+{{FunctionReturns .}} wgpu{{$object.Name | PascalCase}}{{.Name | PascalCase}}(
+{{- range $method := MethodArgList . $object}}
+	{{.}},
+{{- end}}
+)
 ```
 
 {{.Doc}}

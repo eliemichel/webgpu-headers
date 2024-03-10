@@ -14,7 +14,11 @@ TODO
 ## GetCompilationInfo { #wgpuShaderModuleGetCompilationInfo }
 
 ```C
-void wgpuShaderModuleGetCompilationInfo(WGPUShaderModule shaderModule, WGPUShaderModuleGetCompilationInfoCallback callback, WGPU_NULLABLE void * userdata)
+void wgpuShaderModuleGetCompilationInfo(
+	WGPUShaderModule shaderModule,
+	WGPUShaderModuleGetCompilationInfoCallback callback,
+	WGPU_NULLABLE void * userdata,
+)
 ```
 
 
@@ -32,7 +36,10 @@ TODO
 ## SetLabel { #wgpuShaderModuleSetLabel }
 
 ```C
-void wgpuShaderModuleSetLabel(WGPUShaderModule shaderModule, char const * label)
+void wgpuShaderModuleSetLabel(
+	WGPUShaderModule shaderModule,
+	char const * label,
+)
 ```
 
 

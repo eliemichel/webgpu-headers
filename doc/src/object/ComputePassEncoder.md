@@ -14,7 +14,12 @@ TODO
 ## DispatchWorkgroups { #wgpuComputePassEncoderDispatchWorkgroups }
 
 ```C
-void wgpuComputePassEncoderDispatchWorkgroups(WGPUComputePassEncoder computePassEncoder, uint32_t workgroupCountX, uint32_t workgroupCountY, uint32_t workgroupCountZ)
+void wgpuComputePassEncoderDispatchWorkgroups(
+	WGPUComputePassEncoder computePassEncoder,
+	uint32_t workgroupCountX,
+	uint32_t workgroupCountY,
+	uint32_t workgroupCountZ,
+)
 ```
 
 
@@ -55,7 +60,11 @@ TODO
 ## DispatchWorkgroupsIndirect { #wgpuComputePassEncoderDispatchWorkgroupsIndirect }
 
 ```C
-void wgpuComputePassEncoderDispatchWorkgroupsIndirect(WGPUComputePassEncoder computePassEncoder, WGPUBuffer indirectBuffer, uint64_t indirectOffset)
+void wgpuComputePassEncoderDispatchWorkgroupsIndirect(
+	WGPUComputePassEncoder computePassEncoder,
+	WGPUBuffer indirectBuffer,
+	uint64_t indirectOffset,
+)
 ```
 
 
@@ -90,7 +99,9 @@ TODO
 ## End { #wgpuComputePassEncoderEnd }
 
 ```C
-void wgpuComputePassEncoderEnd(WGPUComputePassEncoder computePassEncoder)
+void wgpuComputePassEncoderEnd(
+	WGPUComputePassEncoder computePassEncoder,
+)
 ```
 
 
@@ -108,7 +119,10 @@ TODO
 ## InsertDebugMarker { #wgpuComputePassEncoderInsertDebugMarker }
 
 ```C
-void wgpuComputePassEncoderInsertDebugMarker(WGPUComputePassEncoder computePassEncoder, char const * markerLabel)
+void wgpuComputePassEncoderInsertDebugMarker(
+	WGPUComputePassEncoder computePassEncoder,
+	char const * markerLabel,
+)
 ```
 
 
@@ -137,7 +151,9 @@ TODO
 ## PopDebugGroup { #wgpuComputePassEncoderPopDebugGroup }
 
 ```C
-void wgpuComputePassEncoderPopDebugGroup(WGPUComputePassEncoder computePassEncoder)
+void wgpuComputePassEncoderPopDebugGroup(
+	WGPUComputePassEncoder computePassEncoder,
+)
 ```
 
 
@@ -155,7 +171,10 @@ TODO
 ## PushDebugGroup { #wgpuComputePassEncoderPushDebugGroup }
 
 ```C
-void wgpuComputePassEncoderPushDebugGroup(WGPUComputePassEncoder computePassEncoder, char const * groupLabel)
+void wgpuComputePassEncoderPushDebugGroup(
+	WGPUComputePassEncoder computePassEncoder,
+	char const * groupLabel,
+)
 ```
 
 
@@ -184,7 +203,13 @@ TODO
 ## SetBindGroup { #wgpuComputePassEncoderSetBindGroup }
 
 ```C
-void wgpuComputePassEncoderSetBindGroup(WGPUComputePassEncoder computePassEncoder, uint32_t groupIndex, WGPU_NULLABLE WGPUBindGroup group, size_t dynamicOffsetCount, uint32_t const * dynamicOffsets)
+void wgpuComputePassEncoderSetBindGroup(
+	WGPUComputePassEncoder computePassEncoder,
+	uint32_t groupIndex,
+	WGPU_NULLABLE WGPUBindGroup group,
+	size_t dynamicOffsetCount, ,
+	uint32_t const * dynamicOffsets,
+)
 ```
 
 
@@ -225,7 +250,10 @@ TODO
 ## SetLabel { #wgpuComputePassEncoderSetLabel }
 
 ```C
-void wgpuComputePassEncoderSetLabel(WGPUComputePassEncoder computePassEncoder, char const * label)
+void wgpuComputePassEncoderSetLabel(
+	WGPUComputePassEncoder computePassEncoder,
+	char const * label,
+)
 ```
 
 
@@ -254,7 +282,10 @@ TODO
 ## SetPipeline { #wgpuComputePassEncoderSetPipeline }
 
 ```C
-void wgpuComputePassEncoderSetPipeline(WGPUComputePassEncoder computePassEncoder, WGPUComputePipeline pipeline)
+void wgpuComputePassEncoderSetPipeline(
+	WGPUComputePassEncoder computePassEncoder,
+	WGPUComputePipeline pipeline,
+)
 ```
 
 

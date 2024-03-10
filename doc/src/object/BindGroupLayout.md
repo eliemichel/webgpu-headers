@@ -14,7 +14,10 @@ TODO
 ## SetLabel { #wgpuBindGroupLayoutSetLabel }
 
 ```C
-void wgpuBindGroupLayoutSetLabel(WGPUBindGroupLayout bindGroupLayout, char const * label)
+void wgpuBindGroupLayoutSetLabel(
+	WGPUBindGroupLayout bindGroupLayout,
+	char const * label,
+)
 ```
 
 

@@ -14,7 +14,13 @@ TODO
 ## Draw { #wgpuRenderBundleEncoderDraw }
 
 ```C
-void wgpuRenderBundleEncoderDraw(WGPURenderBundleEncoder renderBundleEncoder, uint32_t vertexCount, uint32_t instanceCount, uint32_t firstVertex, uint32_t firstInstance)
+void wgpuRenderBundleEncoderDraw(
+	WGPURenderBundleEncoder renderBundleEncoder,
+	uint32_t vertexCount,
+	uint32_t instanceCount,
+	uint32_t firstVertex,
+	uint32_t firstInstance,
+)
 ```
 
 
@@ -61,7 +67,14 @@ TODO
 ## DrawIndexed { #wgpuRenderBundleEncoderDrawIndexed }
 
 ```C
-void wgpuRenderBundleEncoderDrawIndexed(WGPURenderBundleEncoder renderBundleEncoder, uint32_t indexCount, uint32_t instanceCount, uint32_t firstIndex, int32_t baseVertex, uint32_t firstInstance)
+void wgpuRenderBundleEncoderDrawIndexed(
+	WGPURenderBundleEncoder renderBundleEncoder,
+	uint32_t indexCount,
+	uint32_t instanceCount,
+	uint32_t firstIndex,
+	int32_t baseVertex,
+	uint32_t firstInstance,
+)
 ```
 
 
@@ -114,7 +127,11 @@ TODO
 ## DrawIndexedIndirect { #wgpuRenderBundleEncoderDrawIndexedIndirect }
 
 ```C
-void wgpuRenderBundleEncoderDrawIndexedIndirect(WGPURenderBundleEncoder renderBundleEncoder, WGPUBuffer indirectBuffer, uint64_t indirectOffset)
+void wgpuRenderBundleEncoderDrawIndexedIndirect(
+	WGPURenderBundleEncoder renderBundleEncoder,
+	WGPUBuffer indirectBuffer,
+	uint64_t indirectOffset,
+)
 ```
 
 
@@ -149,7 +166,11 @@ TODO
 ## DrawIndirect { #wgpuRenderBundleEncoderDrawIndirect }
 
 ```C
-void wgpuRenderBundleEncoderDrawIndirect(WGPURenderBundleEncoder renderBundleEncoder, WGPUBuffer indirectBuffer, uint64_t indirectOffset)
+void wgpuRenderBundleEncoderDrawIndirect(
+	WGPURenderBundleEncoder renderBundleEncoder,
+	WGPUBuffer indirectBuffer,
+	uint64_t indirectOffset,
+)
 ```
 
 
@@ -184,7 +205,10 @@ TODO
 ## Finish { #wgpuRenderBundleEncoderFinish }
 
 ```C
-WGPURenderBundle wgpuRenderBundleEncoderFinish(WGPURenderBundleEncoder renderBundleEncoder, WGPU_NULLABLE WGPURenderBundleDescriptor const * descriptor)
+WGPURenderBundle wgpuRenderBundleEncoderFinish(
+	WGPURenderBundleEncoder renderBundleEncoder,
+	WGPU_NULLABLE WGPURenderBundleDescriptor const * descriptor,
+)
 ```
 
 
@@ -219,7 +243,10 @@ TODO
 ## InsertDebugMarker { #wgpuRenderBundleEncoderInsertDebugMarker }
 
 ```C
-void wgpuRenderBundleEncoderInsertDebugMarker(WGPURenderBundleEncoder renderBundleEncoder, char const * markerLabel)
+void wgpuRenderBundleEncoderInsertDebugMarker(
+	WGPURenderBundleEncoder renderBundleEncoder,
+	char const * markerLabel,
+)
 ```
 
 
@@ -248,7 +275,9 @@ TODO
 ## PopDebugGroup { #wgpuRenderBundleEncoderPopDebugGroup }
 
 ```C
-void wgpuRenderBundleEncoderPopDebugGroup(WGPURenderBundleEncoder renderBundleEncoder)
+void wgpuRenderBundleEncoderPopDebugGroup(
+	WGPURenderBundleEncoder renderBundleEncoder,
+)
 ```
 
 
@@ -266,7 +295,10 @@ TODO
 ## PushDebugGroup { #wgpuRenderBundleEncoderPushDebugGroup }
 
 ```C
-void wgpuRenderBundleEncoderPushDebugGroup(WGPURenderBundleEncoder renderBundleEncoder, char const * groupLabel)
+void wgpuRenderBundleEncoderPushDebugGroup(
+	WGPURenderBundleEncoder renderBundleEncoder,
+	char const * groupLabel,
+)
 ```
 
 
@@ -295,7 +327,13 @@ TODO
 ## SetBindGroup { #wgpuRenderBundleEncoderSetBindGroup }
 
 ```C
-void wgpuRenderBundleEncoderSetBindGroup(WGPURenderBundleEncoder renderBundleEncoder, uint32_t groupIndex, WGPU_NULLABLE WGPUBindGroup group, size_t dynamicOffsetCount, uint32_t const * dynamicOffsets)
+void wgpuRenderBundleEncoderSetBindGroup(
+	WGPURenderBundleEncoder renderBundleEncoder,
+	uint32_t groupIndex,
+	WGPU_NULLABLE WGPUBindGroup group,
+	size_t dynamicOffsetCount, ,
+	uint32_t const * dynamicOffsets,
+)
 ```
 
 
@@ -336,7 +374,13 @@ TODO
 ## SetIndexBuffer { #wgpuRenderBundleEncoderSetIndexBuffer }
 
 ```C
-void wgpuRenderBundleEncoderSetIndexBuffer(WGPURenderBundleEncoder renderBundleEncoder, WGPUBuffer buffer, WGPUIndexFormat format, uint64_t offset, uint64_t size)
+void wgpuRenderBundleEncoderSetIndexBuffer(
+	WGPURenderBundleEncoder renderBundleEncoder,
+	WGPUBuffer buffer,
+	WGPUIndexFormat format,
+	uint64_t offset,
+	uint64_t size,
+)
 ```
 
 
@@ -383,7 +427,10 @@ TODO
 ## SetLabel { #wgpuRenderBundleEncoderSetLabel }
 
 ```C
-void wgpuRenderBundleEncoderSetLabel(WGPURenderBundleEncoder renderBundleEncoder, char const * label)
+void wgpuRenderBundleEncoderSetLabel(
+	WGPURenderBundleEncoder renderBundleEncoder,
+	char const * label,
+)
 ```
 
 
@@ -412,7 +459,10 @@ TODO
 ## SetPipeline { #wgpuRenderBundleEncoderSetPipeline }
 
 ```C
-void wgpuRenderBundleEncoderSetPipeline(WGPURenderBundleEncoder renderBundleEncoder, WGPURenderPipeline pipeline)
+void wgpuRenderBundleEncoderSetPipeline(
+	WGPURenderBundleEncoder renderBundleEncoder,
+	WGPURenderPipeline pipeline,
+)
 ```
 
 
@@ -441,7 +491,13 @@ TODO
 ## SetVertexBuffer { #wgpuRenderBundleEncoderSetVertexBuffer }
 
 ```C
-void wgpuRenderBundleEncoderSetVertexBuffer(WGPURenderBundleEncoder renderBundleEncoder, uint32_t slot, WGPU_NULLABLE WGPUBuffer buffer, uint64_t offset, uint64_t size)
+void wgpuRenderBundleEncoderSetVertexBuffer(
+	WGPURenderBundleEncoder renderBundleEncoder,
+	uint32_t slot,
+	WGPU_NULLABLE WGPUBuffer buffer,
+	uint64_t offset,
+	uint64_t size,
+)
 ```
 
 

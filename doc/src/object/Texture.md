@@ -14,7 +14,10 @@ TODO
 ## CreateView { #wgpuTextureCreateView }
 
 ```C
-WGPUTextureView wgpuTextureCreateView(WGPUTexture texture, WGPU_NULLABLE WGPUTextureViewDescriptor const * descriptor)
+WGPUTextureView wgpuTextureCreateView(
+	WGPUTexture texture,
+	WGPU_NULLABLE WGPUTextureViewDescriptor const * descriptor,
+)
 ```
 
 
@@ -49,7 +52,9 @@ TODO
 ## Destroy { #wgpuTextureDestroy }
 
 ```C
-void wgpuTextureDestroy(WGPUTexture texture)
+void wgpuTextureDestroy(
+	WGPUTexture texture,
+)
 ```
 
 
@@ -68,7 +73,9 @@ TODO
 ## GetDepthOrArrayLayers { #wgpuTextureGetDepthOrArrayLayers }
 
 ```C
-uint32_t wgpuTextureGetDepthOrArrayLayers(WGPUTexture texture)
+uint32_t wgpuTextureGetDepthOrArrayLayers(
+	WGPUTexture texture,
+)
 ```
 
 
@@ -92,7 +99,9 @@ TODO
 ## GetDimension { #wgpuTextureGetDimension }
 
 ```C
-WGPUTextureDimension wgpuTextureGetDimension(WGPUTexture texture)
+WGPUTextureDimension wgpuTextureGetDimension(
+	WGPUTexture texture,
+)
 ```
 
 
@@ -116,7 +125,9 @@ TODO
 ## GetFormat { #wgpuTextureGetFormat }
 
 ```C
-WGPUTextureFormat wgpuTextureGetFormat(WGPUTexture texture)
+WGPUTextureFormat wgpuTextureGetFormat(
+	WGPUTexture texture,
+)
 ```
 
 
@@ -140,7 +151,9 @@ TODO
 ## GetHeight { #wgpuTextureGetHeight }
 
 ```C
-uint32_t wgpuTextureGetHeight(WGPUTexture texture)
+uint32_t wgpuTextureGetHeight(
+	WGPUTexture texture,
+)
 ```
 
 
@@ -164,7 +177,9 @@ TODO
 ## GetMipLevelCount { #wgpuTextureGetMipLevelCount }
 
 ```C
-uint32_t wgpuTextureGetMipLevelCount(WGPUTexture texture)
+uint32_t wgpuTextureGetMipLevelCount(
+	WGPUTexture texture,
+)
 ```
 
 
@@ -188,7 +203,9 @@ TODO
 ## GetSampleCount { #wgpuTextureGetSampleCount }
 
 ```C
-uint32_t wgpuTextureGetSampleCount(WGPUTexture texture)
+uint32_t wgpuTextureGetSampleCount(
+	WGPUTexture texture,
+)
 ```
 
 
@@ -212,7 +229,9 @@ TODO
 ## GetUsage { #wgpuTextureGetUsage }
 
 ```C
-WGPUTextureUsageFlags wgpuTextureGetUsage(WGPUTexture texture)
+WGPUTextureUsageFlags wgpuTextureGetUsage(
+	WGPUTexture texture,
+)
 ```
 
 
@@ -236,7 +255,9 @@ TODO
 ## GetWidth { #wgpuTextureGetWidth }
 
 ```C
-uint32_t wgpuTextureGetWidth(WGPUTexture texture)
+uint32_t wgpuTextureGetWidth(
+	WGPUTexture texture,
+)
 ```
 
 
@@ -260,7 +281,10 @@ TODO
 ## SetLabel { #wgpuTextureSetLabel }
 
 ```C
-void wgpuTextureSetLabel(WGPUTexture texture, char const * label)
+void wgpuTextureSetLabel(
+	WGPUTexture texture,
+	char const * label,
+)
 ```
 
 

@@ -14,7 +14,10 @@ TODO
 ## Configure { #wgpuSurfaceConfigure }
 
 ```C
-void wgpuSurfaceConfigure(WGPUSurface surface, WGPUSurfaceConfiguration const * config)
+void wgpuSurfaceConfigure(
+	WGPUSurface surface,
+	WGPUSurfaceConfiguration const * config,
+)
 ```
 
 
@@ -43,7 +46,11 @@ TODO
 ## GetCapabilities { #wgpuSurfaceGetCapabilities }
 
 ```C
-void wgpuSurfaceGetCapabilities(WGPUSurface surface, WGPUAdapter adapter, WGPUSurfaceCapabilities * capabilities)
+void wgpuSurfaceGetCapabilities(
+	WGPUSurface surface,
+	WGPUAdapter adapter,
+	WGPUSurfaceCapabilities * capabilities,
+)
 ```
 
 
@@ -78,7 +85,10 @@ TODO
 ## GetCurrentTexture { #wgpuSurfaceGetCurrentTexture }
 
 ```C
-void wgpuSurfaceGetCurrentTexture(WGPUSurface surface, WGPUSurfaceTexture * surfaceTexture)
+void wgpuSurfaceGetCurrentTexture(
+	WGPUSurface surface,
+	WGPUSurfaceTexture * surfaceTexture,
+)
 ```
 
 
@@ -107,7 +117,10 @@ TODO
 ## GetPreferredFormat { #wgpuSurfaceGetPreferredFormat }
 
 ```C
-WGPUTextureFormat wgpuSurfaceGetPreferredFormat(WGPUSurface surface, WGPUAdapter adapter)
+WGPUTextureFormat wgpuSurfaceGetPreferredFormat(
+	WGPUSurface surface,
+	WGPUAdapter adapter,
+)
 ```
 
 
@@ -142,7 +155,9 @@ TODO
 ## Present { #wgpuSurfacePresent }
 
 ```C
-void wgpuSurfacePresent(WGPUSurface surface)
+void wgpuSurfacePresent(
+	WGPUSurface surface,
+)
 ```
 
 
@@ -160,7 +175,10 @@ TODO
 ## SetLabel { #wgpuSurfaceSetLabel }
 
 ```C
-void wgpuSurfaceSetLabel(WGPUSurface surface, char const * label)
+void wgpuSurfaceSetLabel(
+	WGPUSurface surface,
+	char const * label,
+)
 ```
 
 
@@ -189,7 +207,9 @@ TODO
 ## Unconfigure { #wgpuSurfaceUnconfigure }
 
 ```C
-void wgpuSurfaceUnconfigure(WGPUSurface surface)
+void wgpuSurfaceUnconfigure(
+	WGPUSurface surface,
+)
 ```
 
 

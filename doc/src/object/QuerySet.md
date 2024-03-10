@@ -14,7 +14,9 @@ TODO
 ## Destroy { #wgpuQuerySetDestroy }
 
 ```C
-void wgpuQuerySetDestroy(WGPUQuerySet querySet)
+void wgpuQuerySetDestroy(
+	WGPUQuerySet querySet,
+)
 ```
 
 
@@ -33,7 +35,9 @@ TODO
 ## GetCount { #wgpuQuerySetGetCount }
 
 ```C
-uint32_t wgpuQuerySetGetCount(WGPUQuerySet querySet)
+uint32_t wgpuQuerySetGetCount(
+	WGPUQuerySet querySet,
+)
 ```
 
 
@@ -57,7 +61,9 @@ TODO
 ## GetType { #wgpuQuerySetGetType }
 
 ```C
-WGPUQueryType wgpuQuerySetGetType(WGPUQuerySet querySet)
+WGPUQueryType wgpuQuerySetGetType(
+	WGPUQuerySet querySet,
+)
 ```
 
 
@@ -81,7 +87,10 @@ TODO
 ## SetLabel { #wgpuQuerySetSetLabel }
 
 ```C
-void wgpuQuerySetSetLabel(WGPUQuerySet querySet, char const * label)
+void wgpuQuerySetSetLabel(
+	WGPUQuerySet querySet,
+	char const * label,
+)
 ```
 
 

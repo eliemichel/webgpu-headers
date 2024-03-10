@@ -14,7 +14,10 @@ This is a test.
 ## EnumerateFeatures { #wgpuAdapterEnumerateFeatures }
 
 ```C
-size_t wgpuAdapterEnumerateFeatures(WGPUAdapter adapter, WGPUFeatureName * features)
+size_t wgpuAdapterEnumerateFeatures(
+	WGPUAdapter adapter,
+	WGPUFeatureName * features,
+)
 ```
 
 
@@ -49,7 +52,10 @@ TODO
 ## GetLimits { #wgpuAdapterGetLimits }
 
 ```C
-WGPUBool wgpuAdapterGetLimits(WGPUAdapter adapter, WGPUSupportedLimits * limits)
+WGPUBool wgpuAdapterGetLimits(
+	WGPUAdapter adapter,
+	WGPUSupportedLimits * limits,
+)
 ```
 
 
@@ -85,7 +91,10 @@ True iff limits were successfully retrieved.
 ## GetProperties { #wgpuAdapterGetProperties }
 
 ```C
-void wgpuAdapterGetProperties(WGPUAdapter adapter, WGPUAdapterProperties * properties)
+void wgpuAdapterGetProperties(
+	WGPUAdapter adapter,
+	WGPUAdapterProperties * properties,
+)
 ```
 
 
@@ -114,7 +123,10 @@ TODO
 ## HasFeature { #wgpuAdapterHasFeature }
 
 ```C
-WGPUBool wgpuAdapterHasFeature(WGPUAdapter adapter, WGPUFeatureName feature)
+WGPUBool wgpuAdapterHasFeature(
+	WGPUAdapter adapter,
+	WGPUFeatureName feature,
+)
 ```
 
 
@@ -149,7 +161,11 @@ TODO
 ## RequestAdapterInfo { #wgpuAdapterRequestAdapterInfo }
 
 ```C
-void wgpuAdapterRequestAdapterInfo(WGPUAdapter adapter, WGPUAdapterRequestAdapterInfoCallback callback, WGPU_NULLABLE void * userdata)
+void wgpuAdapterRequestAdapterInfo(
+	WGPUAdapter adapter,
+	WGPUAdapterRequestAdapterInfoCallback callback,
+	WGPU_NULLABLE void * userdata,
+)
 ```
 
 
@@ -167,7 +183,12 @@ TODO
 ## RequestDevice { #wgpuAdapterRequestDevice }
 
 ```C
-void wgpuAdapterRequestDevice(WGPUAdapter adapter, WGPU_NULLABLE WGPUDeviceDescriptor const * descriptor, WGPUAdapterRequestDeviceCallback callback, WGPU_NULLABLE void * userdata)
+void wgpuAdapterRequestDevice(
+	WGPUAdapter adapter,
+	WGPU_NULLABLE WGPUDeviceDescriptor const * descriptor,
+	WGPUAdapterRequestDeviceCallback callback,
+	WGPU_NULLABLE void * userdata,
+)
 ```
 
 

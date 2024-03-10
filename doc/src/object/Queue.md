@@ -14,7 +14,11 @@ TODO
 ## OnSubmittedWorkDone { #wgpuQueueOnSubmittedWorkDone }
 
 ```C
-void wgpuQueueOnSubmittedWorkDone(WGPUQueue queue, WGPUQueueOnSubmittedWorkDoneCallback callback, WGPU_NULLABLE void * userdata)
+void wgpuQueueOnSubmittedWorkDone(
+	WGPUQueue queue,
+	WGPUQueueOnSubmittedWorkDoneCallback callback,
+	WGPU_NULLABLE void * userdata,
+)
 ```
 
 
@@ -32,7 +36,10 @@ TODO
 ## SetLabel { #wgpuQueueSetLabel }
 
 ```C
-void wgpuQueueSetLabel(WGPUQueue queue, char const * label)
+void wgpuQueueSetLabel(
+	WGPUQueue queue,
+	char const * label,
+)
 ```
 
 
@@ -61,7 +68,11 @@ TODO
 ## Submit { #wgpuQueueSubmit }
 
 ```C
-void wgpuQueueSubmit(WGPUQueue queue, size_t commandCount, WGPUCommandBuffer const * commands)
+void wgpuQueueSubmit(
+	WGPUQueue queue,
+	size_t commandCount, ,
+	WGPUCommandBuffer const * commands,
+)
 ```
 
 
@@ -90,7 +101,13 @@ TODO
 ## WriteBuffer { #wgpuQueueWriteBuffer }
 
 ```C
-void wgpuQueueWriteBuffer(WGPUQueue queue, WGPUBuffer buffer, uint64_t bufferOffset, void const * data, size_t size)
+void wgpuQueueWriteBuffer(
+	WGPUQueue queue,
+	WGPUBuffer buffer,
+	uint64_t bufferOffset,
+	void const * data,
+	size_t size,
+)
 ```
 
 
@@ -137,7 +154,14 @@ TODO
 ## WriteTexture { #wgpuQueueWriteTexture }
 
 ```C
-void wgpuQueueWriteTexture(WGPUQueue queue, WGPUImageCopyTexture const * destination, void const * data, size_t dataSize, WGPUTextureDataLayout const * dataLayout, WGPUExtent3D const * writeSize)
+void wgpuQueueWriteTexture(
+	WGPUQueue queue,
+	WGPUImageCopyTexture const * destination,
+	void const * data,
+	size_t dataSize,
+	WGPUTextureDataLayout const * dataLayout,
+	WGPUExtent3D const * writeSize,
+)
 ```
 
 

@@ -115,6 +115,8 @@ func GenDocSource(rootData *Data, data any, tmpl string, dst io.Writer) error {
 			"FunctionArgs": FunctionArgs,
 			"MethodArgs": MethodArgs,
 			"CallbackArgs": CallbackArgs,
+			"FunctionArgList": FunctionArgList,
+			"MethodArgList": MethodArgList,
 			"EnumValue": func(entryValue any) string {
 				return fmt.Sprintf("%s%.4X", rootData.EnumPrefix, entryValue)
 			},
@@ -282,4 +284,39 @@ func CallbackArgs(f Function) string {
 	}
 	sb.WriteString("WGPU_NULLABLE void * userdata")
 	return sb.String()
+}
+
+func MethodArgList(f Function, o Object) []string {
+	return FunctionArgList(f, &o)
+}
+
+func FunctionArgList(f Function, o *Object) []string {
+	argList := []string {};
+	if o != nil {
+		argList = append(argList, fmt.Sprintf("WGPU%s %s", PascalCase(o.Name), CamelCase(o.Name)))
+	}
+	for _, arg := range f.Args {
+		qualifiers := ""
+		if arg.Optional {
+			qualifiers = "WGPU_NULLABLE "
+		}
+		matches := arrayTypeRegexp.FindStringSubmatch(arg.Type)
+		if len(matches) == 2 {
+			argList = append(argList, fmt.Sprintf("%ssize_t %sCount, ", qualifiers, CamelCase(Singularize(arg.Name))))
+			argList = append(argList, fmt.Sprintf("%s %s", CType(matches[1], arg.Pointer), CamelCase(arg.Name)))
+		} else {
+			argList = append(argList, fmt.Sprintf("%s%s %s", qualifiers, CType(arg.Type, arg.Pointer), CamelCase(arg.Name)))
+		}
+	}
+	if len(f.ReturnsAsync) > 0 {
+		var name string
+		if o != nil {
+			name = PascalCase(o.Name) + PascalCase(f.Name)
+		} else {
+			name = PascalCase(f.Name)
+		}
+		argList = append(argList, fmt.Sprintf("WGPU%sCallback callback", name))
+		argList = append(argList, "WGPU_NULLABLE void * userdata")
+	}
+	return argList
 }

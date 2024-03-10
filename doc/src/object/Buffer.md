@@ -14,7 +14,9 @@ TODO
 ## Destroy { #wgpuBufferDestroy }
 
 ```C
-void wgpuBufferDestroy(WGPUBuffer buffer)
+void wgpuBufferDestroy(
+	WGPUBuffer buffer,
+)
 ```
 
 
@@ -33,7 +35,11 @@ TODO
 ## GetConstMappedRange { #wgpuBufferGetConstMappedRange }
 
 ```C
-void const * wgpuBufferGetConstMappedRange(WGPUBuffer buffer, size_t offset, size_t size)
+void const * wgpuBufferGetConstMappedRange(
+	WGPUBuffer buffer,
+	size_t offset,
+	size_t size,
+)
 ```
 
 
@@ -74,7 +80,9 @@ TODO
 ## GetMapState { #wgpuBufferGetMapState }
 
 ```C
-WGPUBufferMapState wgpuBufferGetMapState(WGPUBuffer buffer)
+WGPUBufferMapState wgpuBufferGetMapState(
+	WGPUBuffer buffer,
+)
 ```
 
 
@@ -98,7 +106,11 @@ TODO
 ## GetMappedRange { #wgpuBufferGetMappedRange }
 
 ```C
-void * wgpuBufferGetMappedRange(WGPUBuffer buffer, size_t offset, size_t size)
+void * wgpuBufferGetMappedRange(
+	WGPUBuffer buffer,
+	size_t offset,
+	size_t size,
+)
 ```
 
 
@@ -139,7 +151,9 @@ TODO
 ## GetSize { #wgpuBufferGetSize }
 
 ```C
-uint64_t wgpuBufferGetSize(WGPUBuffer buffer)
+uint64_t wgpuBufferGetSize(
+	WGPUBuffer buffer,
+)
 ```
 
 
@@ -163,7 +177,9 @@ TODO
 ## GetUsage { #wgpuBufferGetUsage }
 
 ```C
-WGPUBufferUsageFlags wgpuBufferGetUsage(WGPUBuffer buffer)
+WGPUBufferUsageFlags wgpuBufferGetUsage(
+	WGPUBuffer buffer,
+)
 ```
 
 
@@ -187,7 +203,14 @@ TODO
 ## MapAsync { #wgpuBufferMapAsync }
 
 ```C
-void wgpuBufferMapAsync(WGPUBuffer buffer, WGPUMapModeFlags mode, size_t offset, size_t size, WGPUBufferMapAsyncCallback callback, WGPU_NULLABLE void * userdata)
+void wgpuBufferMapAsync(
+	WGPUBuffer buffer,
+	WGPUMapModeFlags mode,
+	size_t offset,
+	size_t size,
+	WGPUBufferMapAsyncCallback callback,
+	WGPU_NULLABLE void * userdata,
+)
 ```
 
 
@@ -228,7 +251,10 @@ TODO
 ## SetLabel { #wgpuBufferSetLabel }
 
 ```C
-void wgpuBufferSetLabel(WGPUBuffer buffer, char const * label)
+void wgpuBufferSetLabel(
+	WGPUBuffer buffer,
+	char const * label,
+)
 ```
 
 
@@ -257,7 +283,9 @@ TODO
 ## Unmap { #wgpuBufferUnmap }
 
 ```C
-void wgpuBufferUnmap(WGPUBuffer buffer)
+void wgpuBufferUnmap(
+	WGPUBuffer buffer,
+)
 ```
 
 

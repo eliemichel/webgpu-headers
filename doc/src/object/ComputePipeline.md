@@ -14,7 +14,10 @@ TODO
 ## GetBindGroupLayout { #wgpuComputePipelineGetBindGroupLayout }
 
 ```C
-WGPUBindGroupLayout wgpuComputePipelineGetBindGroupLayout(WGPUComputePipeline computePipeline, uint32_t groupIndex)
+WGPUBindGroupLayout wgpuComputePipelineGetBindGroupLayout(
+	WGPUComputePipeline computePipeline,
+	uint32_t groupIndex,
+)
 ```
 
 
@@ -49,7 +52,10 @@ TODO
 ## SetLabel { #wgpuComputePipelineSetLabel }
 
 ```C
-void wgpuComputePipelineSetLabel(WGPUComputePipeline computePipeline, char const * label)
+void wgpuComputePipelineSetLabel(
+	WGPUComputePipeline computePipeline,
+	char const * label,
+)
 ```
 
 

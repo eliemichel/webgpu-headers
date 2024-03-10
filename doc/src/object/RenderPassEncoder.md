@@ -14,7 +14,10 @@ TODO
 ## BeginOcclusionQuery { #wgpuRenderPassEncoderBeginOcclusionQuery }
 
 ```C
-void wgpuRenderPassEncoderBeginOcclusionQuery(WGPURenderPassEncoder renderPassEncoder, uint32_t queryIndex)
+void wgpuRenderPassEncoderBeginOcclusionQuery(
+	WGPURenderPassEncoder renderPassEncoder,
+	uint32_t queryIndex,
+)
 ```
 
 
@@ -43,7 +46,13 @@ TODO
 ## Draw { #wgpuRenderPassEncoderDraw }
 
 ```C
-void wgpuRenderPassEncoderDraw(WGPURenderPassEncoder renderPassEncoder, uint32_t vertexCount, uint32_t instanceCount, uint32_t firstVertex, uint32_t firstInstance)
+void wgpuRenderPassEncoderDraw(
+	WGPURenderPassEncoder renderPassEncoder,
+	uint32_t vertexCount,
+	uint32_t instanceCount,
+	uint32_t firstVertex,
+	uint32_t firstInstance,
+)
 ```
 
 
@@ -90,7 +99,14 @@ TODO
 ## DrawIndexed { #wgpuRenderPassEncoderDrawIndexed }
 
 ```C
-void wgpuRenderPassEncoderDrawIndexed(WGPURenderPassEncoder renderPassEncoder, uint32_t indexCount, uint32_t instanceCount, uint32_t firstIndex, int32_t baseVertex, uint32_t firstInstance)
+void wgpuRenderPassEncoderDrawIndexed(
+	WGPURenderPassEncoder renderPassEncoder,
+	uint32_t indexCount,
+	uint32_t instanceCount,
+	uint32_t firstIndex,
+	int32_t baseVertex,
+	uint32_t firstInstance,
+)
 ```
 
 
@@ -143,7 +159,11 @@ TODO
 ## DrawIndexedIndirect { #wgpuRenderPassEncoderDrawIndexedIndirect }
 
 ```C
-void wgpuRenderPassEncoderDrawIndexedIndirect(WGPURenderPassEncoder renderPassEncoder, WGPUBuffer indirectBuffer, uint64_t indirectOffset)
+void wgpuRenderPassEncoderDrawIndexedIndirect(
+	WGPURenderPassEncoder renderPassEncoder,
+	WGPUBuffer indirectBuffer,
+	uint64_t indirectOffset,
+)
 ```
 
 
@@ -178,7 +198,11 @@ TODO
 ## DrawIndirect { #wgpuRenderPassEncoderDrawIndirect }
 
 ```C
-void wgpuRenderPassEncoderDrawIndirect(WGPURenderPassEncoder renderPassEncoder, WGPUBuffer indirectBuffer, uint64_t indirectOffset)
+void wgpuRenderPassEncoderDrawIndirect(
+	WGPURenderPassEncoder renderPassEncoder,
+	WGPUBuffer indirectBuffer,
+	uint64_t indirectOffset,
+)
 ```
 
 
@@ -213,7 +237,9 @@ TODO
 ## End { #wgpuRenderPassEncoderEnd }
 
 ```C
-void wgpuRenderPassEncoderEnd(WGPURenderPassEncoder renderPassEncoder)
+void wgpuRenderPassEncoderEnd(
+	WGPURenderPassEncoder renderPassEncoder,
+)
 ```
 
 
@@ -231,7 +257,9 @@ TODO
 ## EndOcclusionQuery { #wgpuRenderPassEncoderEndOcclusionQuery }
 
 ```C
-void wgpuRenderPassEncoderEndOcclusionQuery(WGPURenderPassEncoder renderPassEncoder)
+void wgpuRenderPassEncoderEndOcclusionQuery(
+	WGPURenderPassEncoder renderPassEncoder,
+)
 ```
 
 
@@ -249,7 +277,11 @@ TODO
 ## ExecuteBundles { #wgpuRenderPassEncoderExecuteBundles }
 
 ```C
-void wgpuRenderPassEncoderExecuteBundles(WGPURenderPassEncoder renderPassEncoder, size_t bundleCount, WGPURenderBundle const * bundles)
+void wgpuRenderPassEncoderExecuteBundles(
+	WGPURenderPassEncoder renderPassEncoder,
+	size_t bundleCount, ,
+	WGPURenderBundle const * bundles,
+)
 ```
 
 
@@ -278,7 +310,10 @@ TODO
 ## InsertDebugMarker { #wgpuRenderPassEncoderInsertDebugMarker }
 
 ```C
-void wgpuRenderPassEncoderInsertDebugMarker(WGPURenderPassEncoder renderPassEncoder, char const * markerLabel)
+void wgpuRenderPassEncoderInsertDebugMarker(
+	WGPURenderPassEncoder renderPassEncoder,
+	char const * markerLabel,
+)
 ```
 
 
@@ -307,7 +342,9 @@ TODO
 ## PopDebugGroup { #wgpuRenderPassEncoderPopDebugGroup }
 
 ```C
-void wgpuRenderPassEncoderPopDebugGroup(WGPURenderPassEncoder renderPassEncoder)
+void wgpuRenderPassEncoderPopDebugGroup(
+	WGPURenderPassEncoder renderPassEncoder,
+)
 ```
 
 
@@ -325,7 +362,10 @@ TODO
 ## PushDebugGroup { #wgpuRenderPassEncoderPushDebugGroup }
 
 ```C
-void wgpuRenderPassEncoderPushDebugGroup(WGPURenderPassEncoder renderPassEncoder, char const * groupLabel)
+void wgpuRenderPassEncoderPushDebugGroup(
+	WGPURenderPassEncoder renderPassEncoder,
+	char const * groupLabel,
+)
 ```
 
 
@@ -354,7 +394,13 @@ TODO
 ## SetBindGroup { #wgpuRenderPassEncoderSetBindGroup }
 
 ```C
-void wgpuRenderPassEncoderSetBindGroup(WGPURenderPassEncoder renderPassEncoder, uint32_t groupIndex, WGPU_NULLABLE WGPUBindGroup group, size_t dynamicOffsetCount, uint32_t const * dynamicOffsets)
+void wgpuRenderPassEncoderSetBindGroup(
+	WGPURenderPassEncoder renderPassEncoder,
+	uint32_t groupIndex,
+	WGPU_NULLABLE WGPUBindGroup group,
+	size_t dynamicOffsetCount, ,
+	uint32_t const * dynamicOffsets,
+)
 ```
 
 
@@ -395,7 +441,10 @@ TODO
 ## SetBlendConstant { #wgpuRenderPassEncoderSetBlendConstant }
 
 ```C
-void wgpuRenderPassEncoderSetBlendConstant(WGPURenderPassEncoder renderPassEncoder, WGPUColor const * color)
+void wgpuRenderPassEncoderSetBlendConstant(
+	WGPURenderPassEncoder renderPassEncoder,
+	WGPUColor const * color,
+)
 ```
 
 
@@ -424,7 +473,13 @@ TODO
 ## SetIndexBuffer { #wgpuRenderPassEncoderSetIndexBuffer }
 
 ```C
-void wgpuRenderPassEncoderSetIndexBuffer(WGPURenderPassEncoder renderPassEncoder, WGPUBuffer buffer, WGPUIndexFormat format, uint64_t offset, uint64_t size)
+void wgpuRenderPassEncoderSetIndexBuffer(
+	WGPURenderPassEncoder renderPassEncoder,
+	WGPUBuffer buffer,
+	WGPUIndexFormat format,
+	uint64_t offset,
+	uint64_t size,
+)
 ```
 
 
@@ -471,7 +526,10 @@ TODO
 ## SetLabel { #wgpuRenderPassEncoderSetLabel }
 
 ```C
-void wgpuRenderPassEncoderSetLabel(WGPURenderPassEncoder renderPassEncoder, char const * label)
+void wgpuRenderPassEncoderSetLabel(
+	WGPURenderPassEncoder renderPassEncoder,
+	char const * label,
+)
 ```
 
 
@@ -500,7 +558,10 @@ TODO
 ## SetPipeline { #wgpuRenderPassEncoderSetPipeline }
 
 ```C
-void wgpuRenderPassEncoderSetPipeline(WGPURenderPassEncoder renderPassEncoder, WGPURenderPipeline pipeline)
+void wgpuRenderPassEncoderSetPipeline(
+	WGPURenderPassEncoder renderPassEncoder,
+	WGPURenderPipeline pipeline,
+)
 ```
 
 
@@ -529,7 +590,13 @@ TODO
 ## SetScissorRect { #wgpuRenderPassEncoderSetScissorRect }
 
 ```C
-void wgpuRenderPassEncoderSetScissorRect(WGPURenderPassEncoder renderPassEncoder, uint32_t x, uint32_t y, uint32_t width, uint32_t height)
+void wgpuRenderPassEncoderSetScissorRect(
+	WGPURenderPassEncoder renderPassEncoder,
+	uint32_t x,
+	uint32_t y,
+	uint32_t width,
+	uint32_t height,
+)
 ```
 
 
@@ -576,7 +643,10 @@ TODO
 ## SetStencilReference { #wgpuRenderPassEncoderSetStencilReference }
 
 ```C
-void wgpuRenderPassEncoderSetStencilReference(WGPURenderPassEncoder renderPassEncoder, uint32_t reference)
+void wgpuRenderPassEncoderSetStencilReference(
+	WGPURenderPassEncoder renderPassEncoder,
+	uint32_t reference,
+)
 ```
 
 
@@ -605,7 +675,13 @@ TODO
 ## SetVertexBuffer { #wgpuRenderPassEncoderSetVertexBuffer }
 
 ```C
-void wgpuRenderPassEncoderSetVertexBuffer(WGPURenderPassEncoder renderPassEncoder, uint32_t slot, WGPU_NULLABLE WGPUBuffer buffer, uint64_t offset, uint64_t size)
+void wgpuRenderPassEncoderSetVertexBuffer(
+	WGPURenderPassEncoder renderPassEncoder,
+	uint32_t slot,
+	WGPU_NULLABLE WGPUBuffer buffer,
+	uint64_t offset,
+	uint64_t size,
+)
 ```
 
 
@@ -652,7 +728,15 @@ TODO
 ## SetViewport { #wgpuRenderPassEncoderSetViewport }
 
 ```C
-void wgpuRenderPassEncoderSetViewport(WGPURenderPassEncoder renderPassEncoder, float x, float y, float width, float height, float minDepth, float maxDepth)
+void wgpuRenderPassEncoderSetViewport(
+	WGPURenderPassEncoder renderPassEncoder,
+	float x,
+	float y,
+	float width,
+	float height,
+	float minDepth,
+	float maxDepth,
+)
 ```
 
 

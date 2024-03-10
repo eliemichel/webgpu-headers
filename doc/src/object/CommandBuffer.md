@@ -14,7 +14,10 @@ TODO
 ## SetLabel { #wgpuCommandBufferSetLabel }
 
 ```C
-void wgpuCommandBufferSetLabel(WGPUCommandBuffer commandBuffer, char const * label)
+void wgpuCommandBufferSetLabel(
+	WGPUCommandBuffer commandBuffer,
+	char const * label,
+)
 ```
 
 

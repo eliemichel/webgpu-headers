@@ -14,7 +14,10 @@ TODO
 ## CreateSurface { #wgpuInstanceCreateSurface }
 
 ```C
-WGPUSurface wgpuInstanceCreateSurface(WGPUInstance instance, WGPUSurfaceDescriptor const * descriptor)
+WGPUSurface wgpuInstanceCreateSurface(
+	WGPUInstance instance,
+	WGPUSurfaceDescriptor const * descriptor,
+)
 ```
 
 
@@ -49,7 +52,10 @@ TODO
 ## HasWGSLLanguageFeature { #wgpuInstanceHasWGSLLanguageFeature }
 
 ```C
-WGPUBool wgpuInstanceHasWGSLLanguageFeature(WGPUInstance instance, WGPUWGSLFeatureName feature)
+WGPUBool wgpuInstanceHasWGSLLanguageFeature(
+	WGPUInstance instance,
+	WGPUWGSLFeatureName feature,
+)
 ```
 
 
@@ -84,7 +90,9 @@ TODO
 ## ProcessEvents { #wgpuInstanceProcessEvents }
 
 ```C
-void wgpuInstanceProcessEvents(WGPUInstance instance)
+void wgpuInstanceProcessEvents(
+	WGPUInstance instance,
+)
 ```
 
 
@@ -102,7 +110,12 @@ TODO
 ## RequestAdapter { #wgpuInstanceRequestAdapter }
 
 ```C
-void wgpuInstanceRequestAdapter(WGPUInstance instance, WGPU_NULLABLE WGPURequestAdapterOptions const * options, WGPUInstanceRequestAdapterCallback callback, WGPU_NULLABLE void * userdata)
+void wgpuInstanceRequestAdapter(
+	WGPUInstance instance,
+	WGPU_NULLABLE WGPURequestAdapterOptions const * options,
+	WGPUInstanceRequestAdapterCallback callback,
+	WGPU_NULLABLE void * userdata,
+)
 ```
 
 

@@ -14,7 +14,10 @@ TODO
 ## SetLabel { #wgpuSamplerSetLabel }
 
 ```C
-void wgpuSamplerSetLabel(WGPUSampler sampler, char const * label)
+void wgpuSamplerSetLabel(
+	WGPUSampler sampler,
+	char const * label,
+)
 ```
 
 

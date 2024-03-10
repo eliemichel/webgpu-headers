@@ -14,7 +14,10 @@ TODO
 ## SetLabel { #wgpuRenderBundleSetLabel }
 
 ```C
-void wgpuRenderBundleSetLabel(WGPURenderBundle renderBundle, char const * label)
+void wgpuRenderBundleSetLabel(
+	WGPURenderBundle renderBundle,
+	char const * label,
+)
 ```
 
 
