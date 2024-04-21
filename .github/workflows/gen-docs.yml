@@ -2,7 +2,7 @@ name: gen-docs
 
 on:
   push:
-    branches: ["eliemichel/docs"]
+    branches: ["eliemichel/mkdocs"]
   workflow_dispatch:
 
 # Allow only one concurrent deployment
