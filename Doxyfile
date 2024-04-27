@@ -150,6 +150,14 @@ ENUM_VALUES_PER_LINE   = 1
 GENERATE_LATEX         = NO
 
 #---------------------------------------------------------------------------
+# Configuration options related to the XML output
+#---------------------------------------------------------------------------
+
+# The XML output is used by breathe to generate sphinx documentation
+
+GENERATE_XML           = YES
+
+#---------------------------------------------------------------------------
 # Configuration options related to the preprocessor
 #---------------------------------------------------------------------------
 
